@@ -37,31 +37,6 @@
   .min-width:after {
     content: "320px"; }
 
-.break-xs {
-  display: inline-block; }
-  .break-xs:after {
-    content: "320px"; }
-
-.break-sm:after {
-  display: inline-block;
-  content: "600px";
-  display: inline-block; }
-
-.break-md:after {
-  display: inline-block;
-  content: "992px";
-  display: inline-block; }
-
-.break-lg:after {
-  display: inline-block;
-  content: "1200px";
-  display: inline-block; }
-
-.break-xl:after {
-  display: inline-block;
-  content: "1200px";
-  display: inline-block; }
-
 /*+------------------------------------------------------------+
  |       -MIXINS        
  +------------------------------------------------------------+*/

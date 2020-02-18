@@ -99,46 +99,6 @@ $transition:278ms;
     }
 }
 
-.break-xs {
-    display: inline-block;
-    &:after {
-        content: "#{$min-width}";
-
-    }
-}
-
-.break-sm {
-    &:after {
-        display: inline-block;
-        content: "#{$break-sm}";
-display: inline-block;
-    }
-}
-
-.break-md {
-    &:after {
-        display: inline-block;
-        content: "#{$break-md}";
-display: inline-block;
-    }
-}
-
-
-
-.break-lg {
-    &:after {
-        display: inline-block;
-        content: "#{$break-lg}";
-display: inline-block;
-    }
-}
-.break-xl {
-    &:after {
-        display: inline-block;
-        content: "#{$break-lg}";
-display: inline-block;
-    }
-}
 
 $height-xs:80px;
 $height-sm:100px;
