@@ -1,0 +1,194 @@
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS        
+ +------------------------------------------------------------+*/
+$font-family-light: 'BasisGrotesque-Light-Pro';
+$font-family-regular: 'BasisGrotesque-Regular-Pro';
+$font-family-medium: 'BasisGrotesque-Medium-Pro';
+$font-family-bold: 'BasisGrotesque-Bold-Pro';
+$theme:'theme-dutti';
+
+@font-face {
+    font-family: $font-family-bold;
+    src: url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Bold-Pro.eot');
+    src: url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Bold-Pro.eot?#iefix') format('embedded-opentype'),
+    url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Bold-Pro.woff2') format('woff2'),
+    url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Bold-Pro.woff') format('woff'),
+    url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Bold-Pro.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: $font-family-medium;
+    src: url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Medium-Pro.eot');
+    src: url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Medium-Pro.eot?#iefix') format('embedded-opentype'),
+    url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Medium-Pro.woff2') format('woff2'),
+    url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Medium-Pro.woff') format('woff'),
+    url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Medium-Pro.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: $font-family-light;
+    src: url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Light-Pro.eot');
+    src: url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Light-Pro.eot?#iefix') format('embedded-opentype'),
+    url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Light-Pro.woff2') format('woff2'),
+    url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Light-Pro.woff') format('woff'),
+    url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Light-Pro.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: $font-family-regular;
+    src: url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Regular-Pro.eot');
+    src: url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Regular-Pro.eot?#iefix') format('embedded-opentype'),
+    url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Regular-Pro.woff2') format('woff2'),
+    url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Regular-Pro.woff') format('woff'),
+    url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Regular-Pro.ttf') format('truetype'),
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS        
+ +------------------------------------------------------------+*/
+
+
+$breakpoints: (
+    xs: 1px,
+    sm: 600px,
+    md: 992px,
+    lg: 1200px,
+    xl: 1500px);
+
+
+$break-xs:nth(map-values($breakpoints), 1);
+$break-sm:nth(map-values($breakpoints), 2);
+$break-md:nth(map-values($breakpoints), 3);
+$break-lg:nth(map-values($breakpoints), 4);
+$break-xl:nth(map-values($breakpoints), 5);
+
+$min-width:320px;
+
+
+/*+------------------------------------------------------------+
+ |       -Variables  Globales      
+ +------------------------------------------------------------+*/
+
+$totalCols :12;
+$padding-global: 8px;
+$padding-button: 8px;
+$padding-btn: 16px;
+$height-inputs: 48px;
+$error-primary:#FD675E;
+
+$container: 800px; //maxwidth del container2
+$container-2: 700px; //maxwidth del container2
+$container-3: 900px; //maxwidth del container2
+$container-4: 350px; //maxwidth del container4
+
+
+$link:rgb(207, 236, 240);
+$linkHover:#999;
+$black:rgb(3, 2, 2);
+$primary:#000;
+
+$primary-guide:#00bfcb;
+
+$transition:278ms;
+
+.min-width{
+    display: inline-block;
+    &:after {
+        content: "#{$min-width}";
+
+    }
+}
+
+.break-xs {
+    display: inline-block;
+    &:after {
+        content: "#{$min-width}";
+
+    }
+}
+
+.break-sm {
+    &:after {
+        display: inline-block;
+        content: "#{$break-sm}";
+display: inline-block;
+    }
+}
+
+.break-md {
+    &:after {
+        display: inline-block;
+        content: "#{$break-md}";
+display: inline-block;
+    }
+}
+
+
+
+.break-lg {
+    &:after {
+        display: inline-block;
+        content: "#{$break-lg}";
+display: inline-block;
+    }
+}
+.break-xl {
+    &:after {
+        display: inline-block;
+        content: "#{$break-lg}";
+display: inline-block;
+    }
+}
+
+$height-xs:80px;
+$height-sm:100px;
+$height-md:350px;
+$height-lg:400px;
+$height-xl:450px;
+$height-full:100vh;
+$height-home:calc(100vh - 80px);
+
+
+
+$fs: "font-size";
+$lh: "line-height";
+$headers: // name:mobile,768,992,1280,line-height,font
+(h1: (32px, 32px, 32px, 40px, 1.2, "medium"),
+  h2: (24px, 24px, 24px, 32px, 1.2, "medium"),
+  h3: (18px, 18px, 18px, 24px, 1.2, "medium"),
+  h4: (16px, 16px, 16px, 18px, 1.2, "medium"),
+  h5: (14px, 14px, 14px, 16px, 1.2, "medium"),
+  h6: (12px, 12px, 12px, 14px, 1.2, "medium"),
+  h7: (10px, 10px, 10px, 12px, 1.2, "medium"),
+  h8: (8px, 8px, 8px, 10px, 1.2, "medium"),
+  display1: (32px, 32px, 32px, 48px, 1.2, "bold"),
+  /* PROMOTIONS BANNER */
+  display2: (20px, 20px, 20px, 40px, 1.2, "bold"),
+  /* SALES */
+  display3: (16px, 16px, 16px, 24px, 1.5, "medium"),
+  /* BLACK FRIDAY */
+  display4: (14px, 14px, 14px, 24px, 1.5, "medium"),
+  /* SALES */
+  display5: (14px, 14px, 14px, 18px, 1.5, "regular"),
+  /* BLACK FRIDAY */
+  display6: (12px, 12px, 12px, 18px, 1.5, "regular"),
+  /* SALES */
+  display7: (14px, 14px, 14px, 18px, 1.5, "medium"),
+  /* BLACK FRIDAY */
+  /* SALES + BLACK FRIDAY */
+  p1: (12px, 12px, 12px, 14px, 1.4, "regular"),
+  p2: (14px, 16px, 16px, 18px, 1.4, "regular"),
+  p4: (14px, 16px, 16px, 18px, 1.4, "medium"));
+//array para elementos fijos
+$headersFixers: ( //name :  fontsize, lineheight
+  12 : (12px, 1.5),
+  14 : (14px, 1.5),
+  16 : (16px, 1.5),
+  18 : (18px, 1.5),
+  20 : (20px, 1.5),
+  24 : (24px, 1.5),
+);
+
+
+
+

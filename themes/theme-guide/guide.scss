@@ -4,17 +4,17 @@
 /* no usar col- nunca ya que hay un selector asi
  */
 
- @import "../../../holygrailcss/scss/lib/settings"; 
-
+@import "../../themes/theme-guide/lib/settings";  //$variables
+@import "../../themes/theme-guide/assets/mixins"; //mixins
+@import "../../themes/theme-guide/assets/colors"; //$colors
+@import "../../themes/theme-guide/assets/headers"; //$headers
 @import "../../themes/theme-guide/site"; //imagenes, fuentes, customización del site
 @import "../../themes/theme-guide/tags"; 
 
-$primary-guide:#000;
 
 .guide {
   .row {
     position: relative;
-    
   }
 
   .menulateral {
