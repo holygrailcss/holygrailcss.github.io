@@ -9,39 +9,39 @@ $theme:'theme-guide';
 
 @font-face {
   font-family: $font-family-bold;
-  src: url('../../themes/#{$theme}/fonts/basis/BasisGrotesque-Bold-Pro.eot');
-  src: url('../../themes/#{$theme}/fonts/basis/BasisGrotesque-Bold-Pro.eot?#iefix') format('embedded-opentype'),
-  url('../../themes/#{$theme}/fonts/basis/BasisGrotesque-Bold-Pro.woff2') format('woff2'),
-  url('../../themes/#{$theme}/fonts/basis/BasisGrotesque-Bold-Pro.woff') format('woff'),
-  url('../../themes/#{$theme}/fonts/basis/BasisGrotesque-Bold-Pro.ttf') format('truetype'),
+  src: url('../../themes/#{$theme}/assets/fonts/basis/BasisGrotesque-Bold-Pro.eot');
+  src: url('../../themes/#{$theme}/assets/fonts/basis/BasisGrotesque-Bold-Pro.eot?#iefix') format('embedded-opentype'),
+  url('../../themes/#{$theme}/assets/fonts/basis/BasisGrotesque-Bold-Pro.woff2') format('woff2'),
+  url('../../themes/#{$theme}/assets/fonts/basis/BasisGrotesque-Bold-Pro.woff') format('woff'),
+  url('../../themes/#{$theme}/assets/fonts/basis/BasisGrotesque-Bold-Pro.ttf') format('truetype'),
 }
 
 @font-face {
   font-family: $font-family-medium;
-  src: url('../../themes/#{$theme}/fonts/basis/BasisGrotesque-Medium-Pro.eot');
-  src: url('../../themes/#{$theme}/fonts/basis/BasisGrotesque-Medium-Pro.eot?#iefix') format('embedded-opentype'),
-  url('../../themes/#{$theme}/fonts/basis/BasisGrotesque-Medium-Pro.woff2') format('woff2'),
-  url('../../themes/#{$theme}/fonts/basis/BasisGrotesque-Medium-Pro.woff') format('woff'),
-  url('../../themes/#{$theme}/fonts/basis/BasisGrotesque-Medium-Pro.ttf') format('truetype'),
+  src: url('../../themes/#{$theme}/assets/fonts/basis/BasisGrotesque-Medium-Pro.eot');
+  src: url('../../themes/#{$theme}/assets/fonts/basis/BasisGrotesque-Medium-Pro.eot?#iefix') format('embedded-opentype'),
+  url('../../themes/#{$theme}/assets/fonts/basis/BasisGrotesque-Medium-Pro.woff2') format('woff2'),
+  url('../../themes/#{$theme}/assets/fonts/basis/BasisGrotesque-Medium-Pro.woff') format('woff'),
+  url('../../themes/#{$theme}/assets/fonts/basis/BasisGrotesque-Medium-Pro.ttf') format('truetype'),
 }
 
 
 @font-face {
   font-family: $font-family-light;
-  src: url('../../themes/#{$theme}/fonts/basis/BasisGrotesque-Light-Pro.eot');
-  src: url('../../themes/#{$theme}/fonts/basis/BasisGrotesque-Light-Pro.eot?#iefix') format('embedded-opentype'),
-  url('../../themes/#{$theme}/fonts/basis/BasisGrotesque-Light-Pro.woff2') format('woff2'),
-  url('../../themes/#{$theme}/fonts/basis/BasisGrotesque-Light-Pro.woff') format('woff'),
-  url('../../themes/#{$theme}/fonts/basis/BasisGrotesque-Light-Pro.ttf') format('truetype'),
+  src: url('../../themes/#{$theme}/assets/fonts/basis/BasisGrotesque-Light-Pro.eot');
+  src: url('../../themes/#{$theme}/assets/fonts/basis/BasisGrotesque-Light-Pro.eot?#iefix') format('embedded-opentype'),
+  url('../../themes/#{$theme}/assets/fonts/basis/BasisGrotesque-Light-Pro.woff2') format('woff2'),
+  url('../../themes/#{$theme}/assets/fonts/basis/BasisGrotesque-Light-Pro.woff') format('woff'),
+  url('../../themes/#{$theme}/assets/fonts/basis/BasisGrotesque-Light-Pro.ttf') format('truetype'),
 }
 
 @font-face {
   font-family: $font-family-regular;
-  src: url('../../themes/#{$theme}/fonts/basis/BasisGrotesque-Regular-Pro.eot');
-  src: url('../../themes/#{$theme}/fonts/basis/BasisGrotesque-Regular-Pro.eot?#iefix') format('embedded-opentype'),
-  url('../../themes/#{$theme}/fonts/basis/BasisGrotesque-Regular-Pro.woff2') format('woff2'),
-  url('../../themes/#{$theme}/fonts/basis/BasisGrotesque-Regular-Pro.woff') format('woff'),
-  url('../../themes/#{$theme}/fonts/basis/BasisGrotesque-Regular-Pro.ttf') format('truetype'),
+  src: url('../../themes/#{$theme}/assets/fonts/basis/BasisGrotesque-Regular-Pro.eot');
+  src: url('../../themes/#{$theme}/assets/fonts/basis/BasisGrotesque-Regular-Pro.eot?#iefix') format('embedded-opentype'),
+  url('../../themes/#{$theme}/assets/fonts/basis/BasisGrotesque-Regular-Pro.woff2') format('woff2'),
+  url('../../themes/#{$theme}/assets/fonts/basis/BasisGrotesque-Regular-Pro.woff') format('woff'),
+  url('../../themes/#{$theme}/assets/fonts/basis/BasisGrotesque-Regular-Pro.ttf') format('truetype'),
 }
 
 
@@ -123,63 +123,6 @@ section {
 
 
 
-
-.x-pd {
-
-  border-color: #89fdfd;
-}
-
-
-.x-mg {
-
-  border-color: #f264b8;
-}
-
-.x,
-.x-x,
-.x-y,
-.x-t,
-.x-r,
-.x-b,
-.x-l {
-  box-sizing: border-box;
-  margin: 20px 0;
-  width: 100%;
-  height: 100px;
-  background: #eaeaea;
-
-    border-style: solid;
-}
-
-.x{
-        border-width: 20px;
-
-}
-
-
-.x-x{
-       border-width: 0 20px;
-}
-.x-y{
-  border-width: 20px 0;
-}
-
-.x-t{
-   border-width: 20px 0 0 0;
-}
-.x-b{
-   border-width: 0 0 20px 0;
-}
-.x-r{
-    border-width: 0 20px 0 0;
-}
-.x-l{
-   border-width: 0 0 0 20px ;
-}
-
-.x-t{
-   border-width:20px 0 0 0 ;
-}
 
 
 .bg-dark {/*  

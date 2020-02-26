@@ -1,83 +1,60 @@
-$variable-list: (
+$variable-list: (break-xs: #{$break-xs},
+    /*Breakpoints*/
+    break-sm: #{$break-sm},
+    break-md: #{$break-md},
+    break-lg: #{$break-lg},
+    break-xl: #{$break-xl},
+    height-xs: #{$height-xs},
+    height-sm: #{$height-sm},
+    height-md: #{$height-md},
+    height-lg: #{$height-lg},
+    height-xl: #{$height-xl},
+    height-full: #{$height-full},
+    height-home: #{$height-home},
+    container-2: #{$container-2}, //maxwidth del container2
+    container-3: #{$container-3}, //maxwidth del container2
+    container-4: #{$container-4}, //maxwidth del container4
+    xl: 1500px);
 
-  break-xs: #{$break-xs},/*Breakpoints*/
-  break-sm: #{$break-sm},
-  break-md: #{$break-md},
-  break-lg: #{$break-lg},
-  break-xl: #{$break-xl},
-  
-  height-xs: #{$height-xs},
-  height-sm: #{$height-sm},
-  height-md: #{$height-md},
-  height-lg: #{$height-lg},
-  height-xl: #{$height-xl},
-  height-full: #{$height-full},
-  height-home: #{$height-home},
-  
-  
-  container-2:  #{$container-2}, //maxwidth del container2
-container-3:  #{$container-3}, //maxwidth del container2
-container-4: #{$container-4}, //maxwidth del container4
-  xl: 1500px);
-
-
-
+    
 $variabletotals: length($variable-list);
-
 @for $i from 1 through $variabletotals {
-  .var-a-#{nth(map-keys($variable-list), $i)} {
-    &:after {
-      display: inline-block;
-      content: "#{nth(map-keys($variable-list), $i)}";
-
+    .var-a-#{nth(map-keys($variable-list), $i)} {
+        &:after {
+            display: inline-block;
+            content: "#{nth(map-keys($variable-list), $i)}";
+        }
     }
-  }
-
-  .var-b-#{nth(map-keys($variable-list), $i)} {
-    &:after {
-      content: "#{nth(map-values($variable-list), $i)}";
-      display: inline-block;
+    .var-b-#{nth(map-keys($variable-list), $i)} {
+        &:after {
+            content: "#{nth(map-values($variable-list), $i)}";
+            display: inline-block;
+        }
     }
-  }
 }
-
 //var-height-sm
-
-
-
-
 @each $name,
 $value in $colorsGuide {
     $i: index(($colorsGuide), ($name $value));
-
     $color0: $name; //funcion del color
     $color1: nth($value, 1); //color
     $color2: nth($value, 2); //segundo nombre color
-
     .wrap-item {
         box-shadow: 0 9px 25px rgba(0, 0, 0, 0.06);
         margin: 0;
         position: relative;
         width: 100px;
         transition: all ease 300ms;
-
-
         &:hover {
             box-shadow: 0px 15px 19px 0px rgba(0, 0, 0, 0.16);
-
         }
-
     }
-
     .wrap-item:nth-child(#{$i}) {
-
         .item {
-
             height: 200px;
             margin: 0;
             background-color: $color1;
             position: relative;
-
             &:after {
                 font-size: 12px;
                 position: absolute;
@@ -89,15 +66,11 @@ $value in $colorsGuide {
                 content: "#{$color1}";
             }
         }
-
         float: left;
         padding: 0;
         margin-bottom: 10px;
         background-color: white;
-
-
         &:after {
-
             color: #fff;
             position: absolute;
             bottom: 10px;
@@ -105,7 +78,6 @@ $value in $colorsGuide {
             left: 16px;
             content: "#{$color2}";
         }
-
         :before {
             color: #fff;
             position: absolute;
@@ -113,14 +85,9 @@ $value in $colorsGuide {
             font-size: 14px;
             left: 0px;
             content: "#{$color0}";
-
         }
     }
 }
-
-
-
-
 @each $name,
 $value in $headers {
     $i: index(($headers), ($name $value));
@@ -200,49 +167,81 @@ $value in $headers {
         }
     }
 }
-
-
-
-
-
 .break-xs {
-  display: inline-block;
-  &:after {
-      content: "#{$min-width}";
-
-  }
+    display: inline-block;
+    &:after {
+        content: "#{$min-width}";
+    }
 }
-
 .break-sm {
-  &:after {
-      display: inline-block;
-      content: "#{$break-sm}";
-display: inline-block;
-  }
+    &:after {
+        display: inline-block;
+        content: "#{$break-sm}";
+        display: inline-block;
+    }
 }
-
 .break-md {
-  &:after {
-      display: inline-block;
-      content: "#{$break-md}";
-display: inline-block;
-  }
+    &:after {
+        display: inline-block;
+        content: "#{$break-md}";
+        display: inline-block;
+    }
 }
-
-
-
 .break-lg {
-  &:after {
-      display: inline-block;
-      content: "#{$break-lg}";
-display: inline-block;
-  }
+    &:after {
+        display: inline-block;
+        content: "#{$break-lg}";
+        display: inline-block;
+    }
 }
 .break-xl {
-  &:after {
-      display: inline-block;
-      content: "#{$break-lg}";
-display: inline-block;
-  }
+    &:after {
+        display: inline-block;
+        content: "#{$break-lg}";
+        display: inline-block;
+    }
 }
-
+.x-pd {
+    border-color: #89fdfd;
+}
+.x-mg {
+    border-color: #f264b8;
+}
+.x,
+.x-x,
+.x-y,
+.x-t,
+.x-r,
+.x-b,
+.x-l {
+    box-sizing: border-box;
+    margin: 20px 0;
+    width: 100%;
+    height: 100px;
+    background: #eaeaea;
+    border-style: solid;
+}
+.x {
+    border-width: 20px;
+}
+.x-x {
+    border-width: 0 20px;
+}
+.x-y {
+    border-width: 20px 0;
+}
+.x-t {
+    border-width: 20px 0 0 0;
+}
+.x-b {
+    border-width: 0 0 20px 0;
+}
+.x-r {
+    border-width: 0 20px 0 0;
+}
+.x-l {
+    border-width: 0 0 0 20px;
+}
+.x-t {
+    border-width: 20px 0 0 0;
+}
