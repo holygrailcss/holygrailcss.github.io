@@ -3365,58 +3365,6 @@ Caja y texto inferior
   padding: 16px 0;
   border-top: 1px solid #eaeaea; }
 
-/*+------------------------------------------------------------+
- |       -IMPORT FONTS        
- +------------------------------------------------------------+*/
-@font-face {
-  font-family: "BasisGrotesque-Bold-Pro";
-  src: url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Bold-Pro.eot");
-  src: url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Bold-Pro.eot?#iefix") format("embedded-opentype"), url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Bold-Pro.woff2") format("woff2"), url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Bold-Pro.woff") format("woff"), url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Bold-Pro.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "BasisGrotesque-Medium-Pro";
-  src: url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Medium-Pro.eot");
-  src: url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Medium-Pro.eot?#iefix") format("embedded-opentype"), url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Medium-Pro.woff2") format("woff2"), url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Medium-Pro.woff") format("woff"), url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Medium-Pro.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "BasisGrotesque-Light-Pro";
-  src: url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Light-Pro.eot");
-  src: url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Light-Pro.eot?#iefix") format("embedded-opentype"), url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Light-Pro.woff2") format("woff2"), url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Light-Pro.woff") format("woff"), url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Light-Pro.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "BasisGrotesque-Regular-Pro";
-  src: url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Regular-Pro.eot");
-  src: url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Regular-Pro.eot?#iefix") format("embedded-opentype"), url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Regular-Pro.woff2") format("woff2"), url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Regular-Pro.woff") format("woff"), url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Regular-Pro.ttf") format("truetype"); }
-
-/*+------------------------------------------------------------+
- |       -BREAKPOINTS        
- +------------------------------------------------------------+*/
-/*+------------------------------------------------------------+
- |       -Variables  Globales      
- +------------------------------------------------------------+*/
-.min-width {
-  display: inline-block; }
-  .min-width:after {
-    content: "320px"; }
-
-/*+------------------------------------------------------------+
- |       -MIXINS        
- +------------------------------------------------------------+*/
-/*+------------------------------------------------------------+
- |       -MIXINS FONTS        
- +------------------------------------------------------------+*/
-/*+------------------------------------------------------------+
- |       -COLORES RANDOM       
- +------------------------------------------------------------+*/
-/*+------------------------------------------------------------+
- |       -FLUID TEXT 
- +------------------------------------------------------------+*/
-/*+------------------------------------------------------------+
- |       -RATIO 
- +------------------------------------------------------------+*/
-/*+------------------------------------------------------------+
- |       -BLEED A SANGRE  
- +------------------------------------------------------------+*/
 .wrap-item-type_header {
   border-right: 1px solid #eaeaea;
   float: left;
@@ -3445,13 +3393,13 @@ Caja y texto inferior
     content: " - 1px"; }
   .wrap-item-type_header .item-2:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: " - 600px"; }
+    content: " - 786px"; }
   .wrap-item-type_header .item-3:after {
     font-family: "BasisGrotesque-Light-Pro";
     content: " - 992px"; }
   .wrap-item-type_header .item-4:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: " - 1200px"; }
+    content: " - 1280px"; }
   .wrap-item-type_header .item-5:after {
     font-family: "BasisGrotesque-Light-Pro"; }
   .wrap-item-type_header .item-6:after {
@@ -4272,100 +4220,6 @@ Caja y texto inferior
   vertical-align: top;
   border: 1px solid #eaeaea; }
 
-@font-face {
-  font-family: "BasisGrotesque-Bold-Pro";
-  src: url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Bold-Pro.eot");
-  src: url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Bold-Pro.eot?#iefix") format("embedded-opentype"), url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Bold-Pro.woff2") format("woff2"), url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Bold-Pro.woff") format("woff"), url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Bold-Pro.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "BasisGrotesque-Medium-Pro";
-  src: url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Medium-Pro.eot");
-  src: url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Medium-Pro.eot?#iefix") format("embedded-opentype"), url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Medium-Pro.woff2") format("woff2"), url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Medium-Pro.woff") format("woff"), url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Medium-Pro.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "BasisGrotesque-Light-Pro";
-  src: url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Light-Pro.eot");
-  src: url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Light-Pro.eot?#iefix") format("embedded-opentype"), url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Light-Pro.woff2") format("woff2"), url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Light-Pro.woff") format("woff"), url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Light-Pro.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "BasisGrotesque-Regular-Pro";
-  src: url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Regular-Pro.eot");
-  src: url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Regular-Pro.eot?#iefix") format("embedded-opentype"), url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Regular-Pro.woff2") format("woff2"), url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Regular-Pro.woff") format("woff"), url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Regular-Pro.ttf") format("truetype"); }
-
-.fondo-1 {
-  background: url(../../themes/theme-guide/images/fondo_1.jpg);
-  background-size: cover; }
-
-.fondo-2 {
-  background: url(../../themes/theme-guide/images/abogado_x.jpg);
-  background-size: cover; }
-
-.fondo-3 {
-  background-position: top left;
-  background: url(../../themes/theme-guide/images/abogada.jpg);
-  background-size: contain;
-  background-repeat: no-repeat; }
-
-.fondo-4 {
-  background-position: top left;
-  background: url(../../themes/theme-guide/images/contact.webp);
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-.fondo-5 {
-  background-position: top left;
-  background: url(../../themes/theme-guide/images/company.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: white; }
-  .fondo-5 .container-2 {
-    background: rgba(0, 0, 0, 0.35); }
-
-.fondo-basic {
-  background: #f7f7f7; }
-
-.header-guide {
-  background: #EFF3F6;
-  padding: 20px;
-  border-bottom: 1px solid #eaeaea; }
-
-.title-guide {
-  padding: 40px 0;
-  font-size: 24px;
-  line-height: 1;
-  font-weight: 600;
-  border-bottom: 1px solid black;
-  display: inline-block;
-  width: 100%;
-  margin: 0 0  40px; }
-
-section {
-  padding-bottom: 20px; }
-
-.separator {
-  padding-top: 30px; }
-
-.clear {
-  clear: both; }
-
-.bg-dark {
-  /*  
-  background-position: top left;
- background: url(../../themes/theme-guide/placeholder/bg-dark.jpg); 
-  background-size: cover;
-  background-repeat: no-repeat;*/
-  background-color: #3dbfcb;
-  color: #fff; }
-  .bg-dark a {
-    color: #fff; }
-
-.bg-light {
-  background-position: top left;
-  background: url(../../themes/theme-guide/placeholder/bg-light.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #000; }
-
 .var-a-break-xs:after {
   display: inline-block;
   content: "break-xs"; }
@@ -4379,7 +4233,7 @@ section {
   content: "break-sm"; }
 
 .var-b-break-sm:after {
-  content: "600px";
+  content: "786px";
   display: inline-block; }
 
 .var-a-break-md:after {
@@ -4395,7 +4249,7 @@ section {
   content: "break-lg"; }
 
 .var-b-break-lg:after {
-  content: "1200px";
+  content: "1280px";
   display: inline-block; }
 
 .var-a-break-xl:after {
@@ -6210,11 +6064,11 @@ section {
 .break-xs {
   display: inline-block; }
   .break-xs:after {
-    content: "320px"; }
+    content: "319px"; }
 
 .break-sm:after {
   display: inline-block;
-  content: "600px";
+  content: "786px";
   display: inline-block; }
 
 .break-md:after {
@@ -6224,12 +6078,12 @@ section {
 
 .break-lg:after {
   display: inline-block;
-  content: "1200px";
+  content: "1280px";
   display: inline-block; }
 
 .break-xl:after {
   display: inline-block;
-  content: "1200px";
+  content: "1280px";
   display: inline-block; }
 
 .x-pd {
@@ -6679,3 +6533,97 @@ section {
     outline: none; }
   .guide .btn:visited {
     outline: none; }
+
+@font-face {
+  font-family: "BasisGrotesque-Bold-Pro";
+  src: url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Bold-Pro.eot");
+  src: url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Bold-Pro.eot?#iefix") format("embedded-opentype"), url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Bold-Pro.woff2") format("woff2"), url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Bold-Pro.woff") format("woff"), url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Bold-Pro.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "BasisGrotesque-Medium-Pro";
+  src: url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Medium-Pro.eot");
+  src: url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Medium-Pro.eot?#iefix") format("embedded-opentype"), url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Medium-Pro.woff2") format("woff2"), url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Medium-Pro.woff") format("woff"), url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Medium-Pro.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "BasisGrotesque-Light-Pro";
+  src: url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Light-Pro.eot");
+  src: url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Light-Pro.eot?#iefix") format("embedded-opentype"), url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Light-Pro.woff2") format("woff2"), url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Light-Pro.woff") format("woff"), url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Light-Pro.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "BasisGrotesque-Regular-Pro";
+  src: url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Regular-Pro.eot");
+  src: url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Regular-Pro.eot?#iefix") format("embedded-opentype"), url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Regular-Pro.woff2") format("woff2"), url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Regular-Pro.woff") format("woff"), url("../../themes/theme-guide/assets/fonts/basis/BasisGrotesque-Regular-Pro.ttf") format("truetype"); }
+
+.fondo-1 {
+  background: url(../../themes/theme-guide/images/fondo_1.jpg);
+  background-size: cover; }
+
+.fondo-2 {
+  background: url(../../themes/theme-guide/images/abogado_x.jpg);
+  background-size: cover; }
+
+.fondo-3 {
+  background-position: top left;
+  background: url(../../themes/theme-guide/images/abogada.jpg);
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.fondo-4 {
+  background-position: top left;
+  background: url(../../themes/theme-guide/images/contact.webp);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.fondo-5 {
+  background-position: top left;
+  background: url(../../themes/theme-guide/images/company.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white; }
+  .fondo-5 .container-2 {
+    background: rgba(0, 0, 0, 0.35); }
+
+.fondo-basic {
+  background: #f7f7f7; }
+
+.header-guide {
+  background: #EFF3F6;
+  padding: 20px;
+  border-bottom: 1px solid #eaeaea; }
+
+.title-guide {
+  padding: 40px 0;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 600;
+  border-bottom: 1px solid black;
+  display: inline-block;
+  width: 100%;
+  margin: 0 0  40px; }
+
+section {
+  padding-bottom: 20px; }
+
+.separator {
+  padding-top: 30px; }
+
+.clear {
+  clear: both; }
+
+.bg-dark {
+  /*  
+  background-position: top left;
+ background: url(../../themes/theme-guide/placeholder/bg-dark.jpg); 
+  background-size: cover;
+  background-repeat: no-repeat;*/
+  background-color: #3dbfcb;
+  color: #fff; }
+  .bg-dark a {
+    color: #fff; }
+
+.bg-light {
+  background-position: top left;
+  background: url(../../themes/theme-guide/placeholder/bg-light.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #000; }
