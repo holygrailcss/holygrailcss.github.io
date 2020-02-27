@@ -4,13 +4,12 @@
 /* no usar col- nunca ya que hay un selector asi
  */
 
- @import "../../../holygrail/scss/style.scss";  //$variables
 
+@import "../../node_modules/holygrailcss/scss/partials.scss";
 @import "../../themes/theme-guide/scss/headers"; //$headers
-
 @import "../../themes/theme-guide/tags"; 
 
- 
+
 .guide {
   .row {
     position: relative;
