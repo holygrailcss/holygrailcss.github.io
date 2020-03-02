@@ -203,7 +203,7 @@ section {
   .site-main {
     position: relative;
     margin: 0 0 0 180px;
-    padding: 100px 0px 60px 0px;
+    padding: 100px $padding-global 60px $padding-global;
   }
 
   .guide-miniboxes {
@@ -804,7 +804,7 @@ section {
 
     }
   }
-  .resize-right{
+  .resize-left{
     transform: translateX(-10px);
     border-right: 1px solid #ccc;
     left: -30px;
@@ -813,7 +813,7 @@ section {
 
 
 
-  .resize-left{
+  .resize-right{
     transform: translateX(10px);
     border-left: 1px solid #ccc;
     cursor: w-resize;
@@ -822,7 +822,10 @@ section {
 
 
 
-
+  .resize.resize-overlay {
+    pointer-events: none;
+    position: relative
+}
 
 
 
@@ -843,11 +846,9 @@ section {
 
 
   .resizable {
-    border: solid #eaeaea;
-    border-width: 0 1px 0 1px;
-    height: 410px;
+
+    height: 436px;
     overflow: auto;
-    padding: 0 20px;
     margin: 0 auto;
   }
 }

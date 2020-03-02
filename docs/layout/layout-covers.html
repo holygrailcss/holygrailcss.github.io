@@ -401,31 +401,29 @@
         ],
         inertia: true
       })
-      .draggable({
-        onmove: window.dragMoveListener,
-        inertia: true,
-        modifiers: [
-          interact.modifiers.restrictRect({
-            restriction: 'parent',
-            endOnly: true
-          })
-        ]
-      })
       .on('resizemove', function (event) {
-        var todo = $(".cosas")
-        var target = event.target
-        console.log(target + '.cosas')
+        var todo = $(".cosas");
+        var target = event.target;
+
+    
+
+        event.target.classList.add('resize-overlay')
+
+ 
         var x = (parseFloat(target.getAttribute('data-x')) || 0)
         var y = (parseFloat(target.getAttribute('data-y')) || 0)
+
         // update the element's style
         target.style.width = event.rect.width + 'px'
         target.style.height = event.rect.height + 'px'
-        target.style.webkitTransform = target.style.transform =
-          'translate(' + x + 'px,' + y + 'px)'
+
+        target.style.webkitTransform = target.style.transform ='translate(' + x + 'px,' + y + 'px)'
         target.setAttribute('data-x', x)
         target.setAttribute('data-y', y)
         target.querySelector('.resize-resolution').textContent = Math.round(event.rect.width) + '\u00D7' + Math.round(
           event.rect.height)
+
+
         if (event.rect.width < 786) {
           console.log("menor", x)
           target.querySelector('.resize-media').textContent = "mobile"
@@ -440,6 +438,15 @@
           console.log("mayor")
         }
       })
+
+      .on('resizeend', function (event) {
+   
+        event.target.classList.remove('resize-overlay')
+  
+      });
+
+ 
+
   </script>
 </body>
 

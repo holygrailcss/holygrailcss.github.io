@@ -2774,15 +2774,15 @@ input::-webkit-input-placeholder {
    |       -FALLBACK PARA EDGE    
    +------------------------------------------------------------+*/
 @supports (-ms-ime-align: auto) {
-  .form-input-label > label {
+  .form-label-group > label {
     display: none; }
-  .form-input-label input::-ms-input-placeholder {
+  .form-label-group input::-ms-input-placeholder {
     color: #777; } }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .form-input-label > label {
+  .form-label-group > label {
     display: none; }
-  .form-input-label input:-ms-input-placeholder {
+  .form-label-group input:-ms-input-placeholder {
     color: #777; } }
 
 /*+------------------------------------------------------------+
@@ -3259,6 +3259,11 @@ ul.h-size-selector a {
     position: absolute;
     z-index: 1;
     width: 100%; }
+
+.cover-5 {
+  width: 100%; }
+  .cover-5 .cover-5-text {
+    height: 100%; }
 
 .row-6 {
   display: -webkit-box;
@@ -6395,7 +6400,7 @@ section {
 .guide .site-main {
   position: relative;
   margin: 0 0 0 180px;
-  padding: 100px 0px 60px 0px; }
+  padding: 100px 8px 60px 8px; }
 
 .guide .guide-miniboxes {
   float: left;
@@ -6861,17 +6866,21 @@ section {
     margin-top: -8px;
     width: 11px; }
 
-.guide .resize-right {
+.guide .resize-left {
   transform: translateX(-10px);
   border-right: 1px solid #ccc;
   left: -30px;
   cursor: e-resize; }
 
-.guide .resize-left {
+.guide .resize-right {
   transform: translateX(10px);
   border-left: 1px solid #ccc;
   cursor: w-resize;
   right: -30px; }
+
+.guide .resize.resize-overlay {
+  pointer-events: none;
+  position: relative; }
 
 .guide .resize-container:hover .resize-left {
   transform: translateX(0);
@@ -6884,9 +6893,6 @@ section {
   visibility: visible; }
 
 .guide .resizable {
-  border: solid #eaeaea;
-  border-width: 0 1px 0 1px;
-  height: 410px;
+  height: 436px;
   overflow: auto;
-  padding: 0 20px;
   margin: 0 auto; }
