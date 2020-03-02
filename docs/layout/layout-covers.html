@@ -4,7 +4,6 @@
             fb: http://ogp.me/ns/fb#
             rdfs: http://www.w3.org/2000/01/rdf-schema# 
             xsd: http://www.w3.org/2001/XMLSchema#" itemscope="">
-
 <head>
   <!--  Metadata Basica-->
   <meta charset="utf-8" />
@@ -22,7 +21,6 @@
   <style>
   </style>
 </head>
-
 <body class="ltr guide">
   <div class="header-bg">
     <section>
@@ -65,11 +63,9 @@
               <div class="resize">
                 <div class="resize-media"></div>
                 <div class="resize-resolution"></div>
-
-
                 <div class="resize-left"> </div>
                 <div class="resize-right"> </div>
-                <iframe class="resizable" src="./covers/cover1.html" width="100%" frameborder="0" seamless></iframe>
+                <iframe  id="cover1"  class="resizable" src="./covers/cover1.html" width="100%" frameborder="0" seamless></iframe>
               </div>
             </div>
           </section>
@@ -83,6 +79,8 @@
               <div class="resize">
                 <div class="resize-media"></div>
                 <div class="resize-resolution"></div>
+                <div class="resize-left"> </div>
+                <div class="resize-right"> </div>
                 <iframe class="resizable" src="./covers/cover2.html" width="100%" frameborder="0" seamless></iframe>
               </div>
             </div>
@@ -97,26 +95,13 @@
               <div class="resize">
                 <div class="resize-media"></div>
                 <div class="resize-resolution"></div>
+                <div class="resize-left"> </div>
+                <div class="resize-right"> </div>
                 <iframe class="resizable" src="./covers/cover3.html" width="100%" frameborder="0" seamless></iframe>
               </div>
             </div>
           </section>
           <section>
-            <div class="resize-container">
-              <div class="resize-bar">
-                <div class="resize-name">
-                  <h3 class="h5"> cover 4</h3>
-                </div>
-              </div>
-              <div class="resize">
-                <div class="resize-media"></div>
-                <div class="resize-resolution"></div>
-                <iframe class="resizable" src="./covers/cover4.html" width="100%" frameborder="0" seamless></iframe>
-              </div>
-            </div>
-          </section>
-          <section>
-            .
             <div class="resize-container">
               <div class="resize-bar">
                 <div class="resize-name">
@@ -126,10 +111,18 @@
               <div class="resize">
                 <div class="resize-media"></div>
                 <div class="resize-resolution"></div>
-                <iframe class="resizable" src="./covers/cover5.html" width="100%" frameborder="0" seamless></iframe>
+                <div class="resize-left"> </div>
+                <div class="resize-right"> </div>
+                <iframe class="resizable" src="./covers/cover5.html" width="100%" height="690px" frameborder="0"
+                  seamless></iframe>
               </div>
             </div>
           </section>
+
+
+
+
+
           <section>
             <div class="resize-container">
               <div class="resize-bar">
@@ -140,6 +133,8 @@
               <div class="resize">
                 <div class="resize-media"></div>
                 <div class="resize-resolution"></div>
+                <div class="resize-left"> </div>
+                <div class="resize-right"> </div>
                 <iframe class="resizable" src="./covers/cover6.html" width="100%" frameborder="0" seamless></iframe>
               </div>
             </div>
@@ -150,6 +145,8 @@
               <div class="resize">
                 <div class="resize-media"></div>
                 <div class="resize-resolution"></div>
+                <div class="resize-left"> </div>
+                <div class="resize-right"> </div>
                 <iframe class="resizable" src="./covers/cover6.html" width="100%" frameborder="0" seamless></iframe>
               </div>
             </div>
@@ -377,6 +374,10 @@
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
   <script>
+
+ var height;
+
+
     interact('.resize')
       .resizable({
         // resize from all edges and corners
@@ -401,53 +402,46 @@
         ],
         inertia: true
       })
+
       .on('resizemove', function (event) {
         var todo = $(".cosas");
         var target = event.target;
-
-    
-
         event.target.classList.add('resize-overlay')
 
- 
+
+
         var x = (parseFloat(target.getAttribute('data-x')) || 0)
         var y = (parseFloat(target.getAttribute('data-y')) || 0)
 
+
+
+
         // update the element's style
         target.style.width = event.rect.width + 'px'
-        target.style.height = event.rect.height + 'px'
-
-        target.style.webkitTransform = target.style.transform ='translate(' + x + 'px,' + y + 'px)'
+        target.querySelector('iframe').height = height +10 + 'px'
+        target.style.webkitTransform = target.style.transform = 'translate(' + x + 'px,' + y + 'px)'
         target.setAttribute('data-x', x)
         target.setAttribute('data-y', y)
         target.querySelector('.resize-resolution').textContent = Math.round(event.rect.width) + '\u00D7' + Math.round(
           event.rect.height)
-
-
         if (event.rect.width < 786) {
-          console.log("menor", x)
+  
           target.querySelector('.resize-media').textContent = "mobile"
         } else if (event.rect.width < 992) {
           target.querySelector('.resize-media').textContent = "MD"
-          console.log("mayor")
+ 
         } else if (event.rect.width < 1280) {
           target.querySelector('.resize-media').textContent = "LG"
-          console.log("mayor")
+     
         } else if (event.rect.width < 1500) {
           target.querySelector('.resize-media').textContent = "XL"
-          console.log("mayor")
+ 
         }
       })
-
       .on('resizeend', function (event) {
-   
         event.target.classList.remove('resize-overlay')
-  
       });
-
- 
-
+      
   </script>
 </body>
-
 </html>

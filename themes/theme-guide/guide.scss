@@ -312,6 +312,7 @@ section {
       display: inline-block;
       background-color: $primary-guide;
       font-size: 12px;
+      padding: 10px;
     }
 
     .guide-xs {
@@ -331,7 +332,7 @@ section {
     }
 
     .guide-xl {
-      left: 55%;
+      left: 54%;
     }
   }
 
@@ -694,42 +695,13 @@ section {
   }
 
   .resize-container {
-    height: 400px;
+    min-height: 400px;
     display: flex;
     margin: 50px 0;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     width: 100%;
     box-sizing: border-box;
-  }
-
-  .resize::after {
-    content: "";
-    position: absolute;
-    height: 5px;
-    width: calc(100% + 50px);
-    z-index: 100;
-    top: 0;
-    left: 0;
-    background: #eaeaea;
-  }
-
-  .resize::before {
-    text-rendering: auto;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "";
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    z-index: 100;
-    top: -5px;
-    right: -55px;
-    background: #eaeaea;
   }
 
   .resize {
@@ -847,7 +819,7 @@ section {
 
   .resizable {
 
-    height: 436px;
+    min-height: 436px;
     overflow: auto;
     margin: 0 auto;
   }
