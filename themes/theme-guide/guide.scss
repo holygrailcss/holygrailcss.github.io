@@ -6,11 +6,13 @@
 @import "../../node_modules/holygrailcss/scss/partials.scss";
 @import "../../themes/theme-guide/scss/headers"; //$headers
 @import "../../themes/theme-guide/tags";
+@import "../../themes/theme-guide/nuevos_elementos";
 //imagenes de fondo este es el theme de la web personalizable
 $font-family-light: 'BasisGrotesque-Light-Pro';
 $font-family-regular: 'BasisGrotesque-Regular-Pro';
 $font-family-medium: 'BasisGrotesque-Medium-Pro';
 $font-family-bold: 'BasisGrotesque-Bold-Pro';
+
 $theme:'theme-guide';
 
 @font-face {
@@ -436,7 +438,7 @@ section {
 
   .table-flex {
     text-align: center;
-
+    
     p {
       font-size: 12px;
       font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace !important;
@@ -694,6 +696,9 @@ section {
     display: inline-block;
   }
 
+
+
+
   .resize-container {
     min-height: 400px;
     display: flex;
@@ -704,14 +709,6 @@ section {
     box-sizing: border-box;
   }
 
-  .resize {
-    z-index: 10;
-    width: 70%;
-    box-sizing: border-box;
-    padding: 10px;
-    position: relative;
-    user-select: none;
-  }
 
   .resize-resolution,
   .resize-media {
@@ -818,8 +815,6 @@ section {
 
 
   .resizable {
-
-    min-height: 436px;
     overflow: auto;
     margin: 0 auto;
   }
