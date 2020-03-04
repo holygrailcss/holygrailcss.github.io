@@ -3,16 +3,17 @@
 \*------------------------------------*/
 /* no usar col- nunca ya que hay un selector asi
  */
-@import "../../node_modules/holygrailcss/scss/partials.scss";
+
+@import "../../../holygrail/scss/partials.scss";
 @import "../../themes/theme-guide/scss/headers"; //$headers
 @import "../../themes/theme-guide/tags";
 @import "../../themes/theme-guide/nuevos_elementos";
+
 //imagenes de fondo este es el theme de la web personalizable
 $font-family-light: 'BasisGrotesque-Light-Pro';
 $font-family-regular: 'BasisGrotesque-Regular-Pro';
 $font-family-medium: 'BasisGrotesque-Medium-Pro';
 $font-family-bold: 'BasisGrotesque-Bold-Pro';
-
 $theme:'theme-guide';
 
 @font-face {
@@ -73,6 +74,7 @@ $theme:'theme-guide';
   background: url(../../themes/#{$theme}/images/contact.webp);
   background-size: cover;
   background-repeat: no-repeat;
+
 }
 
 .fondo-5 {
@@ -285,6 +287,7 @@ section {
 
   .header-bg {
     color: #134b46;
+
   }
 
   .guide-disabled {
@@ -448,6 +451,8 @@ section {
       background-color: #efe5ef;
       margin: 20px 0 0 0;
     }
+
+
 
     th {
       width: 20%;
@@ -663,40 +668,10 @@ section {
     border: 8px solid #eaeaea;
   }
 
-  .btn {
-    position: relative;
-    display: inline-block;
-    line-height: 1.2;
-    text-align: center;
-    vertical-align: middle;
-    box-sizing: border-box;
-    font-size: 14px;
-    margin-right: $padding-global;
-    vertical-align: middle;
-    line-height: 38px;
-    white-space: nowrap;
-    cursor: pointer;
-
-    &:hover {
-      text-decoration: none;
-      opacity: .6;
-    }
-
-    &:active,
-    &:focus {
-      outline: none;
-    }
-
-    &:visited {
-      outline: none;
-    }
-  }
 
   .guide-icon-top {
     display: inline-block;
   }
-
-
 
 
   .resize-container {
@@ -731,6 +706,7 @@ section {
 
   .resize-bar {
     position: absolute;
+    left: 0;
     width: 100%;
     padding: 10px 50px;
     height: 40px;

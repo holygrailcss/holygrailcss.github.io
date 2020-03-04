@@ -4,6 +4,7 @@
             fb: http://ogp.me/ns/fb#
             rdfs: http://www.w3.org/2000/01/rdf-schema# 
             xsd: http://www.w3.org/2001/XMLSchema#" itemscope="">
+
 <head>
 	<!--  Metadata Basica-->
 	<meta charset="utf-8" />
@@ -12,19 +13,22 @@
 	<meta name="HandheldFriendly" content="True" />
 	<meta name="MobileOptimized" content="320" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="../../dist/js/prism/prism.css" />  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prism-themes@1.3.0/themes/prism-material-light.css">
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.19.0/prism.min.js"> </script>
+
 	<link rel="stylesheet" href="../../dist/theme-guide/guide.css" />
 	<meta http-equiv="Accept-CH" content="DPR,Width,Viewport-Width" />
 	<!-- Core Meta -->
 	<title>Margins </title>
 </head>
+
 <body class="ltr guide">
 	<div class="header-bg">
-  		<section>
-  		  <div class="header-menu">
-  		    <iframe class="menutop" src="../../docs/menutop.html" height="100%" frameborder="0" seamless></iframe>
-  		  </div>
-  		</section>
+		<section>
+			<div class="header-menu">
+				<iframe class="menutop" src="../../docs/menutop.html" height="100%" frameborder="0" seamless></iframe>
+			</div>
+		</section>
 	</div>
 	<div class="container-fluid">
 		<div class="row">
@@ -34,93 +38,187 @@
 			<div class="container-main">
 				<div class="site-main">
 					<section class="py-20">
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col-xs-12">
-								<h1 class="h1">Margins</h1>
-								<p class="text-18-r">
-									This page is an overview of the Holygrail documentation and related resources.
-								</p>
-								<p class="text-18-r">
-									Holygrail is a CSS and html library for building user interfaces. Learn what
-									Holygrail is all
-									about on our homepage .
-								</p>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section>
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col-xs-12">
-								<div class="title-guide">Margins & Paddings </div>
-								Customizando los espacios
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6">
-								<h1> Padding</h1>
-								<div class="x x-pd"></div>
-								<p class="h6">
-									PADDING VERTICAL
-								</p>
-								<br />
-								<div class="wrap-item-type">
-									<div class="item item-0"></div>
-									<div class="item item-1"></div>
-									<div class="item item-2"></div>
-									<div class="item item-3"></div>
-									<div class="item item-4"></div>
-									<div class="item item-5"></div>
-									<div class="item item-6"></div>
-								</div>
-								<p>
-									py-20: (10px 0, 20px 0, 20px 0, 20px 0), <br />
-									py-30: (10px 0, 30px 0, 30px 0, 30px 0), <br />
-									py-50: (10px 0, 50px 0, 50px 0, 50px 0);
-								</p>
-								<div class="x-1-wrap">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-xs-12">
+									<h1 class="h1">Margins</h1>
+									<p class="text-18-r">
+										This page is an overview of the Holygrail documentation and related resources.
+									</p>
+									<p class="text-18-r">
+										Holygrail is a CSS and html library for building user interfaces. Learn what
+										Holygrail is all
+										about on our homepage .
+									</p>
 								</div>
 							</div>
-							<div class="col-xs-6">
-								<h1> Margin</h1>
-								<div class="x x-mg"></div>
-								<p class="h6"> MARGEN GLOBAL </p> <br />
-								<p>
-									mg-20: (10px, 20px, 20px, 20px),<br />
-									mg-30: (10px, 30px, 30px, 30px),<br />
-									mg-50: (20px, 50px, 50px, 50px);
-								</p>
+						</div>
+					</section>
+					<section>
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="title-guide">Margins & Paddings </div>
+									Customizando los espacios
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6">
+									<h1> Padding</h1>
+
+
+									<div class="x x-pd"></div>
+									<p class="h6">
+										PADDING VERTICAL
+									</p>
+
+
+									<!-- <div class="wrap-item-type">
+										<div class="item item-0"></div>
+										<div class="item item-1"></div>
+										<div class="item item-2"></div>
+										<div class="item item-3"></div>
+										<div class="item item-4"></div>
+										<div class="item item-5"></div>
+										<div class="item item-6"></div>
+									</div> -->
+
+
+									<pre><code class="language-scss">
+/* PADDING GENERAL */
+
+p-10: (10px, 10px, 10px, 10px),
+p-20: (10px, 20px, 20px, 20px),
+p-30: (10px, 30px, 30px, 30px),
+p-50: (20px, 50px, 50px, 50px);
+
+/* PADDING TOP Y BOTTOM */
+
+py-20: (10px 0, 20px 0, 20px 0, 20px 0),
+py-30: (10px 0, 30px 0, 30px 0, 30px 0),
+py-50: (20px 0, 30px 0, 40px 0, 50px 0),
+py-60: (24px 16px,24px 16px, 24px 16px, 60px 60px),
+
+/* PADDING HORIZONTALES */
+
+px-20: (0 10px, 0 20px, 0 20px, 0 20px),
+px-30: (0 10px, 0 30px, 0 30px, 0 30px),
+px-50: (0 20px, 0 30px, 0 40px, 0 50px);
+
+/* PADDING TOP */
+
+pt-10: (10px, 10px, 10px, 10px),
+pt-20: (10px, 20px, 20px, 20px),
+pt-30: (10px, 30px, 30px, 30px),
+pt-50: (20px, 50px, 50px, 50px);
+
+
+/* PADDING BOTTOM */
+
+pb-10: (10px, 10px, 10px, 10px),
+pb-20: (10px, 20px, 20px, 20px),
+pb-30: (10px, 30px, 30px, 30px),
+pb-50: (20px, 50px, 50px, 50px);
+
+/* PADDING LEFT */
+
+pl-10: (10px, 10px, 10px, 10px),
+pl-20: (10px, 20px, 20px, 20px),
+pl-30: (10px, 30px, 30px, 30px),
+pl-50: (20px, 50px, 50px, 50px);
+
+/* PADDING RIGHT */
+
+pr-10: (10px, 10px, 10px, 10px),
+pr-20: (10px, 20px, 20px, 20px),
+pr-30: (10px, 30px, 30px, 30px),
+pr-50: (20px, 50px, 50px, 50px);
+</code></pre>
+
+
+									<div class="x-1-wrap">
+									</div>
+								</div>
+								<div class="col-xs-6">
+									<h1> Margin</h1>
+									<div class="x x-mg"></div>
+									<p class="h6"> MARGEN GLOBAL </p> 
+									<pre><code class="language-scss">
+/* MARGIN GENERAL */
+
+m-20: (10px, 20px, 20px, 20px),
+m-30: (10px, 30px, 30px, 30px),
+m-50: (20px, 50px, 50px, 50px);
+
+/* MARGIN HORIZONTAL */
+
+mx-10: (0 10px, 0 10px, 0 10px, 0 10px),
+mx-20: (0 10px, 0 20px, 0 20px, 0 20px),
+mx-30: (0 10px, 0 30px, 0 30px, 0 30px),
+mx-50: (0 20px, 0 50px, 0 50px, 0 50px);
+
+/* MARGIN BOTTOM */
+
+my-10: (10px 0, 10px 0, 10px 0, 10px 0),
+my-20: (10px 0, 20px 0, 20px 0, 20px 0),
+my-30: (10px 0, 30p 0x, 30p 0, 30px 0),
+my-50: (20px 0, 50px 0, 50px 0, 50px 0);
+
+/* MARGIN TOP */
+
+mt-10: (10px, 10px, 10px, 10px),
+mt-20: (10px, 20px, 20px, 20px),
+mt-30: (10px, 30px, 30px, 30px),
+mt-50: (20px, 50px, 50px, 50px);
+
+/* MARGIN RIGHT */
+
+mr-10: (10px, 10px, 10px, 10px),
+mr-20: (10px, 20px, 20px, 20px),
+mr-30: (10px, 30px, 30px, 30px),
+mr-50: (20px, 50px, 50px, 50px);
+
+/* MARGIN BOTTOM */
+
+mb-10: (10px, 10px, 10px, 10px),
+mb-20: (10px, 20px, 20px, 20px),
+mb-30: (10px, 30px, 30px, 30px),
+mb-50: (20px, 50px, 50px, 50px);
+
+/* MARGIN LEFT */
+
+ml-10: (10px, 10px, 10px, 10px),
+ml-20: (10px, 20px, 20px, 20px),
+ml-30: (10px, 30px, 30px, 30px),
+ml-50: (20px, 50px, 50px, 50px);
+</code></pre>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="x-b x-pd"></div>
+									<p class="h6"> PADDING-BOTTOM</p> <br />
+
+								</div>
+								<div class="col-xs-6">
+									<div class="x-b x-mg"></div>
+									<p class="h6"> MARGIN BOTTOM</p> <br />
+
+
+
+
+
+
+
+								</div>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-xs-6">
-								<div class="x-b x-pd"></div>
-								<p class="h6"> PADDING-BOTTOM</p> <br />
-								<p>
-									pb-10: (10px, 10px, 10px, 10px), <br />
-									pb-20: (10px, 20px, 20px, 20px),<br />
-									pb-30: (10px, 30px, 30px, 30px),<br />
-									pb-50: (20px, 50px, 50px, 50px);</p>
-							</div>
-							<div class="col-xs-6">
-								<div class="x-b x-mg"></div>
-								<p class="h6"> MARGIN BOTTOM</p> <br />
-								<p>
-									(mb-10: (10px, 10px, 10px, 10px), <br />
-									mb-20: (10px, 20px, 20px, 20px), <br />
-									mb-30: (10px, 30px, 30px, 30px), <br />
-									mb-50: (20px, 50px, 50px, 50px));
-								</p>
-							</div>
-						</div>
-					</div>
-				</section>
+					</section>
+				</div>
 			</div>
 		</div>
-	</div>
-	<script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
+		<script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
 </body>
+
 </html>

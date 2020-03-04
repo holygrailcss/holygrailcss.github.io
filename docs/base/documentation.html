@@ -13,7 +13,8 @@
 	<meta name="MobileOptimized" content="320" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	
-	<link rel="stylesheet" href="../../dist/js/prism/prism.css" />  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prism-themes@1.3.0/themes/prism-material-light.css">
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.19.0/prism.min.js"> </script>
 	<link rel="stylesheet" href="../../dist/theme-guide/guide.css" />
 	
 	
@@ -35,9 +36,14 @@
 			<div class="container-main">
 				<div class="site-main ">
 					<section class="py-20">
-						<div class="container-fluid  text-center pt-50">
+						<div class="container  text-center pt-50">
 							<div class="row">
-								<div class="col-xs-6 text-right align-middle is-flex h-height-xl">
+								<div class="col-xs-6  align-middle pd-20 text-right">
+									<img src="../../assets/images/holygrail_big.png" style="max-width:200px" alt="">
+								</div>
+
+								<div class="col-xs-6 text-left align-middle is-flex h-height-xl">
+
 									<div class="cosa">
 										<p class="p1">holygrail Widgets</p>
 										<h1 class="h1">The Holy way</h1>
@@ -56,14 +62,14 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-xs-6  align-middle is-flex text-center">
-									<img src="../../assets/images/holygrail_big.png" style="max-width:200px" alt="">
-								</div>
+
+
+			
 							</div>
 						</div>
 					</section>
 					<section>
-						<div class="">
+						<div class="container">
 							<div class="row">
 								<div class="col-xs-12">
 									<h1 class="h1">Introduction</h1>
@@ -78,6 +84,93 @@
 							</div>
 						</div>
 					</section>
+
+
+
+<section>
+	
+
+
+
+<div class="container-2">
+	<div class="row">
+		<div class="col ">
+
+			
+			<h3 class="h3 text-center">
+				Personalizar nuestro Holygrail es muy rápido
+			</h3>
+
+			<br>
+			
+<pre><code class="language-scss">
+
+
+// Importamos fuentes
+
+
+
+
+
+$font-family-light: 'Fuente-Light-Pro';
+$font-family-regular: 'Fuente-Regular-Pro';
+$font-family-medium: 'Fuente-Medium-Pro';
+$font-family-bold: 'Fuente-Bold-Pro';
+
+$font-family-secondary:'Times new roman';
+
+// Importamos tantas font face como necesitemos 
+
+@font-face {
+  font-family: $font-family-bold;
+  src: url('../assets/fonts/basis/fuente-Bold-Pro.eot');
+  src: url('../assets/fonts/basis/fuente-Bold-Pro.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/basis/fuente-Bold-Pro.woff2') format('woff2'),
+  url('../assets/fonts/basis/fuente-Bold-Pro.woff') format('woff'),
+  url('../assets/fonts/basis/fuente-Bold-Pro.ttf') format('truetype'),
+}
+
+
+//Actualizamos las variables globales
+
+$totalCols :12;
+$padding-global: 8px;
+$padding-button: 8px;
+$padding-btn: 16px;
+$height-inputs: 48px;
+
+//Modificamos los tamaños de containers
+
+$container: 800px; /* maxwidth del container */
+$container-2: 700px; /* maxwidth del container2*/
+$container-3: 900px; /* maxwidth del container3*/
+$container-4: 350px; /* maxwidth del container4*/
+
+$transition:278ms;
+
+$height-xs:80px;
+$height-sm:100px;
+$height-md:350px;
+$height-lg:400px;
+$height-xl:450px;
+$height-full:100vh;
+$height-home:calc(100vh - 80px);
+
+
+
+// Importamos el resto de Holygrail CSS
+@import "../path/to/holygrailcss";
+
+	
+</code></pre>
+		</div>
+
+	</div>
+</div>
+
+</section>
+
+
 					<section>
 						<div class="">
 							<div class="row">
