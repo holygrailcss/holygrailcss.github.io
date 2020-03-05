@@ -17,6 +17,8 @@ $font-family-medium: 'BasisGrotesque-Medium-Pro';
 $font-family-bold: 'BasisGrotesque-Bold-Pro';
 $theme:'theme-guide';
 
+
+
 @font-face {
   font-family: $font-family-bold;
   src: url('../../themes/#{$theme}/assets/fonts/basis/BasisGrotesque-Bold-Pro.eot');
@@ -25,7 +27,6 @@ $theme:'theme-guide';
   url('../../themes/#{$theme}/assets/fonts/basis/BasisGrotesque-Bold-Pro.woff') format('woff'),
   url('../../themes/#{$theme}/assets/fonts/basis/BasisGrotesque-Bold-Pro.ttf') format('truetype'),
 }
-
 
 
 @font-face {
