@@ -8,9 +8,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --watch scss -o dist     ",
-    "guide": "node-sass --watch themes -o dist  ",
-    "build": "gulp style  "
+    "scss": "node-sass --watch scss -o dist    ",
+    "guide": "node-sass --watch themes -o dist ",
+    "build": "gulp style"
   },
   "repository": {
     "type": "git",
@@ -35,7 +35,7 @@
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
-    "holygrailcss": "^1.0.7",
+    "holygrailcss": "^1.1.0",
     "interactjs": "^1.8.5",
     "node-sass": "^4.13.1"
   }

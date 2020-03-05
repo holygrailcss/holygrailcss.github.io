@@ -4,10 +4,11 @@
 /* no usar col- nunca ya que hay un selector asi
  */
 
-@import "../../../holygrail/scss/partials.scss";
+@import "../../../holygrailcss/scss/partials.scss";
 @import "../../themes/theme-guide/scss/headers"; //$headers
 @import "../../themes/theme-guide/tags";
 @import "../../themes/theme-guide/nuevos_elementos";
+
 
 //imagenes de fondo este es el theme de la web personalizable
 $font-family-light: 'BasisGrotesque-Light-Pro';
@@ -24,6 +25,8 @@ $theme:'theme-guide';
   url('../../themes/#{$theme}/assets/fonts/basis/BasisGrotesque-Bold-Pro.woff') format('woff'),
   url('../../themes/#{$theme}/assets/fonts/basis/BasisGrotesque-Bold-Pro.ttf') format('truetype'),
 }
+
+
 
 @font-face {
   font-family: $font-family-medium;
