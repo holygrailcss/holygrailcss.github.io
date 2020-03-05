@@ -1993,12 +1993,12 @@ mark {
     font-family: "BasisGrotesque-Regular-Pro";
     line-height: 1.6; }
   .p2 {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.4;
     font-family: "BasisGrotesque-Regular-Pro";
     line-height: 1.6; }
   .p4 {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.4;
     font-family: "BasisGrotesque-Medium-Pro"; } }
 
@@ -2084,6 +2084,85 @@ mark {
 /* map-key*/
 @media (min-width: 1280px) {
   .h1 {
+    font-size: 32px;
+    line-height: 1.2;
+    font-family: "BasisGrotesque-Medium-Pro"; }
+  .h2 {
+    font-size: 24px;
+    line-height: 1.2;
+    font-family: "BasisGrotesque-Medium-Pro"; }
+  .h3 {
+    font-size: 18px;
+    line-height: 1.2;
+    font-family: "BasisGrotesque-Medium-Pro"; }
+  .h4, .card .title {
+    font-size: 16px;
+    line-height: 1.2;
+    font-family: "BasisGrotesque-Medium-Pro"; }
+  .h5 {
+    font-size: 14px;
+    line-height: 1.2;
+    font-family: "BasisGrotesque-Medium-Pro"; }
+  .h6, .card .subtitle {
+    font-size: 12px;
+    line-height: 1.2;
+    font-family: "BasisGrotesque-Medium-Pro"; }
+  .h7 {
+    font-size: 10px;
+    line-height: 1.2;
+    font-family: "BasisGrotesque-Medium-Pro"; }
+  .h8 {
+    font-size: 8px;
+    line-height: 1.2;
+    font-family: "BasisGrotesque-Medium-Pro"; }
+  .display1 {
+    font-size: 32px;
+    line-height: 1.2;
+    font-family: "BasisGrotesque-Bold-Pro"; }
+  .display2 {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: "BasisGrotesque-Bold-Pro"; }
+  .display3 {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "BasisGrotesque-Medium-Pro"; }
+  .display4 {
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: "BasisGrotesque-Medium-Pro"; }
+  .display5 {
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: "BasisGrotesque-Regular-Pro";
+    line-height: 1.6; }
+  .display6 {
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: "BasisGrotesque-Regular-Pro";
+    line-height: 1.6; }
+  .display7 {
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: "BasisGrotesque-Medium-Pro"; }
+  .p1 {
+    font-size: 12px;
+    line-height: 1.4;
+    font-family: "BasisGrotesque-Regular-Pro";
+    line-height: 1.6; }
+  .p2 {
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: "BasisGrotesque-Regular-Pro";
+    line-height: 1.6; }
+  .p4 {
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: "BasisGrotesque-Medium-Pro"; } }
+
+/* map-key*/
+@media (min-width: 1500px) {
+  .h1 {
     font-size: 40px;
     line-height: 1.2;
     font-family: "BasisGrotesque-Medium-Pro"; }
@@ -2157,85 +2236,6 @@ mark {
     line-height: 1.6; }
   .p4 {
     font-size: 18px;
-    line-height: 1.4;
-    font-family: "BasisGrotesque-Medium-Pro"; } }
-
-/* map-key*/
-@media (min-width: 1500px) {
-  .h1 {
-    font-size: 1.2;
-    line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
-  .h2 {
-    font-size: 1.2;
-    line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
-  .h3 {
-    font-size: 1.2;
-    line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
-  .h4, .card .title {
-    font-size: 1.2;
-    line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
-  .h5 {
-    font-size: 1.2;
-    line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
-  .h6, .card .subtitle {
-    font-size: 1.2;
-    line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
-  .h7 {
-    font-size: 1.2;
-    line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
-  .h8 {
-    font-size: 1.2;
-    line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
-  .display1 {
-    font-size: 1.2;
-    line-height: 1.2;
-    font-family: "BasisGrotesque-Bold-Pro"; }
-  .display2 {
-    font-size: 1.2;
-    line-height: 1.2;
-    font-family: "BasisGrotesque-Bold-Pro"; }
-  .display3 {
-    font-size: 1.5;
-    line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
-  .display4 {
-    font-size: 1.5;
-    line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
-  .display5 {
-    font-size: 1.5;
-    line-height: 1.5;
-    font-family: "BasisGrotesque-Regular-Pro";
-    line-height: 1.6; }
-  .display6 {
-    font-size: 1.5;
-    line-height: 1.5;
-    font-family: "BasisGrotesque-Regular-Pro";
-    line-height: 1.6; }
-  .display7 {
-    font-size: 1.5;
-    line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
-  .p1 {
-    font-size: 1.4;
-    line-height: 1.4;
-    font-family: "BasisGrotesque-Regular-Pro";
-    line-height: 1.6; }
-  .p2 {
-    font-size: 1.4;
-    line-height: 1.4;
-    font-family: "BasisGrotesque-Regular-Pro";
-    line-height: 1.6; }
-  .p4 {
-    font-size: 1.4;
     line-height: 1.4;
     font-family: "BasisGrotesque-Medium-Pro"; } }
 
@@ -3634,13 +3634,13 @@ Caja y texto inferior
   .wrap-item-type:nth-child(1) .item-3:after {
     content: "32px"; }
   .wrap-item-type:nth-child(1) .item-4:after {
-    content: "40px"; }
+    content: "32px"; }
   .wrap-item-type:nth-child(1) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.2"; }
+    content: "40px"; }
   .wrap-item-type:nth-child(1) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "medium"; }
+    content: "1.2"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -3679,13 +3679,13 @@ Caja y texto inferior
   .wrap-item-type:nth-child(2) .item-3:after {
     content: "24px"; }
   .wrap-item-type:nth-child(2) .item-4:after {
-    content: "32px"; }
+    content: "24px"; }
   .wrap-item-type:nth-child(2) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.2"; }
+    content: "32px"; }
   .wrap-item-type:nth-child(2) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "medium"; }
+    content: "1.2"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -3724,13 +3724,13 @@ Caja y texto inferior
   .wrap-item-type:nth-child(3) .item-3:after {
     content: "18px"; }
   .wrap-item-type:nth-child(3) .item-4:after {
-    content: "24px"; }
+    content: "18px"; }
   .wrap-item-type:nth-child(3) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.2"; }
+    content: "24px"; }
   .wrap-item-type:nth-child(3) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "medium"; }
+    content: "1.2"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -3769,13 +3769,13 @@ Caja y texto inferior
   .wrap-item-type:nth-child(4) .item-3:after {
     content: "16px"; }
   .wrap-item-type:nth-child(4) .item-4:after {
-    content: "18px"; }
+    content: "16px"; }
   .wrap-item-type:nth-child(4) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.2"; }
+    content: "18px"; }
   .wrap-item-type:nth-child(4) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "medium"; }
+    content: "1.2"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -3814,13 +3814,13 @@ Caja y texto inferior
   .wrap-item-type:nth-child(5) .item-3:after {
     content: "14px"; }
   .wrap-item-type:nth-child(5) .item-4:after {
-    content: "16px"; }
+    content: "14px"; }
   .wrap-item-type:nth-child(5) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.2"; }
+    content: "16px"; }
   .wrap-item-type:nth-child(5) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "medium"; }
+    content: "1.2"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -3859,13 +3859,13 @@ Caja y texto inferior
   .wrap-item-type:nth-child(6) .item-3:after {
     content: "12px"; }
   .wrap-item-type:nth-child(6) .item-4:after {
-    content: "14px"; }
+    content: "12px"; }
   .wrap-item-type:nth-child(6) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.2"; }
+    content: "14px"; }
   .wrap-item-type:nth-child(6) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "medium"; }
+    content: "1.2"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -3904,13 +3904,13 @@ Caja y texto inferior
   .wrap-item-type:nth-child(7) .item-3:after {
     content: "10px"; }
   .wrap-item-type:nth-child(7) .item-4:after {
-    content: "12px"; }
+    content: "10px"; }
   .wrap-item-type:nth-child(7) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.2"; }
+    content: "12px"; }
   .wrap-item-type:nth-child(7) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "medium"; }
+    content: "1.2"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -3949,13 +3949,13 @@ Caja y texto inferior
   .wrap-item-type:nth-child(8) .item-3:after {
     content: "8px"; }
   .wrap-item-type:nth-child(8) .item-4:after {
-    content: "10px"; }
+    content: "8px"; }
   .wrap-item-type:nth-child(8) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.2"; }
+    content: "10px"; }
   .wrap-item-type:nth-child(8) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "medium"; }
+    content: "1.2"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -3994,13 +3994,13 @@ Caja y texto inferior
   .wrap-item-type:nth-child(9) .item-3:after {
     content: "32px"; }
   .wrap-item-type:nth-child(9) .item-4:after {
-    content: "48px"; }
+    content: "32px"; }
   .wrap-item-type:nth-child(9) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.2"; }
+    content: "48px"; }
   .wrap-item-type:nth-child(9) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "bold"; }
+    content: "1.2"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -4039,13 +4039,13 @@ Caja y texto inferior
   .wrap-item-type:nth-child(10) .item-3:after {
     content: "20px"; }
   .wrap-item-type:nth-child(10) .item-4:after {
-    content: "40px"; }
+    content: "20px"; }
   .wrap-item-type:nth-child(10) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.2"; }
+    content: "40px"; }
   .wrap-item-type:nth-child(10) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "bold"; }
+    content: "1.2"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -4084,13 +4084,13 @@ Caja y texto inferior
   .wrap-item-type:nth-child(11) .item-3:after {
     content: "16px"; }
   .wrap-item-type:nth-child(11) .item-4:after {
-    content: "24px"; }
+    content: "16px"; }
   .wrap-item-type:nth-child(11) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.5"; }
+    content: "24px"; }
   .wrap-item-type:nth-child(11) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "medium"; }
+    content: "1.5"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -4129,13 +4129,13 @@ Caja y texto inferior
   .wrap-item-type:nth-child(12) .item-3:after {
     content: "14px"; }
   .wrap-item-type:nth-child(12) .item-4:after {
-    content: "24px"; }
+    content: "14px"; }
   .wrap-item-type:nth-child(12) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.5"; }
+    content: "24px"; }
   .wrap-item-type:nth-child(12) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "medium"; }
+    content: "1.5"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -4174,13 +4174,13 @@ Caja y texto inferior
   .wrap-item-type:nth-child(13) .item-3:after {
     content: "14px"; }
   .wrap-item-type:nth-child(13) .item-4:after {
-    content: "18px"; }
+    content: "14px"; }
   .wrap-item-type:nth-child(13) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.5"; }
+    content: "18px"; }
   .wrap-item-type:nth-child(13) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "regular"; }
+    content: "1.5"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -4219,13 +4219,13 @@ Caja y texto inferior
   .wrap-item-type:nth-child(14) .item-3:after {
     content: "12px"; }
   .wrap-item-type:nth-child(14) .item-4:after {
-    content: "18px"; }
+    content: "12px"; }
   .wrap-item-type:nth-child(14) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.5"; }
+    content: "18px"; }
   .wrap-item-type:nth-child(14) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "regular"; }
+    content: "1.5"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -4264,13 +4264,13 @@ Caja y texto inferior
   .wrap-item-type:nth-child(15) .item-3:after {
     content: "14px"; }
   .wrap-item-type:nth-child(15) .item-4:after {
-    content: "18px"; }
+    content: "14px"; }
   .wrap-item-type:nth-child(15) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.5"; }
+    content: "18px"; }
   .wrap-item-type:nth-child(15) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "medium"; }
+    content: "1.5"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -4309,13 +4309,13 @@ Caja y texto inferior
   .wrap-item-type:nth-child(16) .item-3:after {
     content: "12px"; }
   .wrap-item-type:nth-child(16) .item-4:after {
-    content: "14px"; }
+    content: "12px"; }
   .wrap-item-type:nth-child(16) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.4"; }
+    content: "14px"; }
   .wrap-item-type:nth-child(16) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "regular"; }
+    content: "1.4"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -4350,17 +4350,17 @@ Caja y texto inferior
   .wrap-item-type:nth-child(17) .item-1:after {
     content: "14px"; }
   .wrap-item-type:nth-child(17) .item-2:after {
-    content: "16px"; }
+    content: "14px"; }
   .wrap-item-type:nth-child(17) .item-3:after {
     content: "16px"; }
   .wrap-item-type:nth-child(17) .item-4:after {
-    content: "18px"; }
+    content: "16px"; }
   .wrap-item-type:nth-child(17) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.4"; }
+    content: "18px"; }
   .wrap-item-type:nth-child(17) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "regular"; }
+    content: "1.4"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -4395,17 +4395,17 @@ Caja y texto inferior
   .wrap-item-type:nth-child(18) .item-1:after {
     content: "14px"; }
   .wrap-item-type:nth-child(18) .item-2:after {
-    content: "16px"; }
+    content: "14px"; }
   .wrap-item-type:nth-child(18) .item-3:after {
     content: "16px"; }
   .wrap-item-type:nth-child(18) .item-4:after {
-    content: "18px"; }
+    content: "16px"; }
   .wrap-item-type:nth-child(18) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.4"; }
+    content: "18px"; }
   .wrap-item-type:nth-child(18) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "medium"; }
+    content: "1.4"; }
 
 .guide table td {
   padding: 10px;
@@ -5480,13 +5480,13 @@ Caja y texto inferior
   .wrap-item-type:nth-child(1) .item-3:after {
     content: "32px"; }
   .wrap-item-type:nth-child(1) .item-4:after {
-    content: "40px"; }
+    content: "32px"; }
   .wrap-item-type:nth-child(1) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.2"; }
+    content: "40px"; }
   .wrap-item-type:nth-child(1) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "medium"; }
+    content: "1.2"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -5525,13 +5525,13 @@ Caja y texto inferior
   .wrap-item-type:nth-child(2) .item-3:after {
     content: "24px"; }
   .wrap-item-type:nth-child(2) .item-4:after {
-    content: "32px"; }
+    content: "24px"; }
   .wrap-item-type:nth-child(2) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.2"; }
+    content: "32px"; }
   .wrap-item-type:nth-child(2) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "medium"; }
+    content: "1.2"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -5570,13 +5570,13 @@ Caja y texto inferior
   .wrap-item-type:nth-child(3) .item-3:after {
     content: "18px"; }
   .wrap-item-type:nth-child(3) .item-4:after {
-    content: "24px"; }
+    content: "18px"; }
   .wrap-item-type:nth-child(3) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.2"; }
+    content: "24px"; }
   .wrap-item-type:nth-child(3) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "medium"; }
+    content: "1.2"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -5615,13 +5615,13 @@ Caja y texto inferior
   .wrap-item-type:nth-child(4) .item-3:after {
     content: "16px"; }
   .wrap-item-type:nth-child(4) .item-4:after {
-    content: "18px"; }
+    content: "16px"; }
   .wrap-item-type:nth-child(4) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.2"; }
+    content: "18px"; }
   .wrap-item-type:nth-child(4) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "medium"; }
+    content: "1.2"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -5660,13 +5660,13 @@ Caja y texto inferior
   .wrap-item-type:nth-child(5) .item-3:after {
     content: "14px"; }
   .wrap-item-type:nth-child(5) .item-4:after {
-    content: "16px"; }
+    content: "14px"; }
   .wrap-item-type:nth-child(5) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.2"; }
+    content: "16px"; }
   .wrap-item-type:nth-child(5) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "medium"; }
+    content: "1.2"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -5705,13 +5705,13 @@ Caja y texto inferior
   .wrap-item-type:nth-child(6) .item-3:after {
     content: "12px"; }
   .wrap-item-type:nth-child(6) .item-4:after {
-    content: "14px"; }
+    content: "12px"; }
   .wrap-item-type:nth-child(6) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.2"; }
+    content: "14px"; }
   .wrap-item-type:nth-child(6) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "medium"; }
+    content: "1.2"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -5750,13 +5750,13 @@ Caja y texto inferior
   .wrap-item-type:nth-child(7) .item-3:after {
     content: "10px"; }
   .wrap-item-type:nth-child(7) .item-4:after {
-    content: "12px"; }
+    content: "10px"; }
   .wrap-item-type:nth-child(7) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.2"; }
+    content: "12px"; }
   .wrap-item-type:nth-child(7) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "medium"; }
+    content: "1.2"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -5795,13 +5795,13 @@ Caja y texto inferior
   .wrap-item-type:nth-child(8) .item-3:after {
     content: "8px"; }
   .wrap-item-type:nth-child(8) .item-4:after {
-    content: "10px"; }
+    content: "8px"; }
   .wrap-item-type:nth-child(8) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.2"; }
+    content: "10px"; }
   .wrap-item-type:nth-child(8) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "medium"; }
+    content: "1.2"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -5840,13 +5840,13 @@ Caja y texto inferior
   .wrap-item-type:nth-child(9) .item-3:after {
     content: "32px"; }
   .wrap-item-type:nth-child(9) .item-4:after {
-    content: "48px"; }
+    content: "32px"; }
   .wrap-item-type:nth-child(9) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.2"; }
+    content: "48px"; }
   .wrap-item-type:nth-child(9) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "bold"; }
+    content: "1.2"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -5885,13 +5885,13 @@ Caja y texto inferior
   .wrap-item-type:nth-child(10) .item-3:after {
     content: "20px"; }
   .wrap-item-type:nth-child(10) .item-4:after {
-    content: "40px"; }
+    content: "20px"; }
   .wrap-item-type:nth-child(10) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.2"; }
+    content: "40px"; }
   .wrap-item-type:nth-child(10) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "bold"; }
+    content: "1.2"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -5930,13 +5930,13 @@ Caja y texto inferior
   .wrap-item-type:nth-child(11) .item-3:after {
     content: "16px"; }
   .wrap-item-type:nth-child(11) .item-4:after {
-    content: "24px"; }
+    content: "16px"; }
   .wrap-item-type:nth-child(11) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.5"; }
+    content: "24px"; }
   .wrap-item-type:nth-child(11) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "medium"; }
+    content: "1.5"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -5975,13 +5975,13 @@ Caja y texto inferior
   .wrap-item-type:nth-child(12) .item-3:after {
     content: "14px"; }
   .wrap-item-type:nth-child(12) .item-4:after {
-    content: "24px"; }
+    content: "14px"; }
   .wrap-item-type:nth-child(12) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.5"; }
+    content: "24px"; }
   .wrap-item-type:nth-child(12) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "medium"; }
+    content: "1.5"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -6020,13 +6020,13 @@ Caja y texto inferior
   .wrap-item-type:nth-child(13) .item-3:after {
     content: "14px"; }
   .wrap-item-type:nth-child(13) .item-4:after {
-    content: "18px"; }
+    content: "14px"; }
   .wrap-item-type:nth-child(13) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.5"; }
+    content: "18px"; }
   .wrap-item-type:nth-child(13) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "regular"; }
+    content: "1.5"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -6065,13 +6065,13 @@ Caja y texto inferior
   .wrap-item-type:nth-child(14) .item-3:after {
     content: "12px"; }
   .wrap-item-type:nth-child(14) .item-4:after {
-    content: "18px"; }
+    content: "12px"; }
   .wrap-item-type:nth-child(14) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.5"; }
+    content: "18px"; }
   .wrap-item-type:nth-child(14) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "regular"; }
+    content: "1.5"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -6110,13 +6110,13 @@ Caja y texto inferior
   .wrap-item-type:nth-child(15) .item-3:after {
     content: "14px"; }
   .wrap-item-type:nth-child(15) .item-4:after {
-    content: "18px"; }
+    content: "14px"; }
   .wrap-item-type:nth-child(15) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.5"; }
+    content: "18px"; }
   .wrap-item-type:nth-child(15) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "medium"; }
+    content: "1.5"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -6155,13 +6155,13 @@ Caja y texto inferior
   .wrap-item-type:nth-child(16) .item-3:after {
     content: "12px"; }
   .wrap-item-type:nth-child(16) .item-4:after {
-    content: "14px"; }
+    content: "12px"; }
   .wrap-item-type:nth-child(16) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.4"; }
+    content: "14px"; }
   .wrap-item-type:nth-child(16) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "regular"; }
+    content: "1.4"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -6196,17 +6196,17 @@ Caja y texto inferior
   .wrap-item-type:nth-child(17) .item-1:after {
     content: "14px"; }
   .wrap-item-type:nth-child(17) .item-2:after {
-    content: "16px"; }
+    content: "14px"; }
   .wrap-item-type:nth-child(17) .item-3:after {
     content: "16px"; }
   .wrap-item-type:nth-child(17) .item-4:after {
-    content: "18px"; }
+    content: "16px"; }
   .wrap-item-type:nth-child(17) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.4"; }
+    content: "18px"; }
   .wrap-item-type:nth-child(17) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "regular"; }
+    content: "1.4"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -6241,17 +6241,17 @@ Caja y texto inferior
   .wrap-item-type:nth-child(18) .item-1:after {
     content: "14px"; }
   .wrap-item-type:nth-child(18) .item-2:after {
-    content: "16px"; }
+    content: "14px"; }
   .wrap-item-type:nth-child(18) .item-3:after {
     content: "16px"; }
   .wrap-item-type:nth-child(18) .item-4:after {
-    content: "18px"; }
+    content: "16px"; }
   .wrap-item-type:nth-child(18) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    content: "1.4"; }
+    content: "18px"; }
   .wrap-item-type:nth-child(18) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    content: "medium"; }
+    content: "1.4"; }
 
 .break-xs {
   display: inline-block; }
