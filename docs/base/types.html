@@ -12,7 +12,7 @@
 	<meta name="HandheldFriendly" content="True" />
 	<meta name="MobileOptimized" content="320" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prism-themes@1.3.0/themes/prism-material-light.css">
+    <link rel="stylesheet" href="../../dist/theme-guide/prism.css">
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.19.0/prism.min.js"> </script>
 	<link rel="stylesheet" href="../../dist/theme-guide/guide.css" />
 	<meta http-equiv="Accept-CH" content="DPR,Width,Viewport-Width" />
@@ -55,6 +55,19 @@
 							<div class="row">
 								<div class="col-xs-12">
 									<div class="title-guide">Typography </div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col">
+<p> 	Creamos un nuevo array de elementos y los incluimos, p. ej:</p>
+<pre><code class="language-scss">
+$headers-custom:
+/*  name:   1 ->   ,768 -> ,992 -> ,1280 ->,1500 -> ,line-height, font     */
+    (h1:   (32px   ,32px   ,32px   ,32px   ,40px    ,1.2        , "medium" ))
+
+@include types($breakpoints, $headers-custom, $fs);</code></pre>
+								
 								</div>
 							</div>
 							<div class="row">
@@ -167,6 +180,24 @@
 									<h3 class="h3 mb-30">
 										Tipografias fijas
 									</h3>
+
+
+
+
+									<div class="row">
+										<div class="col">
+		<p> 	Creamos un nuevo array de elementos y los incluimos, esto nos generará sus tres versiones, <code>  -r regular   </code> ,<code>  -m medium  </code>, <code> -b bold </code> , p. ej:</p>
+<pre><code class="language-scss">
+$headersFixers-custom: (
+/*name :  fontsize, lineheight */	
+    12 : (12px    , 1.5 ) ) ;
+		
+@include typesFixers($headersFixers-custom, $fs);  </code></pre>
+										
+										</div>
+									</div>
+
+
 									<table class="demo">
 										<thead>
 											<tr>

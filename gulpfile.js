@@ -1,26 +1,35 @@
-const gulp = require('gulp'),
-    sass = require('gulp-sass'),
-    postcss = require('gulp-postcss'),
-    autoprefixer = require('autoprefixer'),
-    cssnano = require('cssnano'),
-    rename = require('gulp-rename')
-    sourcemaps = require('gulp-sourcemaps');
+var gulp = require('gulp');
+var sass = require('gulp-sass');
 
-// Task for compile styles
-function style()
-{
-    return (
-        gulp
-            .src('./scss/style.scss')
-            .pipe(sourcemaps.init())
-            .pipe(sass())
-            .on('error', sass.logError) 
-            .pipe(postcss([autoprefixer(), cssnano()]))
-            .pipe(sourcemaps.write())
-            .pipe(rename('styles.min.css'))
-            .pipe(gulp.dest('./dist'))
-    );
+var browserSync = require('browser-sync').create();
+
+
+function style() {
+
+    //donde esta mi scss 
+    return gulp.src('./themes/**/*.scss')
+
+        //pasamos el archivo y lo compilamos
+        .pipe(sass())
+        .pipe(gulp.dest('./dist'))
+
+        .pipe(browserSync.stream())
+
+
 }
- 
-// Expose the task by exporting it
-exports.style = style;
+
+function watch(){
+    browserSync.init({
+
+        server:{
+            baseDir:'./'
+        }
+    })
+
+    gulp.watch('./themes/**/*.scss',style)
+    gulp.watch('./docs/**/*.html').on('change', browserSync.reload);
+
+}
+
+exports.style=style;
+exports.watch=watch;
