@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html class="no-js" dir="ltr" lang="en-US" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#"
+	xmlns:fb="http://www.facebook.com/2008/fbml" prefix="og: http://ogp.me/ns#
+            fb: http://ogp.me/ns/fb#
+            rdfs: http://www.w3.org/2000/01/rdf-schema# 
+            xsd: http://www.w3.org/2001/XMLSchema#" itemscope="">
+
+<head>
+	<!--  Metadata Basica-->
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!-- http://t.co/dKP3o1e -->
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../dist/theme-guide/prism.css">
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.19.0/prism.min.js"> </script>
+	<link rel="stylesheet" href="../../dist/theme-guide/guide.css" />
+	<meta http-equiv="Accept-CH" content="DPR,Width,Viewport-Width" />
+	<!-- Core Meta -->
+	<title>Helpers </title>
+</head>
+
+<body class="ltr guide">
+	<div class="header-bg">
+		<section>
+			<div class="header-menu">
+				<iframe class="menutop" src="../../docs/menutop.html" height="100%" frameborder="0" seamless></iframe>
+			</div>
+		</section>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="site-navigation">
+				<iframe class="menulateral" src="../../docs/menu.html" height="100%" frameborder="0" seamless></iframe>
+			</div>
+			<div class="container-main">
+				<div class="site-main">
+					<section class="py-20">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-xs-12">
+									<h1 class="h1">Helpers</h1>
+							
+									<p class="text-18-r">
+								Centrados de texto, alineaciones, o posiciones de background directamente en el html. 
+									</p>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="title-guide">Helpers </div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+
+
+
+<section>
+ <div class="pre-code mb-50">
+   <div class="row">
+	  <div class="col-xs-8">
+		<div class="pre-title mb-20">
+			<!-- 1 -- Código de titulo --> <strong> Ratios </strong>titulo 2
+				<p>
+			 Para poder usar el ratio solo tenemos que incluirlo dentro de <code>.content</code> para que tenga posicion absoluta
+			 </p>
+		 </div>
+	 </div>
+   </div>
+   <div class="row">
+	<div class="col-xs-8">
+	   <div class="pre-show">
+<div class="row">
+	<div class="col">
+		<table>
+			<thead>
+				<tr>
+					<th>helper</th>
+					<th>  @include ratio(16, 9);</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><code class="highlighter-rouge"> .rat-16-9 </code></td>
+					<td>   <div class="mini-box rat-16-9"> <div class="content"> pt: 56.25% </div></div>  </td>
+				</tr>
+
+				<tr>
+					<td><code class="highlighter-rouge"> .rat-21-9 </code></td>
+					<td>   <div class="mini-box rat-21-9"> <div class="content"> pt:42.85714% </div></div> </td>
+				</tr>
+
+				<tr>
+					<td><code class="highlighter-rouge"> .rat-1-1 </code></td>
+					<td>   <div class="mini-box rat-1-1"> <div class="content"> pt: 100% </div></div> </td>
+				</tr>
+
+				<tr>
+					<td><code class="highlighter-rouge"> .rat-2-1 </code></td>
+					<td>   <div class="mini-box rat-2-1"> <div class="content"> pt: 50% </div></div> </td>
+				</tr>
+
+
+
+			</tbody>
+		</table>
+	</div>
+	<div class="col">
+
+		<table>
+			<thead>
+				<tr>
+					<th>helper</th>
+					<th>  Ex  </th>
+				</tr>
+			</thead>
+			<tbody>
+				
+				<tr>
+					<td><code class="highlighter-rouge"> .rat-2-3 </code></td>
+					<td>   <div class="mini-box rat-2-3"> <div class="content"> pt: 133.25% </div></div> </td>
+				</tr>
+
+				<tr>
+					<td><code class="highlighter-rouge"> .rat-3-2 </code></td>
+					<td>   <div class="mini-box rat-3-2"> <div class="content"> pt: 66.66667% </div></div> </td>
+				</tr>
+
+				<tr>
+					<td><code class="highlighter-rouge"> .rat-3-4 </code></td>
+					<td>   <div class="mini-box rat-3-4"> <div class="content"> pt: 133.33333%% </div></div> </td>
+				</tr>
+
+
+				<tr>
+					<td><code class="highlighter-rouge"> .rat-4-3 </code></td>
+					<td>   <div class="mini-box rat-4-3"> pt: 75%% </div> </td>
+				</tr>
+
+			</tbody>
+		</table>
+
+
+	</div>
+</div>
+
+
+
+		</div>
+	 </div>
+   </div>
+
+
+   <div class="row">
+	 <div class="col-xs-8">
+	   <pre><code class="language-scss"> 
+&lt;div class=&quot;mini-box rat-2-1&quot;&gt; &lt;div class=&quot;content&quot;&gt; pt: 50% &lt;/div&gt;&lt;/div&gt;
+
+@mixin ratio($width, $height) {
+	position: relative;
+	overflow: hidden;
+
+	&amp;:before {
+		display: block;
+		content: &quot;&quot;;
+		width: 100%;
+		padding-top: ($height / $width) * 100% ;
+	}
+
+	&gt;.content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
+</code></pre>
+	 </div>
+   </div>
+
+
+
+ </div>
+ </section>
+
+
+			
+
+								</div>
+							</div>
+							
+							
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="title-guide">Background positions </div>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col">
+									<table>
+										<thead>
+											<tr>
+												<th>helper</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><code class="highlighter-rouge">.bg-cover</code></td>
+												<td>Imagen centrada al medio con cover</td>
+											</tr>
+										
+										</tbody>
+									</table>
+				
+								</div>
+							</div>
+						</div>
+					</section>
+
+				</div>
+			</div>
+		</div>
+		
+	</div>
+		<script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
+</body>
+
+</html>
