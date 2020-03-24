@@ -1,3 +1,5 @@
+@import "../../../holygrailcss/scss/abstract/settings";
+
 $variable-list: (break-xs: #{$break-xs},
     /*Breakpoints*/
     break-sm: #{$break-sm},
@@ -15,8 +17,6 @@ $variable-list: (break-xs: #{$break-xs},
     container-3: #{$container-3}, //maxwidth del container2
     container-4: #{$container-4}, //maxwidth del container4
     xl: 1500px);
-
-
 
 
     
@@ -207,6 +207,9 @@ $value in $headers {
 .x-pd {
     border-color: #89fdfd;
 }
+
+
+
 .x-mg {
     border-color: #f264b8;
 }

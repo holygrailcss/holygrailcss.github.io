@@ -46,7 +46,7 @@
 
 	 margin: .5em 0;
    overflow: auto;
-   padding: 48px 24px 24px 24px;
+   padding: 24px 24px 24px 24px;
 
 	 background-color: #f7f7f7;
  }
@@ -221,6 +221,24 @@ pre {
 
   }
 
+  &.language-scss{
+	&:before {
+
+		content: '<scss/>';
+
+
+	  }
+  }
+
+  &.language-markup{
+	&:before {
+
+		content: '<html/>';
+
+
+	  }
+  }
+
   &:after {
     top: 2px;
     right: 10px;
@@ -234,3 +252,8 @@ pre {
 
 
 }
+
+.guide code.language-scss  {
+  color: #000;
+}
+

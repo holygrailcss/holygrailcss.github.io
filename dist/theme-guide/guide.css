@@ -889,7 +889,7 @@ a {
     display: block;
     content: "";
     width: 100%;
-    padding-top: 133.25%; }
+    padding-top: 150%; }
   .rat-2-3 > .content {
     position: absolute;
     top: 0;
@@ -2852,7 +2852,7 @@ input::-webkit-input-placeholder {
     display: block;
     width: 100%;
     margin-bottom: 0;
-    line-height: 1.5;
+    line-height: 1.3;
     color: #495057;
     border: 1px solid transparent;
     border-radius: .25rem;
@@ -2945,7 +2945,7 @@ input::-webkit-input-placeholder {
     outline: 0; }
   .select label {
     position: absolute;
-    top: 17px;
+    top: 19px;
     left: 16px;
     z-index: 1; }
   .select::after {
@@ -3693,6 +3693,65 @@ ZEN:
   padding: 16px 0;
   border-top: 1px solid #eaeaea; }
 
+:root {
+  --Black:#000000;
+  --secondary-color:#F5F5F5;
+  --gray-90:#171717;
+  --gray-80:#2E2E2E;
+  --gray-70:#464646;
+  --gray-60:#5D5D5D;
+  --gray-50:#757575;
+  --gray-40:#909090;
+  --gray-30:#ACACAC;
+  --gray-20:#C7C7C7;
+  --gray-10:#E3E3E3;
+  --white-smoke:#F5F5F5;
+  --White:#ffffff;
+  --quartory-color:#E6F5FF;
+  --cinco-color:#B5E6C8;
+  --six-color:#FEF7C1;
+  --siete-color:#FADFC1;
+  --ocho-color:#FCD8CD;
+  --Error:#FD675E;
+  --Sales:#FA3B2C;
+  --Sales-Variant:#E43628;
+  --error-primary:#FD675E;
+  --link:rgb(207, 236, 240);
+  --linkHover:#999;
+  --black:rgb(3, 2, 2);
+  --primary:#000;
+  --break-xs: 1px;
+  --break-sm: 786px;
+  --break-md: 992px;
+  --break-lg: 1280px;
+  --break-xl: 1500px;
+  --min-width:319px; }
+
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
 .var-a-break-xs:after {
   display: inline-block;
   content: "break-xs"; }
@@ -6855,11 +6914,15 @@ section {
 
 .guide .num {
   display: inline-block;
-  font-size: 80px;
+  font-size: 15px;
+  padding: 5px 5px;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
   text-align: center;
   line-height: 1;
-  color: #00bfcb;
-  margin-top: 5px; }
+  background-color: #00bfcb;
+  color: #fff; }
 
 .guide table {
   width: 100%;
