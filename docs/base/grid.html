@@ -4,7 +4,6 @@
             fb: http://ogp.me/ns/fb#
             rdfs: http://www.w3.org/2000/01/rdf-schema# 
             xsd: http://www.w3.org/2001/XMLSchema#" itemscope="">
-
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -14,14 +13,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="../../dist/theme-guide/prism.css">
 	<script src="https://cdn.jsdelivr.net/npm/prismjs@1.19.0/prism.min.js"> </script>
-
-
 	<link rel="stylesheet" href="../../dist/theme-guide/guide.css" />
 	<meta http-equiv="Accept-CH" content="DPR,Width,Viewport-Width" />
 	<!-- Core Meta -->
 	<title>GUIA </title>
 </head>
-
 <body class="ltr guide">
 	<div class="header-menu">
 		<iframe class="menutop" src="../../docs/menutop.html" height="100%" frameborder="0" seamless></iframe>
@@ -45,9 +41,6 @@
 							</div>
 						</div>
 					</section>
-
-
-
 <section>
    <div class="container-fluid">
  <div class="pre-code mb-50">
@@ -79,10 +72,6 @@
  </div>
  </div>
  </section>
-
-
-
-
 <section>
    <div class="container-fluid">
  <div class="pre-code mb-50">
@@ -92,8 +81,6 @@
 			 <strong> Estructura </strong>inicial
 				<p>
 					Antes de nada , vamos al sass de settings y habilitamos el for con colores randoms. descomentamos @include random-bgr() para maquetar;
-
-
 			 </p>
 		 </div>
 	 </div>
@@ -126,10 +113,6 @@
 				</div>
 			</div>
 		</div>
-
-
-
-
 		<div class="steps mt-50">
 			<div class="h4">
 				<div class="num">1</div> Creamos la Section
@@ -138,7 +121,67 @@
 				background oscuro o claro
 			</p>
 <br>
-			<h4 class="h4"> <code>    &lt;section&gt; </code>  + bleed   </h4>
+			<h4 class="h4"> <code>    &lt;section    m-50  p-50  bleed-8  has-light&gt; </code>      </h4>
+			<br>
+
+			<p class="p1">  Una sección con un margin de 50 con un padding interno de 50 pero con margen entre ellos de 8 con textos y bordes blancos. </p>
+			<br>
+
+
+
+			<table>
+				<thead>
+					<tr>
+						<th>Seccion base</th>
+						<th> Márgenes</th>
+						<th> Paddings</th>
+						<th> Tipo de reticula </th>
+						<th> Color de textos</th>
+						<th></th>
+					
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><code class="highlighter-rouge"> &lt;section</code> </td>
+						<td> .m-50 </td>
+						<td> .p-50 </td>
+
+						<td> .bleed-8 </td>
+						<td> .has-light </td>
+						<td> <code class="highlighter-rouge"> &gt; </code></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td> .m-50 </td>
+						<td> .p-50 </td>
+						<td> .bleed-0 </td>
+						<td> </td>
+						<td> </td>
+					</tr>
+					<tr>
+						<td></td>
+						<td> .m-50 </td>
+						<td> .p-50 </td>
+						<td> .bleed-4 </td>
+						<td> </td>
+						<td> </td>
+					</tr>
+					<tr>
+						<td> </td>
+						<td> .m-50 </td>
+						<td> .p-50 </td>
+						<td> </td>
+						<td> </td>
+						<td> 	 </td>
+					
+					</tr>
+
+				</tbody>
+			</table>
+
+
+
 		</div>
 		<div class="steps mt-50">
 			<div class="h4">
@@ -146,24 +189,23 @@
 			</div>
 			<p class="">Elegimos el tipo de container usado</p>
 			<br>
-			<h4 class="h4"> <code>    &lt;section&gt; </code>    </h4>
-
+			<h4 class="h4"> <code>    &lt;div  class="tipo container"&gt; </code>    </h4>
 			<br>
 			<table>
 				<thead>
 					<tr>
-						<th>Containers</th>
+						<th>Tipo container</th>
 						<th>Description</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
 						<td><code class="highlighter-rouge">.container-fluid</code></td>
-						<td>Ancho máximo de 100%</td>
+						<td>Ancho máximo de 100%   </td>
 					</tr>
 					<tr>
 						<td><code class="highlighter-rouge">.container</code></td>
-						<td>Ancho máximo de 800px</td>
+						<td>Ancho máximo de  <div class="var-b-container"></div> </td>
 					</tr>
 					<tr>
 						<td><code class="highlighter-rouge"> <span
@@ -178,7 +220,7 @@
 					<tr>
 						<td><code class="highlighter-rouge"> <span
 									class="var-a-container-4"></span> </code></td>
-						<td>Ancho máximo de <span class="var-b-container-2"></span> </td>
+						<td>Ancho máximo de <span class="var-b-container-4"></span> </td>
 					</tr>
 				</tbody>
 			</table>
@@ -208,25 +250,33 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td>.col-xs-[1...12] desde 1px</td>
+						<td>.col-xs-[1...12] desde <br> <span class="h3 var-b-break-xs"></span>  </td>
 						<td><code class="highlighter-rouge">@media (min-width:$break-xs)
 							</code>
 						</td>
 					</tr>
 					<tr>
-						<td>.col-sm-[1...12] desde 600px</td>
+						<td>.col-sm-[1...12] desde <br>   <span class="h3 var-b-break-sm"></span>     </td>
 						<td><code class="highlighter-rouge">@media (min-width:$break-sm)
 							</code>
 						</td>
 					</tr>
 					<tr>
-						<td>.col-md-[1...12] desde 992px</td>
+						<td>.col-md-[1...12] desde <br>   <span class="h3 var-b-break-md"></span> </td>
 						<td><code class="highlighter-rouge">@media (min-width:$break-md)
 							</code>
 						</td>
 					</tr>
 					<tr>
-						<td>.col-lg-[1...12] desde 1280px</td>
+						<td>.col-lg-[1...12] desde <br>  <span class="h3 var-b-break-lg"></span>   </td>
+						<td><code class="highlighter-rouge">@media (min-width:$break-xl)
+							</code>
+						</td>
+					</tr>
+
+
+					<tr>
+						<td>.col-lg-[1...12] desde <br>   <span class="h3 var-b-break-xl"></span>   </td>
 						<td><code class="highlighter-rouge">@media (min-width:$break-xl)
 							</code>
 						</td>
@@ -304,9 +354,6 @@
 				</tbody>
 			</table>
 		</div>
-
-
-
 		</div>
 	 </div>
    </div>
@@ -320,8 +367,6 @@
  </div>
  </div>
  </section>
-
-
 <section>
    <div class="container-fluid">
  <div class="pre-code mb-50">
@@ -330,7 +375,7 @@
 		<div class="pre-title mb-20">
 			 <strong> Component </strong>Name
 				<p>
-			   Texto interior
+			Construyendo el componente
 			 </p>
 		 </div>
 	 </div>
@@ -369,8 +414,6 @@
  </div>
  </div>
  </section>
-
-
  <section>
 	<div class="container-fluid">
   <div class="pre-code mb-50">
@@ -379,7 +422,7 @@
 		 <div class="pre-title mb-20">
 			  <strong> Breakpoints </strong>
 				 <p>
-				Texto interior
+				Nuestros Breakpoints
 			  </p>
 		  </div>
 	  </div>
@@ -408,13 +451,10 @@
   </div>
   </div>
   </section>
-
-
 				</div>
 			</div>
 		</div>
 		<script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
 </body>
-
 </html>

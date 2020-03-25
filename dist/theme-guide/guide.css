@@ -889,7 +889,7 @@ a {
     display: block;
     content: "";
     width: 100%;
-    padding-top: 150%; }
+    padding-top: 133.25%; }
   .rat-2-3 > .content {
     position: absolute;
     top: 0;
@@ -3846,6 +3846,14 @@ ZEN:
 
 .var-b-height-home:after {
   content: "calc(100vh - 80px)";
+  display: inline-block; }
+
+.var-a-container:after {
+  display: inline-block;
+  content: "container"; }
+
+.var-b-container:after {
+  content: "800px";
   display: inline-block; }
 
 .var-a-container-2:after {

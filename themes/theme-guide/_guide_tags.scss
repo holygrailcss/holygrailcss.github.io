@@ -1,5 +1,11 @@
 @import "../../../holygrailcss/scss/abstract/settings";
 
+
+//rellenamos esta array con todas las variables, como queremos llamarla y cuanto es su valor. 
+//despues creamos dos variables, 
+//.var-a-nombre que es el nombre del array
+// var-b-nombre que es el valor del contenido
+
 $variable-list: (break-xs: #{$break-xs},
     /*Breakpoints*/
     break-sm: #{$break-sm},
@@ -13,11 +19,11 @@ $variable-list: (break-xs: #{$break-xs},
     height-xl: #{$height-xl},
     height-full: #{$height-full},
     height-home: #{$height-home},
+    container: #{$container}, 
     container-2: #{$container-2}, //maxwidth del container2
     container-3: #{$container-3}, //maxwidth del container2
     container-4: #{$container-4}, //maxwidth del container4
     xl: 1500px);
-
 
     
 $variabletotals: length($variable-list);
