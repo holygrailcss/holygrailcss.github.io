@@ -340,6 +340,7 @@ section {
   }
   .num {
     display: inline-block;
+    vertical-align: middle;
     font-size: 15px;
     padding: 5px 5px;
     height: 15px;
@@ -411,8 +412,8 @@ section {
     background-color: #f1f1f1;
     padding-left: 4px;
     padding-right: 4px;
-    color: $primary-guide;
-    ;
+    color: $secondary-guide;
+    
   }
   pre>code {
     background-color: transparent;
@@ -547,6 +548,8 @@ section {
   }
   .box-demo,
   .box-demo2 {
+    height: 100%;
+    box-sizing: border-box;
     padding: 20px;
     border: 1px solid white;
   }
