@@ -6,7 +6,11 @@
 $primary-guide:#121F2A;
 $secondary-guide:#6759bb;
 @import "../../../holygrailcss/scss/partials.scss";
-@import "../../themes/theme-guide/_guide_tags";
+
+@import "../../themes/theme-guide/_tags.scss";
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
 //imagenes de fondo este es el theme de la web personalizable
 $font-family-light: 'BasisGrotesque-Light-Pro';
@@ -76,6 +80,21 @@ $theme:'theme-guide';
     background: rgba(0, 0, 0, 0.35);
   }
 }
+
+
+$headersFluidsGuide: (
+  /*name :  fontsize, lineheight */
+  12 : (12px, 12px, .9),
+  14 : (14px, 12px, .9),
+  16 : (16px, 12px, .9),
+  18 : (18px, 12px, .9),
+  20 : (20px, 12px, .9),
+  50 : (30px, 80px, .9),
+  100 : (40px, 100px, .9));
+@include typesFluids($headersFluidsGuide);
+
+
+
 .fondo-basic {
   background: #f7f7f7;
 }
@@ -135,15 +154,15 @@ section {
   color: #000;
 }
 .guide {
-.title-zone{
-  color: white;
-  padding-top: 120px;
-  background: #121F2A;
-  background: #2a2067;
-  margin-left: -8px;
-  margin-right: -8px;
-}
-  .mb-5{
+  .title-zone {
+    color: white;
+    padding-top: 120px;
+    background: #121F2A;
+    background: #2a2067;
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  .mb-5 {
     margin-bottom: 5px;
   }
   .site-navigation {
@@ -153,7 +172,7 @@ section {
     margin: 0;
     line-height: 1.2;
   }
-  .menu-lateral{
+  .menu-lateral {
     padding-left: 10px;
   }
   .guide-logo-menu {
@@ -161,7 +180,6 @@ section {
       padding-top: 20px;
     }
   }
-
   .list-clear {
     margin-bottom: 30px;
   }
@@ -289,7 +307,8 @@ section {
   .header-bg {
     color: #134b46;
     position: fixed;
-    z-index: 100;  }
+    z-index: 100;
+  }
   .disabled {
     text-decoration: none;
     opacity: .3;
@@ -413,7 +432,6 @@ section {
     padding-left: 4px;
     padding-right: 4px;
     color: $secondary-guide;
-    
   }
   pre>code {
     background-color: transparent;
@@ -467,30 +485,23 @@ section {
     }
   }
   a {
-
     text-decoration: none;
   }
-.mb-big{
-  margin-bottom: 80px;
-
+  .mb-big {
+    margin-bottom: 80px;
     @media (min-width:$break-sm) {
       margin-bottom: 80px;
-}
+    }
     @media (min-width:$break-md) {
       margin-bottom: 80px;
-}
+    }
     @media (min-width:$break-lg) {
       margin-bottom: 80px;
-}
-
-}
-.m-medium{
-  margin: 80px;
-
-
-}
-
-
+    }
+  }
+  .m-medium {
+    margin: 80px;
+  }
   .link-template-mini {
     height: 50px;
     .h1 {
@@ -663,34 +674,26 @@ section {
   }
   .resize-bar {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     padding: 10px 50px;
     height: 40px;
-
     border: solid #eaeaea;
     border-width: 1px 0;
     box-sizing: border-box;
     vertical-align: middle;
   }
-
-  .resize-name{
+  .resize-name {
     width: 40%;
     float: left;
-
   }
-
-
-
-  .resize-snip{
+  .resize-snip {
     font-size: 12px;
     text-align: right;
     width: 40%;
     float: right;
-
-    color:#ec4137;
-    
+    color: #ec4137;
   }
   .resize-media {
     width: 40px;
@@ -778,10 +781,8 @@ section {
   letter-spacing: -3px;
 }
 .btn-guide {
-
   max-width: 200px;
   min-width: 40%;
-
   border-radius: 50px;
   background-color: #5D1E64;
   border: 1px solid #5D1E64 !important;
@@ -798,7 +799,6 @@ section {
   @media (min-width:$break-sm) {
     min-width: 200px;
   }
-
 }
 .logo-guide {
   position: absolute;
@@ -815,13 +815,9 @@ section {
   width: 80%;
   top: 50px;
   @media (min-width:$break-sm) {
-
     width: 40%;
     top: 50px;
-
   }
-
-
 }
 .logo-guide {
   z-index: 1000;
@@ -830,22 +826,14 @@ section {
   background: #121F2A;
 }
 .h2-guide {
-
   color: #8C8C8C;
-
-
   @include fluid-text($min_width, $break-lg, 30px, 50px, 1);
   line-height: 1.2;
   @include font-bold();
-
-
   strong {
     color: #fff;
   }
 }
-
-
-
 .col.is-flex {
   display: flex;
 }
@@ -882,19 +870,12 @@ section {
   width: 100%;
   background-color: #091116;
 }
-
-
-
 .h4 {
   font-size: 30px;
-
 }
-
-.p1{
+.p1 {
   font-size: 14px;
 }
-
-
 .yellow {
   color: #fdc305;
 }
@@ -904,43 +885,22 @@ section {
 .purple {
   color: #792eff;
 }
-
-.blue{
-  color:#121F2A;
+.blue {
+  color: #121F2A;
 }
-
-.guide-box{
+.guide-box {
   width: 100%;
   min-height: 100px;
-
-    @media (min-width:$break-sm) {
-      min-height: 220px;
-}
-
-
-  img{
+  @media (min-width:$break-sm) {
+    min-height: 220px;
+  }
+  img {
     width: 80%;
   }
- 
-
 }
-
-.guide-link{
+.guide-link {
   font-size: 16px;
   font-weight: 700;
   color: #d6d6d6;
 }
 
-
-$headersFluidsGuide: (/*name :  fontsize, lineheight */
-   12 : (12px, 12px, .9),
-   14 : (14px, 12px,.9),
-   16 : (16px, 12px,.9),
-   18 : (18px, 12px,.9),
-   20 : (20px, 12px,.9),
-   50 : (30px, 80px,.9),
-   100 : (40px, 100px,.9)
-   ) ;
-
-
-   @include typesFluids($headersFluidsGuide) ;
