@@ -16,6 +16,7 @@
  |       -RESET  
  +------------------------------------------------------------+*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
 html, body, div, span, select, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, main, menu, nav, section, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -24,6 +25,10 @@ html, body, div, span, select, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font-size: 100%;
   vertical-align: baseline;
   background: transparent; }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .card .title, .h5, .h6, .card .subtitle {
+  margin: 0;
+  padding: 0; }
 
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
   display: block; }
@@ -292,6 +297,36 @@ a {
       width: 80%;
       max-width: 1280px; } }
 
+.container-full {
+  padding-right: 8px;
+  padding-left: 8px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  max-width: 800px; }
+  @media (min-width: 786px) {
+    .container-full {
+      /*600px*/
+      padding-right: 8px;
+      padding-left: 8px;
+      width: 90%;
+      max-width: 786px; } }
+  @media (min-width: 992px) {
+    .container-full {
+      /* 992px*/
+      width: 80%;
+      max-width: 992px; } }
+  @media (min-width: 1280px) {
+    .container-full {
+      /* 1200px*/
+      width: 80%;
+      max-width: 1280px; } }
+  @media (min-width: 1500px) {
+    .container-full {
+      /* 1200px*/
+      width: 80%;
+      max-width: 1500px; } }
+
 .container-fluid {
   padding-right: 8px;
   padding-left: 8px;
@@ -325,6 +360,19 @@ a {
   position: relative;
   width: 90%;
   max-width: 350px; }
+
+/* join life style*/
+.container-5 {
+  position: relative;
+  padding: 0 8px;
+  margin: 0 auto; }
+  @media (min-width: 786px) {
+    .container-5 {
+      max-width: 800px; } }
+  @media (min-width: 1280px) {
+    .container-5 {
+      max-width: 1600px;
+      padding: 0 58px; } }
 
 /*+------------------------------------------------------------+
    |       -ROW        
@@ -641,7 +689,8 @@ a {
     flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-  .bleed-0 [class*="col-"] {
+  .bleed-0 [class*="col-"],
+  .bleed-0 .col {
     padding: 0px;
     box-sizing: border-box; }
 
@@ -681,7 +730,8 @@ a {
     flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-  .bleed-4 [class*="col-"] {
+  .bleed-4 [class*="col-"],
+  .bleed-4 .col {
     padding: 2px;
     box-sizing: border-box; }
 
@@ -721,7 +771,8 @@ a {
     flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-  .bleed-8 [class*="col-"] {
+  .bleed-8 [class*="col-"],
+  .bleed-8 .col {
     padding: 4px;
     box-sizing: border-box; }
 
@@ -830,7 +881,13 @@ a {
     content: "";
     width: 100%;
     padding-top: 56.25%; }
-  .rat-16-9 > .content {
+  .rat-16-9 .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .rat-16-9 .rat-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -845,7 +902,13 @@ a {
     content: "";
     width: 100%;
     padding-top: 42.85714%; }
-  .rat-21-9 > .content {
+  .rat-21-9 .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .rat-21-9 .rat-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -860,7 +923,13 @@ a {
     content: "";
     width: 100%;
     padding-top: 100%; }
-  .rat-1-1 > .content {
+  .rat-1-1 .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .rat-1-1 .rat-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -875,7 +944,13 @@ a {
     content: "";
     width: 100%;
     padding-top: 50%; }
-  .rat-2-1 > .content {
+  .rat-2-1 .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .rat-2-1 .rat-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -890,7 +965,13 @@ a {
     content: "";
     width: 100%;
     padding-top: 133.25%; }
-  .rat-2-3 > .content {
+  .rat-2-3 .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .rat-2-3 .rat-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -905,7 +986,13 @@ a {
     content: "";
     width: 100%;
     padding-top: 66.66667%; }
-  .rat-3-2 > .content {
+  .rat-3-2 .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .rat-3-2 .rat-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -920,7 +1007,13 @@ a {
     content: "";
     width: 100%;
     padding-top: 133.33333%; }
-  .rat-3-4 > .content {
+  .rat-3-4 .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .rat-3-4 .rat-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -935,7 +1028,13 @@ a {
     content: "";
     width: 100%;
     padding-top: 50%; }
-  .rat-4-2 > .content {
+  .rat-4-2 .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .rat-4-2 .rat-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -950,7 +1049,13 @@ a {
     content: "";
     width: 100%;
     padding-top: 75%; }
-  .rat-4-3 > .content {
+  .rat-4-3 .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .rat-4-3 .rat-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -965,7 +1070,13 @@ a {
     content: "";
     width: 100%;
     padding-top: 133.25%; }
-  .rat-main > .content {
+  .rat-main .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .rat-main .rat-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -973,7 +1084,7 @@ a {
     bottom: 0; }
 
 /*+------------------------------------------------------------+
- |       -MARGINS  
+ |       - MARGINS  
  +------------------------------------------------------------+*/
 /*+------------------------------------------------------------+
   |      -MIXINS SPACE  
@@ -1172,42 +1283,74 @@ a {
     margin-right: 50px; } }
 
 @media (min-width: 1px) {
+  .mb-4 {
+    margin-bottom: 4px; }
   .mb-10 {
+    margin-bottom: 10px; }
+  .mb-16 {
     margin-bottom: 10px; }
   .mb-20 {
     margin-bottom: 10px; }
+  .mb-24 {
+    margin-bottom: 20px; }
   .mb-30 {
     margin-bottom: 10px; }
+  .mb-40 {
+    margin-bottom: 20px; }
   .mb-50 {
     margin-bottom: 20px; } }
 
 @media (min-width: 786px) {
+  .mb-4 {
+    margin-bottom: 4px; }
   .mb-10 {
+    margin-bottom: 10px; }
+  .mb-16 {
     margin-bottom: 10px; }
   .mb-20 {
     margin-bottom: 20px; }
+  .mb-24 {
+    margin-bottom: 20px; }
   .mb-30 {
     margin-bottom: 30px; }
+  .mb-40 {
+    margin-bottom: 40px; }
   .mb-50 {
     margin-bottom: 50px; } }
 
 @media (min-width: 992px) {
+  .mb-4 {
+    margin-bottom: 4px; }
   .mb-10 {
     margin-bottom: 10px; }
+  .mb-16 {
+    margin-bottom: 16px; }
   .mb-20 {
     margin-bottom: 20px; }
+  .mb-24 {
+    margin-bottom: 24px; }
   .mb-30 {
     margin-bottom: 30px; }
+  .mb-40 {
+    margin-bottom: 40px; }
   .mb-50 {
     margin-bottom: 50px; } }
 
 @media (min-width: 1280px) {
+  .mb-4 {
+    margin-bottom: 4px; }
   .mb-10 {
     margin-bottom: 10px; }
+  .mb-16 {
+    margin-bottom: 16px; }
   .mb-20 {
     margin-bottom: 20px; }
+  .mb-24 {
+    margin-bottom: 24px; }
   .mb-30 {
     margin-bottom: 30px; }
+  .mb-40 {
+    margin-bottom: 40px; }
   .mb-50 {
     margin-bottom: 50px; } }
 
@@ -1293,6 +1436,8 @@ a {
     padding: 50px; } }
 
 @media (min-width: 1px) {
+  .py-16 {
+    padding: 10px 0; }
   .py-20 {
     padding: 10px 0; }
   .py-30 {
@@ -1303,6 +1448,8 @@ a {
     padding: 24px 16px; } }
 
 @media (min-width: 786px) {
+  .py-16 {
+    padding: 16px 0; }
   .py-20 {
     padding: 20px 0; }
   .py-30 {
@@ -1313,6 +1460,8 @@ a {
     padding: 24px 16px; } }
 
 @media (min-width: 992px) {
+  .py-16 {
+    padding: 16px 0; }
   .py-20 {
     padding: 20px 0; }
   .py-30 {
@@ -1323,6 +1472,8 @@ a {
     padding: 24px 16px; } }
 
 @media (min-width: 1280px) {
+  .py-16 {
+    padding: 16px 0; }
   .py-20 {
     padding: 20px 0; }
   .py-30 {
@@ -1333,6 +1484,8 @@ a {
     padding: 60px 60px; } }
 
 @media (min-width: 1px) {
+  .px-16 {
+    padding: 0 8px; }
   .px-20 {
     padding: 0 10px; }
   .px-30 {
@@ -1341,6 +1494,8 @@ a {
     padding: 0 20px; } }
 
 @media (min-width: 786px) {
+  .px-16 {
+    padding: 0 16px; }
   .px-20 {
     padding: 0 20px; }
   .px-30 {
@@ -1349,6 +1504,8 @@ a {
     padding: 0 30px; } }
 
 @media (min-width: 992px) {
+  .px-16 {
+    padding: 0 16px; }
   .px-20 {
     padding: 0 20px; }
   .px-30 {
@@ -1357,6 +1514,8 @@ a {
     padding: 0 40px; } }
 
 @media (min-width: 1280px) {
+  .px-16 {
+    padding: 0 16px; }
   .px-20 {
     padding: 0 20px; }
   .px-30 {
@@ -1367,6 +1526,8 @@ a {
 @media (min-width: 1px) {
   .pt-10 {
     padding-top: 10px; }
+  .pt-16 {
+    padding-top: 8px; }
   .pt-20 {
     padding-top: 10px; }
   .pt-30 {
@@ -1377,6 +1538,8 @@ a {
 @media (min-width: 786px) {
   .pt-10 {
     padding-top: 10px; }
+  .pt-16 {
+    padding-top: 16px; }
   .pt-20 {
     padding-top: 20px; }
   .pt-30 {
@@ -1387,6 +1550,8 @@ a {
 @media (min-width: 992px) {
   .pt-10 {
     padding-top: 10px; }
+  .pt-16 {
+    padding-top: 16px; }
   .pt-20 {
     padding-top: 20px; }
   .pt-30 {
@@ -1397,6 +1562,8 @@ a {
 @media (min-width: 1280px) {
   .pt-10 {
     padding-top: 10px; }
+  .pt-16 {
+    padding-top: 16px; }
   .pt-20 {
     padding-top: 20px; }
   .pt-30 {
@@ -1407,6 +1574,8 @@ a {
 @media (min-width: 1px) {
   .pl-10 {
     padding-left: 10px; }
+  .pl-16 {
+    padding-left: 8px; }
   .pl-20 {
     padding-left: 10px; }
   .pl-30 {
@@ -1417,6 +1586,8 @@ a {
 @media (min-width: 786px) {
   .pl-10 {
     padding-left: 10px; }
+  .pl-16 {
+    padding-left: 16 px; }
   .pl-20 {
     padding-left: 20px; }
   .pl-30 {
@@ -1427,6 +1598,8 @@ a {
 @media (min-width: 992px) {
   .pl-10 {
     padding-left: 10px; }
+  .pl-16 {
+    padding-left: 16 px; }
   .pl-20 {
     padding-left: 20px; }
   .pl-30 {
@@ -1437,6 +1610,8 @@ a {
 @media (min-width: 1280px) {
   .pl-10 {
     padding-left: 10px; }
+  .pl-16 {
+    padding-left: 16 px; }
   .pl-20 {
     padding-left: 20px; }
   .pl-30 {
@@ -1447,6 +1622,8 @@ a {
 @media (min-width: 1px) {
   .pb-10 {
     padding-bottom: 10px; }
+  .pb-16 {
+    padding-bottom: 8px; }
   .pb-20 {
     padding-bottom: 10px; }
   .pb-30 {
@@ -1457,6 +1634,8 @@ a {
 @media (min-width: 786px) {
   .pb-10 {
     padding-bottom: 10px; }
+  .pb-16 {
+    padding-bottom: 16px; }
   .pb-20 {
     padding-bottom: 20px; }
   .pb-30 {
@@ -1467,6 +1646,8 @@ a {
 @media (min-width: 992px) {
   .pb-10 {
     padding-bottom: 10px; }
+  .pb-16 {
+    padding-bottom: 16px; }
   .pb-20 {
     padding-bottom: 20px; }
   .pb-30 {
@@ -1477,6 +1658,8 @@ a {
 @media (min-width: 1280px) {
   .pb-10 {
     padding-bottom: 10px; }
+  .pb-16 {
+    padding-bottom: 16px; }
   .pb-20 {
     padding-bottom: 20px; }
   .pb-30 {
@@ -1487,6 +1670,8 @@ a {
 @media (min-width: 1px) {
   .pr-10 {
     padding-right: 10px; }
+  .pr-16 {
+    padding-right: 8px; }
   .pr-20 {
     padding-right: 10px; }
   .pr-30 {
@@ -1497,6 +1682,8 @@ a {
 @media (min-width: 786px) {
   .pr-10 {
     padding-right: 10px; }
+  .pr-16 {
+    padding-right: 16px; }
   .pr-20 {
     padding-right: 20px; }
   .pr-30 {
@@ -1507,6 +1694,8 @@ a {
 @media (min-width: 992px) {
   .pr-10 {
     padding-right: 10px; }
+  .pr-16 {
+    padding-right: 16px; }
   .pr-20 {
     padding-right: 20px; }
   .pr-30 {
@@ -1517,6 +1706,8 @@ a {
 @media (min-width: 1280px) {
   .pr-10 {
     padding-right: 10px; }
+  .pr-16 {
+    padding-right: 16px; }
   .pr-20 {
     padding-right: 20px; }
   .pr-30 {
@@ -1527,12 +1718,8 @@ a {
 /*+------------------------------------------------------------+
  |       -HTML REMS        
  +------------------------------------------------------------+*/
-body,
-button,
-input,
-select,
-textarea {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+body {
+  font-family: "Open Sans"; }
 
 pre,
 code,
@@ -1612,90 +1799,167 @@ mark {
   font-family: "Open Sans";
   font-weight: 400; }
   .fluid-h1 {
-    font-size: 36px; }
+    font-size: 36px;
+    line-height: 1;
+    color: 319px;
+    color: 1280px;
+    color: 36px;
+    color: 64px;
+    color: "px";
+    color: "px";
+    color: "px";
+    color: "px"; }
     @media screen and (min-width: 319px) {
       .fluid-h1 {
-        font-size: calc(36px + 28 * ((100vw - 319px) / 961)); } }
+        font-size: calc(36px + 28 * ((100vw - 319px) / 961));
+        line-height: 1; } }
     @media screen and (min-width: 1280px) {
       .fluid-h1 {
-        font-size: 64px; } }
+        font-size: 64px;
+        line-height: 1; } }
 
 .fluid-h2 {
   line-height: 1.2;
   font-family: "Open Sans";
   font-weight: 700; }
   .fluid-h2 {
-    font-size: 24px; }
+    font-size: 24px;
+    line-height: 1;
+    color: 319px;
+    color: 1280px;
+    color: 24px;
+    color: 48px;
+    color: "px";
+    color: "px";
+    color: "px";
+    color: "px"; }
     @media screen and (min-width: 319px) {
       .fluid-h2 {
-        font-size: calc(24px + 24 * ((100vw - 319px) / 961)); } }
+        font-size: calc(24px + 24 * ((100vw - 319px) / 961));
+        line-height: 1; } }
     @media screen and (min-width: 1280px) {
       .fluid-h2 {
-        font-size: 48px; } }
+        font-size: 48px;
+        line-height: 1; } }
 
 .fluid-h3 {
   line-height: 1.2;
   font-family: "Open Sans";
   font-weight: 300; }
   .fluid-h3 {
-    font-size: 18px; }
+    font-size: 18px;
+    line-height: 1;
+    color: 319px;
+    color: 1280px;
+    color: 18px;
+    color: 24px;
+    color: "px";
+    color: "px";
+    color: "px";
+    color: "px"; }
     @media screen and (min-width: 319px) {
       .fluid-h3 {
-        font-size: calc(18px + 6 * ((100vw - 319px) / 961)); } }
+        font-size: calc(18px + 6 * ((100vw - 319px) / 961));
+        line-height: 1; } }
     @media screen and (min-width: 1280px) {
       .fluid-h3 {
-        font-size: 24px; } }
+        font-size: 24px;
+        line-height: 1; } }
 
 .fluid-h4 {
   line-height: 1.2;
   font-family: "Open Sans";
   font-weight: 700; }
   .fluid-h4 {
-    font-size: 16px; }
+    font-size: 16px;
+    line-height: 1;
+    color: 319px;
+    color: 1280px;
+    color: 16px;
+    color: 22px;
+    color: "px";
+    color: "px";
+    color: "px";
+    color: "px"; }
     @media screen and (min-width: 319px) {
       .fluid-h4 {
-        font-size: calc(16px + 6 * ((100vw - 319px) / 961)); } }
+        font-size: calc(16px + 6 * ((100vw - 319px) / 961));
+        line-height: 1; } }
     @media screen and (min-width: 1280px) {
       .fluid-h4 {
-        font-size: 22px; } }
+        font-size: 22px;
+        line-height: 1; } }
 
 .fluid-h5 {
   line-height: 1.2;
   font-family: "Open Sans";
   font-weight: 600; }
   .fluid-h5 {
-    font-size: 14px; }
+    font-size: 14px;
+    line-height: 1;
+    color: 319px;
+    color: 1280px;
+    color: 14px;
+    color: 20px;
+    color: "px";
+    color: "px";
+    color: "px";
+    color: "px"; }
     @media screen and (min-width: 319px) {
       .fluid-h5 {
-        font-size: calc(14px + 6 * ((100vw - 319px) / 961)); } }
+        font-size: calc(14px + 6 * ((100vw - 319px) / 961));
+        line-height: 1; } }
     @media screen and (min-width: 1280px) {
       .fluid-h5 {
-        font-size: 20px; } }
+        font-size: 20px;
+        line-height: 1; } }
 
 .fluid-h6 {
   font-size: calc(1em + 0.25vw);
   font-family: "Open Sans";
   font-weight: 300; }
   .fluid-h6 {
-    font-size: 14px; }
+    font-size: 14px;
+    line-height: 1;
+    color: 319px;
+    color: 1280px;
+    color: 14px;
+    color: 18px;
+    color: "px";
+    color: "px";
+    color: "px";
+    color: "px"; }
     @media screen and (min-width: 319px) {
       .fluid-h6 {
-        font-size: calc(14px + 4 * ((100vw - 319px) / 961)); } }
+        font-size: calc(14px + 4 * ((100vw - 319px) / 961));
+        line-height: 1; } }
     @media screen and (min-width: 1280px) {
       .fluid-h6 {
-        font-size: 18px; } }
+        font-size: 18px;
+        line-height: 1; } }
 
 .fluid-h7 {
   font-family: "Open Sans";
   font-weight: 400; }
   .fluid-h7 {
-    font-size: 12px; }
+    font-size: 12px;
+    line-height: 1;
+    color: 319px;
+    color: 1280px;
+    color: 12px;
+    color: 18px;
+    color: "px";
+    color: "px";
+    color: "px";
+    color: "px"; }
     @media screen and (min-width: 319px) {
       .fluid-h7 {
-        font-size: calc(12px + 6 * ((100vw - 319px) / 961)); } }
+        font-size: calc(12px + 6 * ((100vw - 319px) / 961));
+        line-height: 1; } }
     @media screen and (min-width: 1280px) {
       .fluid-h7 {
-        font-size: 18px; } }
+        font-size: 18px;
+        line-height: 1; } }
 
 .secondary {
   font-family: "Times new roman" !important;
@@ -1811,463 +2075,612 @@ mark {
 
 @media (min-width: 1px) {
   .h1 {
-    font-size: 32px;
-    line-height: 1.2;
     font-family: "Open Sans";
-    font-weight: 600; }
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2; }
   .h2 {
+    font-family: "Open Sans";
+    font-weight: 600;
     font-size: 24px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h3 {
+    font-family: "Open Sans";
+    font-weight: 600;
     font-size: 18px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h4, .card .title {
-    font-size: 16px;
-    line-height: 1.2;
     font-family: "Open Sans";
-    font-weight: 600; }
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2; }
   .h5 {
-    font-size: 14px;
-    line-height: 1.2;
     font-family: "Open Sans";
-    font-weight: 600; }
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2; }
   .h6, .card .subtitle {
-    font-size: 12px;
-    line-height: 1.2;
     font-family: "Open Sans";
-    font-weight: 600; }
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.2; }
   .h7 {
+    font-family: "Open Sans";
+    font-weight: 600;
     font-size: 10px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h8 {
+    font-family: "Open Sans";
+    font-weight: 600;
     font-size: 8px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .display1 {
+    font-family: "Open Sans";
+    font-weight: 700;
     font-size: 32px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 700; }
+    line-height: 1.2; }
   .display2 {
+    font-family: "Open Sans";
+    font-weight: 700;
     font-size: 20px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 700; }
+    line-height: 1.2; }
   .display3 {
+    font-family: "Open Sans";
+    font-weight: 600;
     font-size: 16px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.5; }
   .display4 {
-    font-size: 14px;
-    line-height: 1.5;
     font-family: "Open Sans";
-    font-weight: 600; }
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.5; }
   .display5 {
-    font-size: 14px;
-    line-height: 1.5;
     font-family: "Open Sans";
-    font-weight: 400; }
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5; }
   .display6 {
-    font-size: 12px;
-    line-height: 1.5;
     font-family: "Open Sans";
-    font-weight: 400; }
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5; }
   .display7 {
-    font-size: 14px;
-    line-height: 1.5;
     font-family: "Open Sans";
-    font-weight: 600; }
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.5; }
   .p1 {
+    font-family: "Open Sans";
+    font-weight: 400;
     font-size: 12px;
-    line-height: 1.4;
-    font-family: "Open Sans";
-    font-weight: 400; }
+    line-height: 1.4; }
   .p2 {
-    font-size: 14px;
-    line-height: 1.4;
     font-family: "Open Sans";
-    font-weight: 400; }
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4; }
   .p4 {
-    font-size: 14px;
-    line-height: 1.4;
     font-family: "Open Sans";
-    font-weight: 600; } }
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.4; } }
 
 @media (min-width: 786px) {
   .h1 {
     font-size: 32px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h2 {
     font-size: 24px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h3 {
     font-size: 18px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h4, .card .title {
     font-size: 16px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h5 {
     font-size: 14px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h6, .card .subtitle {
     font-size: 12px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h7 {
     font-size: 10px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h8 {
     font-size: 8px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .display1 {
     font-size: 32px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 700; }
+    line-height: 1.2; }
   .display2 {
     font-size: 20px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 700; }
+    line-height: 1.2; }
   .display3 {
     font-size: 16px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.5; }
   .display4 {
     font-size: 14px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.5; }
   .display5 {
     font-size: 14px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 400; }
+    line-height: 1.5; }
   .display6 {
     font-size: 12px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 400; }
+    line-height: 1.5; }
   .display7 {
     font-size: 14px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.5; }
   .p1 {
     font-size: 12px;
-    line-height: 1.4;
-    font-family: "Open Sans";
-    font-weight: 400; }
+    line-height: 1.4; }
   .p2 {
     font-size: 14px;
-    line-height: 1.4;
-    font-family: "Open Sans";
-    font-weight: 400; }
+    line-height: 1.4; }
   .p4 {
     font-size: 14px;
-    line-height: 1.4;
-    font-family: "Open Sans";
-    font-weight: 600; } }
+    line-height: 1.4; } }
 
 @media (min-width: 992px) {
   .h1 {
     font-size: 32px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h2 {
     font-size: 24px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h3 {
     font-size: 18px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h4, .card .title {
     font-size: 16px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h5 {
     font-size: 14px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h6, .card .subtitle {
     font-size: 12px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h7 {
     font-size: 10px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h8 {
     font-size: 8px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .display1 {
     font-size: 32px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 700; }
+    line-height: 1.2; }
   .display2 {
     font-size: 20px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 700; }
+    line-height: 1.2; }
   .display3 {
     font-size: 16px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.5; }
   .display4 {
     font-size: 14px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.5; }
   .display5 {
     font-size: 14px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 400; }
+    line-height: 1.5; }
   .display6 {
     font-size: 12px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 400; }
+    line-height: 1.5; }
   .display7 {
     font-size: 14px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.5; }
   .p1 {
     font-size: 12px;
-    line-height: 1.4;
-    font-family: "Open Sans";
-    font-weight: 400; }
+    line-height: 1.4; }
   .p2 {
     font-size: 16px;
-    line-height: 1.4;
-    font-family: "Open Sans";
-    font-weight: 400; }
+    line-height: 1.4; }
   .p4 {
     font-size: 16px;
-    line-height: 1.4;
-    font-family: "Open Sans";
-    font-weight: 600; } }
+    line-height: 1.4; } }
 
 @media (min-width: 1280px) {
   .h1 {
     font-size: 32px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h2 {
     font-size: 24px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h3 {
     font-size: 18px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h4, .card .title {
     font-size: 16px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h5 {
     font-size: 14px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h6, .card .subtitle {
     font-size: 12px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h7 {
     font-size: 10px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h8 {
     font-size: 8px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .display1 {
     font-size: 32px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 700; }
+    line-height: 1.2; }
   .display2 {
     font-size: 20px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 700; }
+    line-height: 1.2; }
   .display3 {
     font-size: 16px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.5; }
   .display4 {
     font-size: 14px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.5; }
   .display5 {
     font-size: 14px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 400; }
+    line-height: 1.5; }
   .display6 {
     font-size: 12px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 400; }
+    line-height: 1.5; }
   .display7 {
     font-size: 14px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.5; }
   .p1 {
     font-size: 12px;
-    line-height: 1.4;
-    font-family: "Open Sans";
-    font-weight: 400; }
+    line-height: 1.4; }
   .p2 {
     font-size: 16px;
-    line-height: 1.4;
-    font-family: "Open Sans";
-    font-weight: 400; }
+    line-height: 1.4; }
   .p4 {
     font-size: 16px;
-    line-height: 1.4;
-    font-family: "Open Sans";
-    font-weight: 600; } }
+    line-height: 1.4; } }
 
 @media (min-width: 1500px) {
   .h1 {
     font-size: 40px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h2 {
     font-size: 32px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h3 {
     font-size: 24px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h4, .card .title {
     font-size: 18px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h5 {
     font-size: 16px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h6, .card .subtitle {
     font-size: 14px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h7 {
     font-size: 12px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h8 {
     font-size: 10px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .display1 {
     font-size: 48px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 700; }
+    line-height: 1.2; }
   .display2 {
     font-size: 40px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 700; }
+    line-height: 1.2; }
   .display3 {
     font-size: 24px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.5; }
   .display4 {
     font-size: 24px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.5; }
   .display5 {
     font-size: 18px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 400; }
+    line-height: 1.5; }
   .display6 {
     font-size: 18px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 400; }
+    line-height: 1.5; }
   .display7 {
     font-size: 18px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.5; }
   .p1 {
     font-size: 14px;
-    line-height: 1.4;
-    font-family: "Open Sans";
-    font-weight: 400; }
+    line-height: 1.4; }
   .p2 {
     font-size: 18px;
-    line-height: 1.4;
-    font-family: "Open Sans";
-    font-weight: 400; }
+    line-height: 1.4; }
   .p4 {
     font-size: 18px;
-    line-height: 1.4;
-    font-family: "Open Sans";
-    font-weight: 600; } }
+    line-height: 1.4; } }
+
+.fluid-12-r {
+  font-family: "Open Sans";
+  font-weight: 400; }
+  .fluid-12-r {
+    font-size: 12px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-12-r {
+        font-size: calc(12px + 0 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-12-r {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-12-m {
+  font-family: "Open Sans";
+  font-weight: 400; }
+  .fluid-12-m {
+    font-size: 12px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-12-m {
+        font-size: calc(12px + 0 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-12-m {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-12-b {
+  font-family: "Open Sans";
+  font-weight: 700; }
+  .fluid-12-b {
+    font-size: 12px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-12-b {
+        font-size: calc(12px + 0 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-12-b {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-14-r {
+  font-family: "Open Sans";
+  font-weight: 400; }
+  .fluid-14-r {
+    font-size: 14px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-14-r {
+        font-size: calc(14px + -2 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-14-r {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-14-m {
+  font-family: "Open Sans";
+  font-weight: 400; }
+  .fluid-14-m {
+    font-size: 14px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-14-m {
+        font-size: calc(14px + -2 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-14-m {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-14-b {
+  font-family: "Open Sans";
+  font-weight: 700; }
+  .fluid-14-b {
+    font-size: 14px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-14-b {
+        font-size: calc(14px + -2 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-14-b {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-16-r {
+  font-family: "Open Sans";
+  font-weight: 400; }
+  .fluid-16-r {
+    font-size: 16px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-16-r {
+        font-size: calc(16px + -4 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-16-r {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-16-m {
+  font-family: "Open Sans";
+  font-weight: 400; }
+  .fluid-16-m {
+    font-size: 16px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-16-m {
+        font-size: calc(16px + -4 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-16-m {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-16-b {
+  font-family: "Open Sans";
+  font-weight: 700; }
+  .fluid-16-b {
+    font-size: 16px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-16-b {
+        font-size: calc(16px + -4 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-16-b {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-18-r {
+  font-family: "Open Sans";
+  font-weight: 400; }
+  .fluid-18-r {
+    font-size: 18px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-18-r {
+        font-size: calc(18px + -6 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-18-r {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-18-m {
+  font-family: "Open Sans";
+  font-weight: 400; }
+  .fluid-18-m {
+    font-size: 18px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-18-m {
+        font-size: calc(18px + -6 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-18-m {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-18-b {
+  font-family: "Open Sans";
+  font-weight: 700; }
+  .fluid-18-b {
+    font-size: 18px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-18-b {
+        font-size: calc(18px + -6 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-18-b {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-20-r {
+  font-family: "Open Sans";
+  font-weight: 400; }
+  .fluid-20-r {
+    font-size: 20px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-20-r {
+        font-size: calc(20px + -8 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-20-r {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-20-m {
+  font-family: "Open Sans";
+  font-weight: 400; }
+  .fluid-20-m {
+    font-size: 20px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-20-m {
+        font-size: calc(20px + -8 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-20-m {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-20-b {
+  font-family: "Open Sans";
+  font-weight: 700; }
+  .fluid-20-b {
+    font-size: 20px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-20-b {
+        font-size: calc(20px + -8 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-20-b {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-50-r {
+  font-family: "Open Sans";
+  font-weight: 400; }
+  .fluid-50-r {
+    font-size: 30px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-50-r {
+        font-size: calc(30px + 50 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-50-r {
+        font-size: 80px;
+        line-height: 0.9; } }
+
+.fluid-50-m {
+  font-family: "Open Sans";
+  font-weight: 400; }
+  .fluid-50-m {
+    font-size: 30px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-50-m {
+        font-size: calc(30px + 50 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-50-m {
+        font-size: 80px;
+        line-height: 0.9; } }
+
+.fluid-50-b {
+  font-family: "Open Sans";
+  font-weight: 700; }
+  .fluid-50-b {
+    font-size: 30px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-50-b {
+        font-size: calc(30px + 50 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-50-b {
+        font-size: 80px;
+        line-height: 0.9; } }
+
+.has-ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: top;
+  width: 100%;
+  margin: 0 0 7px; }
+
+/** DENTRO DE UN CONTENT DE UN RATIO CENTRAMOS EL VIDEO**/
+.video-cover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+hr {
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid transparent; }
 
 /*------------------------------------*\
     $ELEMENTS COMPONENTES
@@ -2378,23 +2791,31 @@ hr {
   white-space: nowrap;
   cursor: pointer;
   padding: 16px;
-  background-color: #fff;
-  border: 1px solid #ccc;
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #000;
   /**
  	* Nadie quiere un botón con texto subrayado cuando hacemos hover.
  	*/ }
   .btn:hover {
     text-decoration: none;
-    opacity: .6; }
+    opacity: .5; }
   .btn:active, .btn:focus {
     outline: none; }
   .btn:visited {
     outline: none; }
+  .has-light .btn {
+    color: white;
+    border-color: white; }
+    .has-light .btn:after {
+      background-color: white; }
 
 /*+------------------------------------------------------------+
  |       -TAMAÑOS    
  +------------------------------------------------------------+*/
 .btn--mini {
+  padding-top: 8px;
+  padding-bottom: 8px;
   padding-right: 24px;
   padding-left: 24px;
   font-size: 12px; }
@@ -2465,23 +2886,35 @@ hr {
   .btn-xs:visited {
     outline: none; }
 
+.btn-link {
+  display: inline;
+  position: relative;
+  text-align: center;
+  outline: none;
+  padding: 4px 0;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.2px;
+  background: transparent;
+  border: none;
+  color: #fff; }
+  .btn-link:after {
+    content: '';
+    background-color: #000;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 1px; }
+  .has-light .btn-link {
+    color: white; }
+    .has-light .btn-link:after {
+      background-color: white; }
+
 .btn-block {
   display: block;
   width: 100%; }
-
-.link-btn {
-  height: 42px;
-  width: 100%;
-  line-height: 42px;
-  text-align: center;
-  outline: none;
-  text-align: center;
-  cursor: pointer;
-  font-size: 14px;
-  background: #000;
-  border: none;
-  color: #fff;
-  transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
 
 /*+------------------------------------------------------------+
  |       -TIPOS DE BOTONES    
@@ -2494,11 +2927,6 @@ hr {
   color: #fff;
   background-color: #000;
   border: 1px solid #000; }
-  .btn-primary:hover {
-    opacity: .7;
-    color: #fff;
-    background-color: #000;
-    border: 1px solid #000; }
 
 .btn-phantom {
   color: black;
@@ -2819,7 +3247,7 @@ label {
   padding: 10px; }
   .guide-font span {
     top: 15px;
-    color: #00bfcb;
+    color: #121F2A;
     font-size: 14px;
     position: absolute;
     line-height: 1;
@@ -2992,35 +3420,25 @@ a:hover {
   opacity: .9; }
 
 .link1 {
+  display: inline;
+  position: relative;
+  text-align: center;
+  outline: none;
+  padding: 4px 0;
+  text-align: center;
+  cursor: pointer;
   font-size: 16px;
-  font-family: "Open Sans";
-  font-weight: 700;
-  transition: color 250ms linear;
-  text-decoration: none;
-  position: relative; }
-  .link1:hover {
-    /* color: $linkHover; */ }
-    .link1:hover::after {
-      -webkit-transform: scaleX(1);
-      -ms-transform: scaleX(1);
-      transform: scaleX(1); }
-  .link1:focus {
-    outline: none;
-    text-decoration: none; }
-  .link1:-moz-focusring {
-    outline: none !important;
-    background: none; }
-  .link1::after {
-    content: "";
-    position: absolute;
+  line-height: 1.2px;
+  background: transparent;
+  border: none; }
+  .link1:after {
+    content: '';
+    background-color: #000;
     width: 100%;
-    height: 2px;
-    bottom: -4px;
-    left: 0;
-    background: #000;
-    transform: scaleX(0);
-    transition: transform 278ms;
-    transition: transform 278ms, -webkit-transform 278ms; }
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 1px; }
 
 .link2 {
   font-size: 12px;
@@ -3056,7 +3474,8 @@ a:hover {
   font-family: "Open Sans";
   font-weight: 600; }
 
-.link3:hover, .link3.hover {
+.link3:hover,
+.link3.hover {
   opacity: 0.9; }
 
 .link3:hover::before {
@@ -3073,17 +3492,65 @@ a:hover {
   margin: 0px;
   font-size: 16px;
   line-height: 16px;
-  padding: 12px 0; }
+  padding: 4px 0; }
   .link4:hover {
     opacity: .5; }
-  .link4 .link4-underline {
-    background: #000;
-    height: 1px;
+  .link4:after {
+    content: '';
+    background-color: #000;
     width: 100%;
-    display: inline-block;
     position: absolute;
-    bottom: 12px;
-    left: 0; }
+    bottom: 0px;
+    left: 0px;
+    height: 1px; }
+
+.link5 {
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  transition: color 250ms linear;
+  text-decoration: none;
+  position: relative; }
+  .link5:hover {
+    /* color: $linkHover; */ }
+    .link5:hover::after {
+      -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+      transform: scaleX(1); }
+  .link5:focus {
+    outline: none;
+    text-decoration: none; }
+  .link5:-moz-focusring {
+    outline: none !important;
+    background: none; }
+  .link5::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background: #000;
+    transform: scaleX(0);
+    transition: transform 278ms;
+    transition: transform 278ms, -webkit-transform 278ms; }
+
+.link6 {
+  font-family: "Open Sans";
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  padding: 4px 0;
+  margin: 20px 0;
+  border-bottom: 2px solid #000000;
+  color: black;
+  font-size: 16px;
+  line-height: 13px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase; }
 
 .link-button-prev {
   background: transparent !important;
@@ -3118,12 +3585,12 @@ a:hover {
     transform-origin: center;
     width: 10px; }
 
-.link5 {
+.link7 {
   position: relative;
   font-size: 16px;
   line-height: 1.6;
   text-decoration: none; }
-  .link5:after {
+  .link7:after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -3134,12 +3601,26 @@ a:hover {
     background: #000;
     -webkit-animation: underline 1s 0.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
     animation: underline 1s 0.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards; }
-  .link5:hover {
+  .link7:hover {
     opacity: .5; }
 
-.has-light .link5 {
+.has-light .link1 {
+  color: white; }
+  .has-light .link1:after {
+    background-color: white; }
+
+.has-light .link4 {
+  color: white; }
+  .has-light .link4:after {
+    background-color: white; }
+
+.has-light .link6 {
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff; }
+
+.has-light .link7 {
   color: #ffffff; }
-  .has-light .link5:after {
+  .has-light .link7:after {
     background: #ffffff; }
 
 .has-light .link4 .link4-underline {
@@ -3176,7 +3657,8 @@ ul.list-disc {
  |       -LISTA HORIZONTAL LIMPIA    
  +------------------------------------------------------------+*/
 ul.list-inline {
-  margin: 0px; }
+  margin: 0px;
+  padding: 0px; }
   ul.list-inline li {
     display: inline-block;
     padding: 0 8px;
@@ -4819,7 +5301,7 @@ ZEN:
       text-align: center;
       content: "h1"; }
   .wrap-item-type:nth-child(1) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(1) .item-1:after {
     content: "32px"; }
@@ -4866,7 +5348,7 @@ ZEN:
       text-align: center;
       content: "h2"; }
   .wrap-item-type:nth-child(2) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(2) .item-1:after {
     content: "24px"; }
@@ -4913,7 +5395,7 @@ ZEN:
       text-align: center;
       content: "h3"; }
   .wrap-item-type:nth-child(3) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(3) .item-1:after {
     content: "18px"; }
@@ -4960,7 +5442,7 @@ ZEN:
       text-align: center;
       content: "h4"; }
   .wrap-item-type:nth-child(4) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(4) .item-1:after {
     content: "16px"; }
@@ -5007,7 +5489,7 @@ ZEN:
       text-align: center;
       content: "h5"; }
   .wrap-item-type:nth-child(5) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(5) .item-1:after {
     content: "14px"; }
@@ -5054,7 +5536,7 @@ ZEN:
       text-align: center;
       content: "h6"; }
   .wrap-item-type:nth-child(6) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(6) .item-1:after {
     content: "12px"; }
@@ -5101,7 +5583,7 @@ ZEN:
       text-align: center;
       content: "h7"; }
   .wrap-item-type:nth-child(7) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(7) .item-1:after {
     content: "10px"; }
@@ -5148,7 +5630,7 @@ ZEN:
       text-align: center;
       content: "h8"; }
   .wrap-item-type:nth-child(8) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(8) .item-1:after {
     content: "8px"; }
@@ -5195,7 +5677,7 @@ ZEN:
       text-align: center;
       content: "display1"; }
   .wrap-item-type:nth-child(9) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(9) .item-1:after {
     content: "32px"; }
@@ -5242,7 +5724,7 @@ ZEN:
       text-align: center;
       content: "display2"; }
   .wrap-item-type:nth-child(10) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(10) .item-1:after {
     content: "20px"; }
@@ -5289,7 +5771,7 @@ ZEN:
       text-align: center;
       content: "display3"; }
   .wrap-item-type:nth-child(11) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(11) .item-1:after {
     content: "16px"; }
@@ -5336,7 +5818,7 @@ ZEN:
       text-align: center;
       content: "display4"; }
   .wrap-item-type:nth-child(12) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(12) .item-1:after {
     content: "14px"; }
@@ -5383,7 +5865,7 @@ ZEN:
       text-align: center;
       content: "display5"; }
   .wrap-item-type:nth-child(13) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(13) .item-1:after {
     content: "14px"; }
@@ -5430,7 +5912,7 @@ ZEN:
       text-align: center;
       content: "display6"; }
   .wrap-item-type:nth-child(14) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(14) .item-1:after {
     content: "12px"; }
@@ -5477,7 +5959,7 @@ ZEN:
       text-align: center;
       content: "display7"; }
   .wrap-item-type:nth-child(15) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(15) .item-1:after {
     content: "14px"; }
@@ -5524,7 +6006,7 @@ ZEN:
       text-align: center;
       content: "p1"; }
   .wrap-item-type:nth-child(16) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(16) .item-1:after {
     content: "12px"; }
@@ -5571,7 +6053,7 @@ ZEN:
       text-align: center;
       content: "p2"; }
   .wrap-item-type:nth-child(17) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(17) .item-1:after {
     content: "14px"; }
@@ -5618,7 +6100,7 @@ ZEN:
       text-align: center;
       content: "p4"; }
   .wrap-item-type:nth-child(18) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(18) .item-1:after {
     content: "14px"; }
@@ -5728,7 +6210,7 @@ ZEN:
       width: 100%;
       text-align: center; }
   .wrap-item-type_header .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type_header .item-1:after {
     font-family: "Open Sans";
@@ -5781,7 +6263,7 @@ ZEN:
       text-align: center;
       content: "h1"; }
   .wrap-item-type:nth-child(1) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(1) .item-1:after {
     content: "32px"; }
@@ -5828,7 +6310,7 @@ ZEN:
       text-align: center;
       content: "h2"; }
   .wrap-item-type:nth-child(2) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(2) .item-1:after {
     content: "24px"; }
@@ -5875,7 +6357,7 @@ ZEN:
       text-align: center;
       content: "h3"; }
   .wrap-item-type:nth-child(3) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(3) .item-1:after {
     content: "18px"; }
@@ -5922,7 +6404,7 @@ ZEN:
       text-align: center;
       content: "h4"; }
   .wrap-item-type:nth-child(4) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(4) .item-1:after {
     content: "16px"; }
@@ -5969,7 +6451,7 @@ ZEN:
       text-align: center;
       content: "h5"; }
   .wrap-item-type:nth-child(5) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(5) .item-1:after {
     content: "14px"; }
@@ -6016,7 +6498,7 @@ ZEN:
       text-align: center;
       content: "h6"; }
   .wrap-item-type:nth-child(6) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(6) .item-1:after {
     content: "12px"; }
@@ -6063,7 +6545,7 @@ ZEN:
       text-align: center;
       content: "h7"; }
   .wrap-item-type:nth-child(7) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(7) .item-1:after {
     content: "10px"; }
@@ -6110,7 +6592,7 @@ ZEN:
       text-align: center;
       content: "h8"; }
   .wrap-item-type:nth-child(8) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(8) .item-1:after {
     content: "8px"; }
@@ -6157,7 +6639,7 @@ ZEN:
       text-align: center;
       content: "display1"; }
   .wrap-item-type:nth-child(9) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(9) .item-1:after {
     content: "32px"; }
@@ -6204,7 +6686,7 @@ ZEN:
       text-align: center;
       content: "display2"; }
   .wrap-item-type:nth-child(10) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(10) .item-1:after {
     content: "20px"; }
@@ -6251,7 +6733,7 @@ ZEN:
       text-align: center;
       content: "display3"; }
   .wrap-item-type:nth-child(11) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(11) .item-1:after {
     content: "16px"; }
@@ -6298,7 +6780,7 @@ ZEN:
       text-align: center;
       content: "display4"; }
   .wrap-item-type:nth-child(12) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(12) .item-1:after {
     content: "14px"; }
@@ -6345,7 +6827,7 @@ ZEN:
       text-align: center;
       content: "display5"; }
   .wrap-item-type:nth-child(13) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(13) .item-1:after {
     content: "14px"; }
@@ -6392,7 +6874,7 @@ ZEN:
       text-align: center;
       content: "display6"; }
   .wrap-item-type:nth-child(14) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(14) .item-1:after {
     content: "12px"; }
@@ -6439,7 +6921,7 @@ ZEN:
       text-align: center;
       content: "display7"; }
   .wrap-item-type:nth-child(15) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(15) .item-1:after {
     content: "14px"; }
@@ -6486,7 +6968,7 @@ ZEN:
       text-align: center;
       content: "p1"; }
   .wrap-item-type:nth-child(16) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(16) .item-1:after {
     content: "12px"; }
@@ -6533,7 +7015,7 @@ ZEN:
       text-align: center;
       content: "p2"; }
   .wrap-item-type:nth-child(17) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(17) .item-1:after {
     content: "14px"; }
@@ -6580,7 +7062,7 @@ ZEN:
       text-align: center;
       content: "p4"; }
   .wrap-item-type:nth-child(18) .item-0 {
-    color: #00bfcb;
+    color: #121F2A;
     word-wrap: break-word; }
   .wrap-item-type:nth-child(18) .item-1:after {
     content: "14px"; }
@@ -6673,6 +7155,20 @@ ZEN:
   to {
     -webkit-transform: translate3d(0, -15px, 0);
     transform: translate3d(0, -15px, 0); } }
+
+.guide-dark-bg {
+  position: relative;
+  background: #000;
+  padding: 10px 20px 20px;
+  display: inline-block; }
+  .guide-dark-bg:after {
+    content: '.has-light';
+    color: #fff;
+    position: absolute;
+    font-size: 8px;
+    top: 2px;
+    left: 5px;
+    opacity: .8; }
 
 @font-face {
   font-family: "BasisGrotesque-Bold-Pro";
@@ -6780,20 +7276,60 @@ section {
   background-repeat: no-repeat;
   color: #000; }
 
+.guide .title-zone {
+  color: white;
+  padding-top: 120px;
+  background: #121F2A;
+  background: #2a2067;
+  margin-left: -8px;
+  margin-right: -8px; }
+
+.guide .mb-5 {
+  margin-bottom: 5px; }
+
+.guide .site-navigation {
+  background-color: #121F2A; }
+
+.guide .menu-lateral ul.list-clear li {
+  margin: 0;
+  line-height: 1.2; }
+
+.guide .menu-lateral {
+  padding-left: 10px; }
+
+.guide .guide-logo-menu img {
+  padding-top: 20px; }
+
+.guide .list-clear {
+  margin-bottom: 30px; }
+
+.guide .guide-title {
+  color: #878787;
+  font-size: 11px;
+  font-family: 'Muli', sans-serif !important;
+  text-transform: uppercase; }
+
+.guide .guide-text {
+  padding-left: 10px;
+  color: #B7C1C8;
+  font-size: 10px;
+  font-family: 'Muli', sans-serif !important;
+  text-transform: uppercase; }
+
 .guide .row {
   position: relative; }
 
 .guide .menulateral {
+  box-sizing: border-box;
   position: fixed;
   top: 62px;
   overflow: auto;
   height: calc(100vh - 62px);
-  border-right: 1px solid #eaeaea;
-  font-size: 12px;
+  font-size: 10px;
   box-sizing: border-box;
   -webkit-box-flex: 0;
   width: 180px;
-  padding-left: 20px; }
+  padding: 0px 0 0 20px; }
   .guide .menulateral html {
     font-size: 12px; }
 
@@ -6809,18 +7345,19 @@ section {
   min-height: calc(100vh - 48px); }
 
 .guide .site-navigation {
-  padding: 40px 20px 60px 0px;
+  box-sizing: border-box;
+  padding: 40px 0px 60px 0px;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   z-index: 10;
-  width: 160px; }
+  width: 180px; }
 
 .guide .site-main {
   position: relative;
   margin: 0 0 0 180px;
-  padding: 100px 8px 60px 8px; }
+  padding: 0px 8px 60px 8px; }
 
 .guide .guide-miniboxes {
   float: left;
@@ -6848,14 +7385,15 @@ section {
   position: fixed;
   top: 0px;
   height: 62px;
-  background-color: #00bfcb;
+  background-color: #121F2A;
   overflow: hidden;
   min-height: 40px;
   padding: 0;
+  padding-top: 20px;
   color: white;
   font-size: 12px;
   z-index: 100;
-  width: calc(100%); }
+  width: 180px; }
   .guide .header-menu html {
     font-size: 12px; }
   .guide .header-menu .menutop {
@@ -6868,7 +7406,7 @@ section {
 .guide .guide-header {
   z-index: 100;
   padding: 0 16px;
-  background: #00bfcb;
+  background: #121F2A;
   position: fixed;
   top: 0;
   width: 100%;
@@ -6879,7 +7417,9 @@ section {
   opacity: .6; }
 
 .guide .header-bg {
-  color: #134b46; }
+  color: #134b46;
+  position: fixed;
+  z-index: 100; }
 
 .guide .disabled {
   text-decoration: none;
@@ -6903,7 +7443,7 @@ section {
     z-index: 1000;
     color: #fff;
     display: inline-block;
-    background-color: #00bfcb;
+    background-color: #121F2A;
     font-size: 12px;
     padding: 10px; }
   .guide .guide-breakpoints .guide-xs {
@@ -6929,7 +7469,7 @@ section {
   border-radius: 50%;
   text-align: center;
   line-height: 1;
-  background-color: #00bfcb;
+  background-color: #121F2A;
   color: #fff; }
 
 .guide table {
@@ -6975,17 +7515,17 @@ section {
   font-size: 12px;
   text-align: left; }
   .guide table thead {
-    background-color: #00bfcb;
+    background-color: #121F2A;
     color: #ffffff; }
   .guide table td:first-child {
     font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace !important;
-    color: #00bfcb !important; }
+    color: #121F2A !important; }
 
 .guide code {
   background-color: #f1f1f1;
   padding-left: 4px;
   padding-right: 4px;
-  color: #00bfcb; }
+  color: #121F2A; }
 
 .guide pre > code {
   background-color: transparent; }
@@ -6995,7 +7535,7 @@ section {
   .guide .table-flex p {
     font-size: 12px;
     font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace !important;
-    color: #00bfcb !important;
+    color: #121F2A !important;
     text-align: center;
     width: 100%;
     background-color: #efe5ef;
@@ -7073,43 +7613,43 @@ section {
   box-sizing: border-box; }
 
 .guide .item-i:nth-child(1) {
-  background-color: #00bfcb;
+  background-color: #121F2A;
   opacity: .93; }
 
 .guide .item-i:nth-child(2) {
-  background-color: #00bfcb;
+  background-color: #121F2A;
   opacity: .83; }
 
 .guide .item-i:nth-child(3) {
-  background-color: #00bfcb;
+  background-color: #121F2A;
   opacity: .79; }
 
 .guide .item-i:nth-child(4) {
-  background-color: #00bfcb;
+  background-color: #121F2A;
   opacity: .72; }
 
 .guide .item-i:nth-child(5) {
-  background-color: #00bfcb;
+  background-color: #121F2A;
   opacity: .65; }
 
 .guide .item-i:nth-child(6) {
-  background-color: #00bfcb;
+  background-color: #121F2A;
   opacity: .58; }
 
 .guide .item-i:nth-child(7) {
-  background-color: #00bfcb;
+  background-color: #121F2A;
   opacity: .51; }
 
 .guide .item-i:nth-child(8) {
-  background-color: #00bfcb;
+  background-color: #121F2A;
   opacity: .44; }
 
 .guide .item-i:nth-child(9) {
-  background-color: #00bfcb;
+  background-color: #121F2A;
   opacity: .37; }
 
 .guide .item-i:nth-child(10) {
-  background-color: #00bfcb;
+  background-color: #121F2A;
   opacity: .3; }
 
 .guide .box-demo,
@@ -7120,7 +7660,7 @@ section {
 .guide .box-demo-inner {
   height: 200px;
   border: 1px solid white;
-  background-color: #00bfcb;
+  background-color: #121F2A;
   opacity: .6;
   font-size: 20px;
   padding-top: 100px;
@@ -7187,7 +7727,7 @@ section {
 .guide .resize-resolution,
 .guide .resize-media {
   text-align: center;
-  color: #00bfcb;
+  color: #121F2A;
   display: table;
   margin: 0 auto;
   margin-top: -80px;
@@ -7275,4 +7815,112 @@ section {
   font-size: 10px; }
 
 .guide-bg {
-  background-color: #00bfcb; }
+  background-color: #121F2A; }
+
+.pre-title {
+  box-sizing: border-box;
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid #eaeaea; }
+  .pre-title strong {
+    color: #6759bb;
+    overflow: hidden; }
+  .pre-title p {
+    color: #444; }
+
+.h11 {
+  font-size: 100px;
+  line-height: 1;
+  letter-spacing: -3px; }
+
+.btn-guide {
+  min-width: 200px;
+  border-radius: 50px;
+  background-color: #5D1E64;
+  border: 1px solid #5D1E64 !important; }
+
+.btn-guide2 {
+  min-width: 200px;
+  border-radius: 50px;
+  background-color: transparent;
+  border: 1px solid #ffffff; }
+
+.logo-guide {
+  position: absolute; }
+
+.holycup {
+  position: absolute;
+  right: 0;
+  width: 40%;
+  top: 50px; }
+
+.logo-guide {
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  background: #121F2A; }
+
+.h2-guide {
+  font-size: 35px;
+  color: #8C8C8C; }
+  .h2-guide strong {
+    color: #fff; }
+
+.col.is-flex {
+  display: flex; }
+
+.coding-box {
+  position: relative;
+  border-radius: 20px;
+  width: 100%;
+  background-color: #091116; }
+  .coding-box .coding-box-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #323235; }
+    .coding-box .coding-box-header:after {
+      position: absolute;
+      content: '';
+      width: 16px;
+      height: 16px;
+      top: 7px;
+      right: 10px;
+      background-color: #242426;
+      border-radius: 50%; }
+    .coding-box .coding-box-header:before {
+      position: absolute;
+      content: '';
+      width: 16px;
+      height: 16px;
+      top: 7px;
+      right: 35px;
+      background-color: #242426;
+      border-radius: 50%; }
+
+.h4, .card .title {
+  font-size: 30px; }
+
+.p1 {
+  font-size: 14px; }
+
+.yellow {
+  color: #fdc305; }
+
+.red {
+  color: #ec4137; }
+
+.purple {
+  color: #792eff; }
+
+.blue {
+  color: #121F2A; }
+
+.guide-box {
+  width: 100%;
+  min-height: 220px; }
+
+.guide-link {
+  font-size: 16px;
+  font-weight: 700;
+  color: #d6d6d6; }

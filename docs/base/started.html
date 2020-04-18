@@ -12,22 +12,22 @@
 	<meta name="HandheldFriendly" content="True" />
 	<meta name="MobileOptimized" content="320" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	
-    <link rel="stylesheet" href="../../dist/theme-guide/prism.css">
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.19.0/prism.min.js"> </script>
+	<link rel="stylesheet" href="../../dist/theme-guide/prism.css">
+	<script src="https://cdn.jsdelivr.net/npm/prismjs@1.19.0/prism.min.js"> </script>
 	<link rel="stylesheet" href="../../dist/theme-guide/guide.css" />
-	
-	
-
-	
 	<meta http-equiv="Accept-CH" content="DPR,Width,Viewport-Width" />
 	<!-- Core Meta -->
 	<title>GUIA </title>
 </head>
 <body class="ltr guide">
-	<div class="header-menu">
-		<iframe class="menutop" src="../menutop.html" height="100%" frameborder="0" seamless></iframe>
+	<div class="header-bg">
+		<section>
+			<div class="header-menu">
+				<iframe class="menutop" src="../../docs/menutop.html" height="100%" frameborder="0" seamless></iframe>
+			</div>
+		</section>
 	</div>
+
 	<div class="container-fluid">
 		<div class="row">
 			<div class="site-navigation">
@@ -35,42 +35,42 @@
 			</div>
 			<div class="container-main">
 				<div class="site-main ">
-					<section class="p-20">
-						<div class="container  text-center pt-50">
+					<section class="p-20 title-zone">
+						<div class="container-fluid  pt-50">
 							<div class="row">
-								<div class="col-xs-6  align-middle pd-20 text-right">
+								<div class="col-xs-2  pd-20 ">
 									<img src="../../assets/images/holygrail_big.png" style="max-width:200px" alt="">
 								</div>
-
-								<div class="col-xs-6 text-left align-middle is-flex h-height-xl">
-
+								<div class="col-xs-6 text-left  h-height-xl">
 									<div class="cosa">
 										<p class="p1">holygrail Widgets</p>
 										<h1 class="h1">The Holy way</h1>
 										<h2 class="h2 mb-20">holygrail</h2>
 										<p class="text-18-r mb-20">Angular widgets built from the ground up using only
 											Holygrail CSS
-										
-										 <br>
-											No dependencies on 3rd party JavaScript.   </p>
+											<br>
+											No dependencies on 3rd party JavaScript. </p>
 
 
-											<p>npm install holygrailcss
-											</p>
+										<p class="mb-20"> 
+											 <code>    npm install holygrailcss </code>  
+
+										</p>
 										<div class="btn btn-primary btn--small">
 											<a href="docs/index.html"> Get Started</a>
 										</div>
+
+										<div class="btn btn-primary btn--small">
+											<a href="docs/index.html"> Download Boilerplate</a>
+										</div>
 									</div>
 								</div>
-
-
-			
 							</div>
 						</div>
 					</section>
 					<section>
-						<div class="container">
-							<div class="row">
+						<div class="container-fluid">
+							<div class="row p-20">
 								<div class="col-xs-12">
 									<h1 class="h1">Introduction</h1>
 									<p class="text-18-r">
@@ -86,68 +86,119 @@
 					</section>
 
 
-
-<section>
-	
-
-
-
-<div class="container-2">
-	<div class="row">
-		<div class="col ">
-
-			
-			<h3 class="h3 text-center">
-				Personalizar nuestro Holygrail es muy rápido
-			</h3>
-
-			<br>
-			
-<pre><code class="language-scss">
-
-
+					<section>
+						<div class="container-fluid">
+							<div class="p-20">
+								<div class="row">
+									<div class="col-xs-10">
+										<div class="pre-title mb-20">
+											<strong> 1-Personalización </strong>
+											custom.scss
+											<p> Antes de nada, crearemos un custom.scss donde personalizaremos nuestro
+												holygrail
+												antes de importarlo</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="container-fluid">
+							<div class="row p-20">
+								<div class="col-xs-6">
+									<h4 class="h4">
+										Si la fuente es woff, eot
+									</h4>
+									<pre><code class="language-scss">
 // Importamos fuentes
-
-
-
-
-
-$font-family-light: 'Fuente-Light-Pro';
+$font-family-primary: 'Fuente-Regular-Pro';
+$font-family-light:   'Fuente-Light-Pro';
 $font-family-regular: 'Fuente-Regular-Pro';
-$font-family-medium: 'Fuente-Medium-Pro';
-$font-family-bold: 'Fuente-Bold-Pro';
-
-$font-family-secondary:'Times new roman';
-
+$font-family-medium:  'Fuente-Medium-Pro';
+$font-family-bold:    'Fuente-Bold-Pro';
+$font-family-primary: 'Fuente-Regular-Pro';
+//si cada fuente tiene diferente peso y ya la importamos
+$font-weight-light:    inherit;
+$font-weight-regular:  inherit;
+$font-weight-medium:   inherit;
+$font-weight-bold:     inherit;
+$font-family-secondary:"Times new roman"!default;
 // Importamos tantas font face como necesitemos 
-
 @font-face {
-  font-family: $font-family-bold;
-  src: url('../assets/fonts/basis/fuente-Bold-Pro.eot');
-  src: url('../assets/fonts/basis/fuente-Bold-Pro.eot?#iefix') format('embedded-opentype'),
-  url('../assets/fonts/basis/fuente-Bold-Pro.woff2') format('woff2'),
-  url('../assets/fonts/basis/fuente-Bold-Pro.woff') format('woff'),
-  url('../assets/fonts/basis/fuente-Bold-Pro.ttf') format('truetype'),
-}
-
-
+	font-family: $font-family-bold;
+	src: url('../fuente.eot');
+	src: url('../fuente.eot?#iefix') format('embedded-opentype'),
+	url('../fuente.woff2') format('woff2'),
+	url('../fuente..woff') format('woff'),
+	url('../fuente.ttf') format('truetype'),
+		}
+		</code></pre>
+								</div>
+								<div class="col-xs-6">
+									<h4 class="h4">
+										Si la fuente es de google fonts
+									</h4>
+									<pre><code class="language-scss">
+// Importamos fuentes
+@import url('https://fonts.googleapis.com/...');
+$font-family-primary: 'google-font-family';
+$font-family-light:   'google-font-family';
+$font-family-regular: 'google-font-family';
+$font-family-medium:  'google-font-family';
+$font-family-bold:    'google-font-family';
+$font-family-primary: 'google-font-family';
+//si cargamos por ejemplo con google fonts
+$font-weight-light:   300;
+$font-weight-regular: 500;
+$font-weight-medium:  700;
+$font-weight-bold:    900;
+$font-family-secondary:"Times new roman"!default;
+			</code></pre>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="container-fluid">
+							<div class="p-20">
+								<div class="row">
+									<div class="col-xs-10">
+										<div class="pre-title mb-20">
+											<strong> 2-Personalizar </strong>
+											Variables Globales
+											<p> Antes de nada, crearemos un custom.scss donde personalizaremos nuestro
+												holygrail
+												antes de importarlo</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="container-fluid">
+							<div class="row p-20">
+								<div class="col">
+									<pre><code class="language-scss">
+$primary-guide:#00bfcb;
+$error-primary:  #FD675E ;
+$link:           rgb(207, 236, 240) ;
+$linkHover:      #999 ;
+$black:          rgb(3, 2, 2) ;
+$primary:        #000 ;
 //Actualizamos las variables globales
-
 $totalCols :12;
 $padding-global: 8px;
 $padding-button: 8px;
 $padding-btn: 16px;
 $height-inputs: 48px;
-
 //Modificamos los tamaños de containers
-
-$container: 800px; /* maxwidth del container */
-$container-2: 700px; /* maxwidth del container2*/
-$container-3: 900px; /* maxwidth del container3*/
-$container-4: 350px; /* maxwidth del container4*/
-
+$container: 800px; 
+$container-2: 700px;
+$container-3: 900px;
+$container-4: 350px; 
 $transition:278ms;
-
 $height-xs:80px;
 $height-sm:100px;
 $height-md:350px;
@@ -155,32 +206,93 @@ $height-lg:400px;
 $height-xl:450px;
 $height-full:100vh;
 $height-home:calc(100vh - 80px);
-
-
-
+		</code></pre>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="container-fluid">
+							<div class="p-20">
+								<div class="row">
+									<div class="col-xs-10">
+										<div class="pre-title mb-20">
+											<strong> 3-Customización </strong> Holygrail
+											<p> Customización de headers, margenes y paddings</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="container-fluid">
+							<div class="row p-20">
+								<div class="col">
+									<pre><code class="language-scss">$headers:
+/* name :    xs,   sm,   md,   lg,   xl,line-height,font-weight */
+     (h1: (32px, 32px, 32px, 32px, 40px, 1.2, "medium" ),
+      h2: (24px, 24px, 24px, 24px, 32px, 1.2, "medium" ),
+      h3: (18px, 18px, 18px, 18px, 24px, 1.2, "medium" ),
+      h4: (16px, 16px, 16px, 16px, 18px, 1.2, "medium" ),
+      h5: (14px, 14px, 14px, 14px, 16px, 1.2, "medium" ),
+      h6: (12px, 12px, 12px, 12px, 14px, 1.2, "medium" ),
+      h7: (10px, 10px, 10px, 10px, 12px, 1.2, "medium" ),
+      h8: ( 8px,  8px,  8px,  8px, 10px, 1.2, "medium" ),
+display1: (32px, 32px, 32px, 32px, 48px, 1.2, "bold"   ),
+display2: (20px, 20px, 20px, 20px, 40px, 1.2, "bold"   ),
+display3: (16px, 16px, 16px, 16px, 24px, 1.5, "medium" ),
+display4: (14px, 14px, 14px, 14px, 24px, 1.5, "medium" ),
+display5: (14px, 14px, 14px, 14px, 18px, 1.5, "regular"),
+display6: (12px, 12px, 12px, 12px, 18px, 1.5, "regular"),
+display7: (14px, 14px, 14px, 14px, 18px, 1.5, "medium" ),
+      p1: (12px, 12px, 12px, 12px, 14px, 1.4, "regular"),
+      p2: (14px, 14px, 16px, 16px, 18px, 1.4, "regular"),
+      p4: (14px, 14px, 16px, 16px, 18px, 1.4, "medium" ));
+		</code></pre>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="container-fluid">
+							<div class="p-20">
+								<div class="row">
+									<div class="col-xs-10">
+										<div class="pre-title mb-20">
+											<strong> 4-Personalización </strong>
+											Holygrail
+											<p> Antes de nada, crearemos un custom.scss donde personalizaremos nuestro
+												holygrail
+												antes de importarlo</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="container-fluid">
+							<div class="row p-20">
+								<div class="col">
+									<pre><code class="language-scss">
 // Importamos el resto de Holygrail CSS
 @import "../path/to/holygrailcss";
-
-	
-</code></pre>
-		</div>
-
-	</div>
-</div>
-
-</section>
-
-
+		</code></pre>
+								</div>
+							</div>
+						</div>
+					</section>
 					<section>
 						<div class="">
-							<div class="row">
+							<div class="row p-20">
 								<div class="col">
 									<div class="title-guide">Colors
 										<div class="h3"> Palette</div>
 									</div>
 								</div>
 							</div>
-							<div class="row">
+							<div class="row p-20">
 								<div class="col">
 									<div class="wrap-item">
 										<div class="item"></div>
@@ -247,16 +359,14 @@ $height-home:calc(100vh - 80px);
 							</div>
 						</div>
 					</section>
-					
 					<section>
-						
-						<div class="container"><div class="row">
-							<div class="col">
-						
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col">
+								</div>
 							</div>
-						</div></div>
+						</div>
 					</section>
-
 				</div>
 			</div>
 		</div>

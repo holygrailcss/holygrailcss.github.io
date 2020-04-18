@@ -3,9 +3,11 @@
 \*------------------------------------*/
 /* no usar col- nunca ya que hay un selector asi
  */
+$primary-guide:#121F2A;
+$secondary-guide:#6759bb;
 @import "../../../holygrailcss/scss/partials.scss";
 @import "../../themes/theme-guide/_guide_tags";
-
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
 //imagenes de fondo este es el theme de la web personalizable
 $font-family-light: 'BasisGrotesque-Light-Pro';
 $font-family-regular: 'BasisGrotesque-Regular-Pro';
@@ -133,20 +135,63 @@ section {
   color: #000;
 }
 .guide {
+.title-zone{
+  color: white;
+  padding-top: 120px;
+  background: #121F2A;
+  background: #2a2067;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+  .mb-5{
+    margin-bottom: 5px;
+  }
+  .site-navigation {
+    background-color: #121F2A;
+  }
+  .menu-lateral ul.list-clear li {
+    margin: 0;
+    line-height: 1.2;
+  }
+  .menu-lateral{
+    padding-left: 10px;
+  }
+  .guide-logo-menu {
+    img {
+      padding-top: 20px;
+    }
+  }
+
+  .list-clear {
+    margin-bottom: 30px;
+  }
+  .guide-title {
+    color: #878787;
+    font-size: 11px;
+    font-family: 'Muli', sans-serif !important;
+    text-transform: uppercase;
+  }
+  .guide-text {
+    padding-left: 10px;
+    color: #B7C1C8;
+    font-size: 10px;
+    font-family: 'Muli', sans-serif !important;
+    text-transform: uppercase;
+  }
   .row {
     position: relative;
   }
   .menulateral {
+    box-sizing: border-box;
     position: fixed;
     top: 62px;
     overflow: auto;
     height: calc(100vh - 62px);
-    border-right: 1px solid #eaeaea;
-    font-size: 12px;
+    font-size: 10px;
     box-sizing: border-box;
     -webkit-box-flex: 0;
     width: 180px;
-    padding-left: 20px;
+    padding: 0px 0 0 20px;
     html {
       font-size: 12px;
     }
@@ -163,18 +208,19 @@ section {
     min-height: calc(100vh - 48px);
   }
   .site-navigation {
-    padding: 40px 20px 60px 0px;
+    box-sizing: border-box;
+    padding: 40px 0px 60px 0px;
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     z-index: 10;
-    width: 160px;
+    width: 180px;
   }
   .site-main {
     position: relative;
     margin: 0 0 0 180px;
-    padding: 100px $padding-global 60px $padding-global;
+    padding: 0px $padding-global 60px $padding-global;
   }
   .guide-miniboxes {
     float: left;
@@ -204,14 +250,15 @@ section {
     position: fixed;
     top: 0px;
     height: 62px;
-    background-color: $primary-guide;
+    background-color: #121F2A;
     overflow: hidden;
     min-height: 40px;
     padding: 0;
+    padding-top: 20px;
     color: white;
     font-size: 12px;
     z-index: 100;
-    width: calc(100%);
+    width: 180px;
     html {
       font-size: 12px;
     }
@@ -241,7 +288,8 @@ section {
   }
   .header-bg {
     color: #134b46;
-  }
+    position: fixed;
+    z-index: 100;  }
   .disabled {
     text-decoration: none;
     opacity: .3;
@@ -284,7 +332,6 @@ section {
       left: 54%;
     }
   }
-  
   ul {
     //   margin: 20px
   }
@@ -301,8 +348,7 @@ section {
     text-align: center;
     line-height: 1;
     background-color: $primary-guide;
-    color:#fff;
-
+    color: #fff;
   }
   table {
     width: 100%;
@@ -668,4 +714,128 @@ section {
 }
 .guide-bg {
   background-color: $primary-guide;
+}
+.pre-title {
+  box-sizing: border-box;
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid #eaeaea;
+  & strong {
+    color: $secondary-guide;
+    overflow: hidden;
+  }
+  p {
+    color: #444;
+  }
+}
+.h11 {
+  font-size: 100px;
+  line-height: 1;
+  letter-spacing: -3px;
+}
+.btn-guide {
+  min-width: 200px;
+  border-radius: 50px;
+  background-color: #5D1E64;
+  border: 1px solid #5D1E64 !important;
+}
+.btn-guide2 {
+  min-width: 200px;
+  border-radius: 50px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
+.logo-guide {
+  position: absolute;
+}
+.holycup {
+  position: absolute;
+  right: 0;
+  width: 40%;
+  top: 50px;
+}
+.logo-guide {
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  background: #121F2A;
+}
+.h2-guide {
+  font-size: 35px;
+  color: #8C8C8C;
+  strong {
+    color: #fff;
+  }
+}
+.col.is-flex {
+  display: flex;
+}
+.coding-box {
+  position: relative;
+  border-radius: 20px;
+  .coding-box-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #323235;
+    &:after {
+      position: absolute;
+      content: '';
+      width: 16px;
+      height: 16px;
+      top: 7px;
+      right: 10px;
+      background-color: #242426;
+      border-radius: 50%;
+    }
+    &:before {
+      position: absolute;
+      content: '';
+      width: 16px;
+      height: 16px;
+      top: 7px;
+      right: 35px;
+      background-color: #242426;
+      border-radius: 50%;
+    }
+  }
+  width: 100%;
+  background-color: #091116;
+}
+
+
+
+.h4 {
+  font-size: 30px;
+
+}
+
+.p1{
+  font-size: 14px;
+}
+
+
+.yellow {
+  color: #fdc305;
+}
+.red {
+  color: #ec4137;
+}
+.purple {
+  color: #792eff;
+}
+
+.blue{
+  color:#121F2A;
+}
+
+.guide-box{
+  width: 100%;
+  min-height: 220px;
+}
+
+.guide-link{
+  font-size: 16px;
+  font-weight: 700;
+  color: #d6d6d6;
 }

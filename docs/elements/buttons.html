@@ -34,7 +34,7 @@
 			</div>
 			<div class="container-main">
 				<div class="site-main">
-					<section class="p-20">
+					<section class="p-20 title-zone">
 						<div class="container-fluid">
 							<div class="row">
 								<div class="col-xs-12">
@@ -95,7 +95,7 @@
 										<div class="pre-title mb-20">
 											 <strong> Botones </strong>tamaños
 											<p>
-												Texto interior
+												5 tipos de tamaños
 											</p>
 										</div>
 									</div>
@@ -129,6 +129,9 @@
 									<div class="col-xs-8">
 										<div class="pre-title mb-20">
 											 <strong> Botón </strong>Full<p>
+											</p>
+											<p>
+												Un botón al 100% de ancho
 											</p>
 										</div>
 									</div>
@@ -260,12 +263,9 @@
    <div class="row">
 	 <div class="col-xs-8">
 	   <pre><code class="language-markup"> 
-&lt;div class=&quot;btn btn-primary  btn--medium  &quot;&gt;
-&lt;div class=&quot;btn btn-primary  btn--medium  btn--medium icon-pre &quot;&gt;
-&lt;div class=&quot;btn btn-primary  btn--medium  icon-post&quot;&gt;
-&lt;div class=&quot;btn btn-primary  btn--medium  disabled&quot;&gt;
-&lt;div class=&quot;btn btn-primary  btn--medium  icon-pre disabled&quot;&gt;
-&lt;div class=&quot;btn btn-primary  btn--medium  icon-post disabled&quot;&gt;
+&lt;div class=&quot;btn btn-primary  btn--medium  &quot;&gt; No icon &lt;/div&gt;
+&lt;div class=&quot;btn btn-primary  btn--medium icon-pre &quot;&gt; icon-pre &lt;/div&gt;
+&lt;div class=&quot;btn btn-primary  btn--medium  icon-post &quot;&gt; icon-post &lt;/div&gt;
 </code></pre>
 	 </div>
    </div>
@@ -295,12 +295,12 @@
 										<div class="pre-show">
 											<div class="row">
 												<div class="col-xs-6">
-													<div class="btn btn-primary  btn--medium   btn-block mb-10">
+													<div class="btn btn-primary btn-block">
 														boton largo
 													</div>
 												</div>
 												<div class="col-xs-6">
-													<div class="btn btn-phantom btn--medium  btn-block">
+													<div class="btn btn-phantom btn-block">
 														btn btn-phantom
 													</div>
 												</div>
@@ -310,14 +310,15 @@
 								</div>
 								<div class="row">
 									<div class="col-xs-8">
-										<pre><code class="language-markup">&lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col-xs-8&quot;&gt;
-		&lt;div class=&quot;btn btn-primary  btn--medium   btn-block mb-10&quot;&gt;
+										<pre><code class="language-markup">										
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-xs-6&quot;&gt;
+		&lt;div class=&quot;btn btn-primary btn-block&quot;&gt;
 			boton largo
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;col-xs-8&quot;&gt;
-		&lt;div class=&quot;btn btn-phantom btn--medium  btn-block&quot;&gt;
+	&lt;div class=&quot;col-xs-6&quot;&gt;
+		&lt;div class=&quot;btn btn-phantom btn-block&quot;&gt;
 			btn btn-phantom
 		&lt;/div&gt;
 	&lt;/div&gt;
@@ -347,7 +348,7 @@
 									<div class="pre-title mb-20">
 										<strong> Boton </strong>grupal
 										<p>
-											Grupal
+								btn-group-inline
 										</p>
 									</div>
 								</div>
@@ -357,10 +358,10 @@
 									<div class="pre-show">
 										<div class="btn-group-inline">
 											<div class="btn btn-phantom btn--medium ">
-												Boton
+												Boton 1
 											</div>
 											<div class="btn btn-phantom btn--medium ">
-												Boton </div>
+												Boton 2 </div>
 										</div>
 									</div>
 								</div>
@@ -368,16 +369,9 @@
 							<div class="row">
 								<div class="col-xs-8">
 									<pre><code class="language-markup"> 
-&lt;div class=&quot;row&quot;&gt;
-&lt;div class=&quot;col-xs-8&quot;&gt;
 &lt;div class=&quot;btn-group-inline&quot;&gt;
-&lt;div class=&quot;btn btn-phantom btn--medium &quot;&gt;
-grupal
-&lt;/div&gt;
-&lt;div class=&quot;btn btn-phantom btn--medium &quot;&gt;
-grupal &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;div class=&quot;btn btn-phantom btn--medium &quot;&gt;Boton 1&lt;/div&gt;
+&lt;div class=&quot;btn btn-phantom btn--medium &quot;&gt;Boton 2 &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
 								</div>
@@ -401,9 +395,9 @@ grupal &lt;/div&gt;
 								<div class="col-xs-8">
 									<div class="pre-show">
 										<div class="btn-group">
-											<button class="btn btn-phantom btn--medium"> botones</button>
-											<button class="btn btn-phantom btn--medium"> botones</button>
-											<button class="btn btn-phantom btn--medium"> botones</button>
+											<button class="btn btn-phantom btn--mini"> mini</button>
+											<button class="btn btn-phantom btn--medium"> medium</button>
+											<button class="btn btn-phantom btn--large"> large</button>
 										</div>
 									</div>
 								</div>
@@ -412,15 +406,64 @@ grupal &lt;/div&gt;
 								<div class="col-xs-8">
 <pre><code class="language-markup">
 &lt;div class=&quot;btn-group&quot;&gt;
-	&lt;button class=&quot;btn btn-phantom btn--medium&quot;&gt; botones&lt;/button&gt;
-	&lt;button class=&quot;btn btn-phantom btn--medium&quot;&gt; botones&lt;/button&gt;
-	&lt;button class=&quot;btn btn-phantom btn--medium&quot;&gt; botones&lt;/button&gt;
+	&lt;button class=&quot;btn btn-phantom btn--mini&quot;&gt; mini&lt;/button&gt;
+	&lt;button class=&quot;btn btn-phantom btn--medium&quot;&gt; medium&lt;/button&gt;
+	&lt;button class=&quot;btn btn-phantom btn--large&quot;&gt; large&lt;/button&gt;
 &lt;/div&gt;
 </code></pre>
 								</div>
 							</div>
 						</div>
 					</section>
+
+
+
+<section>
+   <div class="container-fluid">
+ <div class="pre-code mb-50">
+   <div class="row">
+	  <div class="col-xs-8">
+		<div class="pre-title mb-20">
+			<!-- 1 -- Código de titulo --> <strong>underline  </strong> btn 
+				<p>
+			   btn-link
+			 </p>
+		 </div>
+	 </div>
+   </div>
+   <div class="row">
+	<div class="col-xs-8">
+	   <div class="pre-show">
+
+	
+<a class="btn btn-link"href="">boton link</a> 
+
+
+<div class="has-light guide-dark-bg">
+	<a class="btn btn-link"href="">boton link</a> 
+</div>
+
+
+		</div>
+
+	 </div>
+   </div>
+   <div class="row">
+	 <div class="col-xs-8">
+	   <pre><code class="language-markup"> 
+&lt;a class=&quot;btn btn-link&quot;href=&quot;&quot;&gt;boton link&lt;/a&gt; 
+		
+&lt;div class=&quot;has-light guide-dark-bg&quot;&gt;
+	&lt;a class=&quot;btn btn-link&quot;href=&quot;&quot;&gt;boton link&lt;/a&gt; 
+&lt;/div&gt;
+
+</code></pre>
+	 </div>
+   </div>
+ </div>
+ </div>
+ </section>
+
 
 				</div>
 			</div>
