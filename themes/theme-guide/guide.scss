@@ -121,7 +121,7 @@ section {
  background: url(../../themes/#{$theme}/placeholder/bg-dark.jpg); 
   background-size: cover;
   background-repeat: no-repeat;*/
-  background-color: #20bec9;
+  background-color: $primary-guide;
   color: #fff;
   a {
     color: #fff;
@@ -611,9 +611,10 @@ section {
     display: inline-block;
   }
   .resize-container {
+    position: relative;
     min-height: 400px;
     display: flex;
-    margin: 50px 0;
+    padding: 50px 0;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     width: 100%;
@@ -625,7 +626,7 @@ section {
     color: $primary-guide;
     display: table;
     margin: 0 auto;
-    margin-top: -80px;
+    margin-top: -55px;
     font-size: 14px;
     padding: 4px 8px;
     position: absolute;
@@ -638,15 +639,34 @@ section {
   }
   .resize-bar {
     position: absolute;
+    top:0;
     left: 0;
     width: 100%;
     padding: 10px 50px;
     height: 40px;
-    margin-top: -75px;
+
     border: solid #eaeaea;
     border-width: 1px 0;
     box-sizing: border-box;
     vertical-align: middle;
+  }
+
+  .resize-name{
+    width: 40%;
+    float: left;
+
+  }
+
+
+
+  .resize-snip{
+    font-size: 12px;
+    text-align: right;
+    width: 40%;
+    float: right;
+
+    color:#ec4137;
+    
   }
   .resize-media {
     width: 40px;
