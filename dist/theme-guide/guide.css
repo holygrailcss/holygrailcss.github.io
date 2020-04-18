@@ -796,29 +796,29 @@ a {
  |       -Alturas
  +------------------------------------------------------------+*/
 .height-xs {
-  height: 80px; }
+  min-height: 80px; }
 
 .height-sm {
-  height: 100px; }
+  min-height: 100px; }
 
 .height-md {
-  height: 350px; }
+  min-height: 350px; }
 
 .height-lg {
-  height: 400px; }
+  min-height: 400px; }
 
 .height-xl {
-  height: 450px; }
+  min-height: 450px; }
 
 .height-full {
-  height: 100vh; }
+  min-height: 100vh; }
 
 .height-home {
-  height: calc(100vh - 80px); }
+  min-height: calc(100vh - 80px); }
 
 @media (min-width: 786px) {
   .height-header {
-    height: calc(100vh - 80px); } }
+    min-height: calc(100vh - 80px); } }
 
 /*+------------------------------------------------------------+
  |       -HEROS        
@@ -7830,6 +7830,7 @@ section {
   font-size: 10px; }
 
 .guide-bg {
+  overflow: hidden;
   background-color: #121F2A; }
 
 .pre-title {
@@ -7848,25 +7849,42 @@ section {
   letter-spacing: -3px; }
 
 .btn-guide {
-  min-width: 200px;
+  max-width: 200px;
+  min-width: 40%;
   border-radius: 50px;
   background-color: #5D1E64;
   border: 1px solid #5D1E64 !important; }
+  @media (min-width: 786px) {
+    .btn-guide {
+      min-width: 200px; } }
 
 .btn-guide2 {
-  min-width: 200px;
+  max-width: 200px;
+  min-width: 40%;
   border-radius: 50px;
   background-color: transparent;
   border: 1px solid #ffffff; }
+  @media (min-width: 786px) {
+    .btn-guide2 {
+      min-width: 200px; } }
 
 .logo-guide {
   position: absolute; }
+  .logo-guide img {
+    max-width: 100px; }
+    @media (min-width: 786px) {
+      .logo-guide img {
+        max-width: 150px; } }
 
 .holycup {
   position: absolute;
   right: 0;
-  width: 40%;
+  width: 80%;
   top: 50px; }
+  @media (min-width: 786px) {
+    .holycup {
+      width: 40%;
+      top: 50px; } }
 
 .logo-guide {
   z-index: 1000;
@@ -7875,8 +7893,29 @@ section {
   background: #121F2A; }
 
 .h2-guide {
-  font-size: 35px;
-  color: #8C8C8C; }
+  color: #8C8C8C;
+  line-height: 1.2;
+  font-family: "BasisGrotesque-Bold-Pro";
+  font-weight: 700; }
+  .h2-guide {
+    font-size: 30px;
+    line-height: 1;
+    color: 319px;
+    color: 1280px;
+    color: 30px;
+    color: 50px;
+    color: "px";
+    color: "px";
+    color: "px";
+    color: "px"; }
+    @media screen and (min-width: 319px) {
+      .h2-guide {
+        font-size: calc(30px + 20 * ((100vw - 319px) / 961));
+        line-height: 1; } }
+    @media screen and (min-width: 1280px) {
+      .h2-guide {
+        font-size: 50px;
+        line-height: 1; } }
   .h2-guide strong {
     color: #fff; }
 
@@ -7933,9 +7972,329 @@ section {
 
 .guide-box {
   width: 100%;
-  min-height: 220px; }
+  min-height: 100px; }
+  @media (min-width: 786px) {
+    .guide-box {
+      min-height: 220px; } }
+  .guide-box img {
+    width: 80%; }
 
 .guide-link {
   font-size: 16px;
   font-weight: 700;
   color: #d6d6d6; }
+
+.fluid-12-r {
+  font-family: "BasisGrotesque-Regular-Pro";
+  font-weight: 400; }
+  .fluid-12-r {
+    font-size: 12px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-12-r {
+        font-size: calc(12px + 0 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-12-r {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-12-m {
+  font-family: "BasisGrotesque-Regular-Pro";
+  font-weight: 400; }
+  .fluid-12-m {
+    font-size: 12px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-12-m {
+        font-size: calc(12px + 0 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-12-m {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-12-b {
+  font-family: "BasisGrotesque-Bold-Pro";
+  font-weight: 700; }
+  .fluid-12-b {
+    font-size: 12px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-12-b {
+        font-size: calc(12px + 0 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-12-b {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-14-r {
+  font-family: "BasisGrotesque-Regular-Pro";
+  font-weight: 400; }
+  .fluid-14-r {
+    font-size: 14px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-14-r {
+        font-size: calc(14px + -2 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-14-r {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-14-m {
+  font-family: "BasisGrotesque-Regular-Pro";
+  font-weight: 400; }
+  .fluid-14-m {
+    font-size: 14px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-14-m {
+        font-size: calc(14px + -2 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-14-m {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-14-b {
+  font-family: "BasisGrotesque-Bold-Pro";
+  font-weight: 700; }
+  .fluid-14-b {
+    font-size: 14px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-14-b {
+        font-size: calc(14px + -2 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-14-b {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-16-r {
+  font-family: "BasisGrotesque-Regular-Pro";
+  font-weight: 400; }
+  .fluid-16-r {
+    font-size: 16px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-16-r {
+        font-size: calc(16px + -4 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-16-r {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-16-m {
+  font-family: "BasisGrotesque-Regular-Pro";
+  font-weight: 400; }
+  .fluid-16-m {
+    font-size: 16px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-16-m {
+        font-size: calc(16px + -4 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-16-m {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-16-b {
+  font-family: "BasisGrotesque-Bold-Pro";
+  font-weight: 700; }
+  .fluid-16-b {
+    font-size: 16px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-16-b {
+        font-size: calc(16px + -4 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-16-b {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-18-r {
+  font-family: "BasisGrotesque-Regular-Pro";
+  font-weight: 400; }
+  .fluid-18-r {
+    font-size: 18px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-18-r {
+        font-size: calc(18px + -6 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-18-r {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-18-m {
+  font-family: "BasisGrotesque-Regular-Pro";
+  font-weight: 400; }
+  .fluid-18-m {
+    font-size: 18px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-18-m {
+        font-size: calc(18px + -6 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-18-m {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-18-b {
+  font-family: "BasisGrotesque-Bold-Pro";
+  font-weight: 700; }
+  .fluid-18-b {
+    font-size: 18px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-18-b {
+        font-size: calc(18px + -6 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-18-b {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-20-r {
+  font-family: "BasisGrotesque-Regular-Pro";
+  font-weight: 400; }
+  .fluid-20-r {
+    font-size: 20px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-20-r {
+        font-size: calc(20px + -8 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-20-r {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-20-m {
+  font-family: "BasisGrotesque-Regular-Pro";
+  font-weight: 400; }
+  .fluid-20-m {
+    font-size: 20px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-20-m {
+        font-size: calc(20px + -8 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-20-m {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-20-b {
+  font-family: "BasisGrotesque-Bold-Pro";
+  font-weight: 700; }
+  .fluid-20-b {
+    font-size: 20px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-20-b {
+        font-size: calc(20px + -8 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-20-b {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-50-r {
+  font-family: "BasisGrotesque-Regular-Pro";
+  font-weight: 400; }
+  .fluid-50-r {
+    font-size: 30px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-50-r {
+        font-size: calc(30px + 50 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-50-r {
+        font-size: 80px;
+        line-height: 0.9; } }
+
+.fluid-50-m {
+  font-family: "BasisGrotesque-Regular-Pro";
+  font-weight: 400; }
+  .fluid-50-m {
+    font-size: 30px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-50-m {
+        font-size: calc(30px + 50 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-50-m {
+        font-size: 80px;
+        line-height: 0.9; } }
+
+.fluid-50-b {
+  font-family: "BasisGrotesque-Bold-Pro";
+  font-weight: 700; }
+  .fluid-50-b {
+    font-size: 30px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-50-b {
+        font-size: calc(30px + 50 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-50-b {
+        font-size: 80px;
+        line-height: 0.9; } }
+
+.fluid-100-r {
+  font-family: "BasisGrotesque-Regular-Pro";
+  font-weight: 400; }
+  .fluid-100-r {
+    font-size: 40px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-100-r {
+        font-size: calc(40px + 60 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-100-r {
+        font-size: 100px;
+        line-height: 0.9; } }
+
+.fluid-100-m {
+  font-family: "BasisGrotesque-Regular-Pro";
+  font-weight: 400; }
+  .fluid-100-m {
+    font-size: 40px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-100-m {
+        font-size: calc(40px + 60 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-100-m {
+        font-size: 100px;
+        line-height: 0.9; } }
+
+.fluid-100-b {
+  font-family: "BasisGrotesque-Bold-Pro";
+  font-weight: 700; }
+  .fluid-100-b {
+    font-size: 40px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-100-b {
+        font-size: calc(40px + 60 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-100-b {
+        font-size: 100px;
+        line-height: 0.9; } }

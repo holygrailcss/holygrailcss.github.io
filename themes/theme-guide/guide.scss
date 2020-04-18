@@ -736,6 +736,7 @@ section {
   font-size: 10px;
 }
 .guide-bg {
+  overflow: hidden;
   background-color: $primary-guide;
 }
 .pre-title {
@@ -756,25 +757,50 @@ section {
   letter-spacing: -3px;
 }
 .btn-guide {
-  min-width: 200px;
+
+  max-width: 200px;
+  min-width: 40%;
+
   border-radius: 50px;
   background-color: #5D1E64;
   border: 1px solid #5D1E64 !important;
+  @media (min-width:$break-sm) {
+    min-width: 200px;
+  }
 }
 .btn-guide2 {
-  min-width: 200px;
+  max-width: 200px;
+  min-width: 40%;
   border-radius: 50px;
   background-color: transparent;
   border: 1px solid #ffffff;
+  @media (min-width:$break-sm) {
+    min-width: 200px;
+  }
+
 }
 .logo-guide {
   position: absolute;
+  img {
+    max-width: 100px;
+    @media (min-width:$break-sm) {
+      max-width: 150px;
+    }
+  }
 }
 .holycup {
   position: absolute;
   right: 0;
-  width: 40%;
+  width: 80%;
   top: 50px;
+  @media (min-width:$break-sm) {
+
+    width: 40%;
+    top: 50px;
+
+  }
+
+
 }
 .logo-guide {
   z-index: 1000;
@@ -783,12 +809,22 @@ section {
   background: #121F2A;
 }
 .h2-guide {
-  font-size: 35px;
+
   color: #8C8C8C;
+
+
+  @include fluid-text($min_width, $break-lg, 30px, 50px, 1);
+  line-height: 1.2;
+  @include font-bold();
+
+
   strong {
     color: #fff;
   }
 }
+
+
+
 .col.is-flex {
   display: flex;
 }
@@ -854,7 +890,18 @@ section {
 
 .guide-box{
   width: 100%;
-  min-height: 220px;
+  min-height: 100px;
+
+    @media (min-width:$break-sm) {
+      min-height: 220px;
+}
+
+
+  img{
+    width: 80%;
+  }
+ 
+
 }
 
 .guide-link{
@@ -862,3 +909,17 @@ section {
   font-weight: 700;
   color: #d6d6d6;
 }
+
+
+$headersFluidsGuide: (/*name :  fontsize, lineheight */
+   12 : (12px, 12px, .9),
+   14 : (14px, 12px,.9),
+   16 : (16px, 12px,.9),
+   18 : (18px, 12px,.9),
+   20 : (20px, 12px,.9),
+   50 : (30px, 80px,.9),
+   100 : (40px, 100px,.9)
+   ) ;
+
+
+   @include typesFluids($headersFluidsGuide) ;
