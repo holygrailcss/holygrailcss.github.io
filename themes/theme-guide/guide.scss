@@ -5,6 +5,12 @@
  */
 $primary-guide:#121F2A;
 $secondary-guide:#6759bb;
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+
 @import "../../../holygrailcss/scss/partials.scss";
 
 @import "../../themes/theme-guide/_tags.scss";
@@ -93,7 +99,14 @@ $headersFluidsGuide: (
   100 : (40px, 100px, .9));
 @include typesFluids($headersFluidsGuide);
 
+.holy-bg{
 
+  background-image: url(../../assets/images/holygrail_big.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  background-blend-mode: soft-light;
+}
 
 .fondo-basic {
   background: #f7f7f7;
@@ -157,8 +170,8 @@ section {
   .title-zone {
     color: white;
     padding-top: 120px;
-    background: #121F2A;
-    background: #2a2067;
+
+    background-color: #2a2067;
     margin-left: -8px;
     margin-right: -8px;
   }

@@ -4,6 +4,12 @@
 \*------------------------------------*/
 /* no usar col- nunca ya que hay un selector asi
  */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+*, ::after, ::before {
+  box-sizing: border-box; }
+
 /*@import "abstract/0debug";  si queremos debugar la maqueta */
 /**
 * Base estilo inline    class="[col-sm-2]    [py-20m-20]    [h1 text-1 link-2] [text-center]"
@@ -15,9 +21,6 @@
 /*+------------------------------------------------------------+
  |       -RESET  
  +------------------------------------------------------------+*/
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
 html, body, div, span, select, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, main, menu, nav, section, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -439,7 +442,7 @@ a {
     -ms-flex: 0 0 58.33333%;
     flex: 0 0 58.33333%;
     max-width: 58.33333%; }
-  .col-xs-12 col-lg-8 {
+  .col-xs-8 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 66.66667%;
     flex: 0 0 66.66667%;
@@ -1796,172 +1799,6 @@ mark {
 /*+-----------------------------------------------------------------------------------------+
  |       -FLUID TEXT   Desde min_width   hasta  break-lg  <--->  font-minima hasta font-maxima
  +-------------------------------------------------------------------------------------------+*/
-.fluid-h1 {
-  font-family: "Open Sans";
-  font-weight: 400; }
-  .fluid-h1 {
-    font-size: 36px;
-    line-height: 1;
-    color: 319px;
-    color: 1280px;
-    color: 36px;
-    color: 64px;
-    color: "px";
-    color: "px";
-    color: "px";
-    color: "px"; }
-    @media screen and (min-width: 319px) {
-      .fluid-h1 {
-        font-size: calc(36px + 28 * ((100vw - 319px) / 961));
-        line-height: 1; } }
-    @media screen and (min-width: 1280px) {
-      .fluid-h1 {
-        font-size: 64px;
-        line-height: 1; } }
-
-.fluid-h2 {
-  line-height: 1.2;
-  font-family: "Open Sans";
-  font-weight: 700; }
-  .fluid-h2 {
-    font-size: 24px;
-    line-height: 1;
-    color: 319px;
-    color: 1280px;
-    color: 24px;
-    color: 48px;
-    color: "px";
-    color: "px";
-    color: "px";
-    color: "px"; }
-    @media screen and (min-width: 319px) {
-      .fluid-h2 {
-        font-size: calc(24px + 24 * ((100vw - 319px) / 961));
-        line-height: 1; } }
-    @media screen and (min-width: 1280px) {
-      .fluid-h2 {
-        font-size: 48px;
-        line-height: 1; } }
-
-.fluid-h3 {
-  line-height: 1.2;
-  font-family: "Open Sans";
-  font-weight: 300; }
-  .fluid-h3 {
-    font-size: 18px;
-    line-height: 1;
-    color: 319px;
-    color: 1280px;
-    color: 18px;
-    color: 24px;
-    color: "px";
-    color: "px";
-    color: "px";
-    color: "px"; }
-    @media screen and (min-width: 319px) {
-      .fluid-h3 {
-        font-size: calc(18px + 6 * ((100vw - 319px) / 961));
-        line-height: 1; } }
-    @media screen and (min-width: 1280px) {
-      .fluid-h3 {
-        font-size: 24px;
-        line-height: 1; } }
-
-.fluid-h4 {
-  line-height: 1.2;
-  font-family: "Open Sans";
-  font-weight: 700; }
-  .fluid-h4 {
-    font-size: 16px;
-    line-height: 1;
-    color: 319px;
-    color: 1280px;
-    color: 16px;
-    color: 22px;
-    color: "px";
-    color: "px";
-    color: "px";
-    color: "px"; }
-    @media screen and (min-width: 319px) {
-      .fluid-h4 {
-        font-size: calc(16px + 6 * ((100vw - 319px) / 961));
-        line-height: 1; } }
-    @media screen and (min-width: 1280px) {
-      .fluid-h4 {
-        font-size: 22px;
-        line-height: 1; } }
-
-.fluid-h5 {
-  line-height: 1.2;
-  font-family: "Open Sans";
-  font-weight: 600; }
-  .fluid-h5 {
-    font-size: 14px;
-    line-height: 1;
-    color: 319px;
-    color: 1280px;
-    color: 14px;
-    color: 20px;
-    color: "px";
-    color: "px";
-    color: "px";
-    color: "px"; }
-    @media screen and (min-width: 319px) {
-      .fluid-h5 {
-        font-size: calc(14px + 6 * ((100vw - 319px) / 961));
-        line-height: 1; } }
-    @media screen and (min-width: 1280px) {
-      .fluid-h5 {
-        font-size: 20px;
-        line-height: 1; } }
-
-.fluid-h6 {
-  font-size: calc(1em + 0.25vw);
-  font-family: "Open Sans";
-  font-weight: 300; }
-  .fluid-h6 {
-    font-size: 14px;
-    line-height: 1;
-    color: 319px;
-    color: 1280px;
-    color: 14px;
-    color: 18px;
-    color: "px";
-    color: "px";
-    color: "px";
-    color: "px"; }
-    @media screen and (min-width: 319px) {
-      .fluid-h6 {
-        font-size: calc(14px + 4 * ((100vw - 319px) / 961));
-        line-height: 1; } }
-    @media screen and (min-width: 1280px) {
-      .fluid-h6 {
-        font-size: 18px;
-        line-height: 1; } }
-
-.fluid-h7 {
-  font-family: "Open Sans";
-  font-weight: 400; }
-  .fluid-h7 {
-    font-size: 12px;
-    line-height: 1;
-    color: 319px;
-    color: 1280px;
-    color: 12px;
-    color: 18px;
-    color: "px";
-    color: "px";
-    color: "px";
-    color: "px"; }
-    @media screen and (min-width: 319px) {
-      .fluid-h7 {
-        font-size: calc(12px + 6 * ((100vw - 319px) / 961));
-        line-height: 1; } }
-    @media screen and (min-width: 1280px) {
-      .fluid-h7 {
-        font-size: 18px;
-        line-height: 1; } }
-
 .secondary {
   font-family: "Times new roman" !important;
   font-weight: 100; }
@@ -7029,6 +6866,13 @@ ZEN:
         font-size: 100px;
         line-height: 0.9; } }
 
+.holy-bg {
+  background-image: url(../../assets/images/holygrail_big.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  background-blend-mode: soft-light; }
+
 .fondo-basic {
   background: #f7f7f7; }
 
@@ -7089,8 +6933,7 @@ section {
 .guide .title-zone {
   color: white;
   padding-top: 120px;
-  background: #121F2A;
-  background: #2a2067;
+  background-color: #2a2067;
   margin-left: -8px;
   margin-right: -8px; }
 
