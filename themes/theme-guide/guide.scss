@@ -5,18 +5,13 @@
  */
 $primary-guide:#121F2A;
 $secondary-guide:#6759bb;
-
-*, ::after, ::before {
+*,
+::after,
+::before {
   box-sizing: border-box;
 }
-
-
 @import "../../../holygrailcss/scss/partials.scss";
-
 @import "../../themes/theme-guide/_tags.scss";
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
 //imagenes de fondo este es el theme de la web personalizable
 $font-family-light: 'BasisGrotesque-Light-Pro';
@@ -56,37 +51,6 @@ $theme:'theme-guide';
   url('../../themes/#{$theme}/assets/fonts/basis/BasisGrotesque-Regular-Pro.woff') format('woff'),
   url('../../themes/#{$theme}/assets/fonts/basis/BasisGrotesque-Regular-Pro.ttf') format('truetype'),
 }
-.fondo-1 {
-  background: url(../../themes/#{$theme}/images/fondo_1.jpg);
-  background-size: cover;
-}
-.fondo-2 {
-  background: url(../../themes/#{$theme}/images/abogado_x.jpg);
-  background-size: cover;
-}
-.fondo-3 {
-  background-position: top left;
-  background: url(../../themes/#{$theme}/images/abogada.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.fondo-4 {
-  background-position: top left;
-  background: url(../../themes/#{$theme}/images/contact.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.fondo-5 {
-  background-position: top left;
-  background: url(../../themes/#{$theme}/images/company.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: white;
-  .container-2 {
-    background: rgba(0, 0, 0, 0.35);
-  }
-}
-
 
 $headersFluidsGuide: (
   /*name :  fontsize, lineheight */
@@ -98,16 +62,13 @@ $headersFluidsGuide: (
   50 : (30px, 80px, .9),
   100 : (40px, 100px, .9));
 @include typesFluids($headersFluidsGuide);
-
-.holy-bg{
-
+.holy-bg {
   background-image: url(../../assets/images/holygrail_big.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
   background-blend-mode: soft-light;
 }
-
 .fondo-basic {
   background: #f7f7f7;
 }
@@ -169,12 +130,28 @@ section {
 .guide {
   .title-zone {
     color: white;
-    padding-top: 120px;
-
+    padding-top: 20px;
     background-color: #2a2067;
     margin-left: -8px;
     margin-right: -8px;
+    margin-bottom: 20px;
+    padding: 30px;
+    @media (min-width:$break-md) {
+      padding-top: 120px;
+    }
   }
+
+  .site-main {
+    position: relative;
+    margin: 0 0 0 55px;
+    padding: 0px 8px 0px 8px;
+  
+    @media (min-width:$break-md) {
+      margin: 0 0 0 180px;
+    }
+  }
+
+
   .mb-5 {
     margin-bottom: 5px;
   }
@@ -248,11 +225,7 @@ section {
     z-index: 10;
     width: 180px;
   }
-  .site-main {
-    position: relative;
-    margin: 0 0 0 180px;
-    padding: 0px $padding-global 60px $padding-global;
-  }
+
   .guide-miniboxes {
     float: left;
     width: 100%;
@@ -778,8 +751,11 @@ section {
 }
 .pre-title {
   box-sizing: border-box;
-  padding: 20px 0 20px 0;
+  padding: 0px 0 10px 0;
   border-bottom: 1px solid #eaeaea;
+  @media (min-width:$break-md) {
+    padding: 20px 0 20px 0;
+  }
   & strong {
     color: $secondary-guide;
     overflow: hidden;
@@ -915,5 +891,11 @@ section {
   font-size: 16px;
   font-weight: 700;
   color: #d6d6d6;
+}
+.guide-table {
+  overflow: auto;
+  .pre-show {
+    width: 800px;
+  }
 }
 

@@ -200,12 +200,15 @@ code[class*="language-css"] {
   background: linear-gradient(to right, rgba(193, 222, 241, 0.2) 70%, rgba(221, 222, 241, 0)); }
 
 .pre-code {
-  padding: 20px; }
+  padding: 0 20px 20px 20px; }
 
 .pre-show {
   box-sizing: border-box;
   width: 100%;
-  padding: 20px 0; }
+  padding: 0px 0 10px 0; }
+  @media (min-width: 992px) {
+    .pre-show {
+      padding: 20px 0; } }
 
 pre {
   padding: 42px 24px 24px 24px;

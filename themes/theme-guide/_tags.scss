@@ -78,6 +78,27 @@ $variabletotals: length($variable-list);
 
 
 
+.tag-color-wrap {
+    .wrap-item {
+        .item {
+            height: 100px;
+            margin: 0;
+            position: relative;
+            &:after {
+                font-size: 12px;
+                position: absolute;
+                top: 50%;
+                margin-top: -10px;
+                width: 100%;
+                text-align: center;
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+
 //var-height-sm
 @each $name,
 $value in $colorsGuide {
@@ -85,6 +106,7 @@ $value in $colorsGuide {
     $color0: $name; //funcion del color
     $color1: nth($value, 1); //color
     $color2: nth($value, 2); //segundo nombre color
+
     .wrap-item {
         box-shadow: 0 9px 25px rgba(0, 0, 0, 0.06);
         margin: 0;
@@ -97,18 +119,12 @@ $value in $colorsGuide {
     }
     .wrap-item:nth-child(#{$i}) {
         .item {
-            height: 200px;
-            margin: 0;
+   
+  
             background-color: $color1;
-            position: relative;
+    
             &:after {
-                font-size: 12px;
-                position: absolute;
-                top: 50%;
-                margin-top: -10px;
-                width: 100%;
-                text-align: center;
-                color: #fff;
+  
                 content: "#{$color1}";
             }
         }
@@ -392,6 +408,32 @@ $value in $colorsGuide {
 
 
 
+.tag-wrap-item_header {
+    float: left;
+    position: relative;
+    width: 100%;
+    transition: all ease 300ms;
+    display: table;
+
+    .item {
+        display: table-cell;
+
+        &:after {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .item-0 {  word-wrap: break-word; }
+    .item-1 { &:after { @include font-light(); content: " - #{$break-xs}"; } }
+    .item-2 { &:after { @include font-light(); content: " - #{$break-sm}"; } }
+    .item-3 { &:after { @include font-light(); content: " - #{$break-md}"; } }
+    .item-4 { &:after { @include font-light(); content: " - #{$break-lg}"; } }
+    .item-5 { &:after { @include font-light(); content: " - #{$break-xl}"; } }
+    .item-6 { &:after { @include font-bold(); } }
+    .item-7 { &:after { @include font-bold(); } }
+}
+
+
 @each $name,
 $value in $headers {
     $i: index(($headers), ($name $value));
@@ -464,6 +506,8 @@ $value in $headers {
 @each $name,
 $value in $headersFluids {
     $i: index(($headersFluids), ($name $value));
+
+
     $typeFluid0: $name; //funcion del fipografia
     $typeFluid1: nth($value, 1); //tipografia
     $typeFluid2: nth($value, 2); 
@@ -504,3 +548,105 @@ $value in $headersFluids {
 
     }
 }
+
+
+
+
+
+.tag-wrap-item {
+    background-color: white;
+    position: relative;
+    width: 100%;
+    transition: all ease 300ms;
+    &:last-child {}
+    &:hover {
+        box-shadow: 0px 15px 19px 0px rgba(0, 0, 0, 0.16);
+    }
+    .item {
+        float: left;
+        position: relative;
+        font-size: 12px;
+        text-align: center;
+        margin-left: -1px;
+        margin-top: -1px;
+        &:after {
+            border: 1px solid #eaeaea;
+            width: 100%;
+            height: 100%;
+            float: left;
+            padding: 5px;
+            left: 0;
+            top: 0;
+            &:empty {
+                display: none;
+            }
+        }
+    }
+}
+@mixin tagSpacing($spacingArray, $spacingName) {
+
+
+    $totalItems: 5;
+
+    @each $name,
+    $value in $spacingArray {
+        $i: index(($spacingArray), ($name $value));
+        $spacing0: $name; //funcion del fipografia
+        $spacing1: nth($value, 1); //tipografia
+        $spacing2: nth($value, 2);
+        $spacing3: nth($value, 3);
+        $spacing4: nth($value, 4);
+
+        .#{$spacingName} {
+            .tag-wrap-item:nth-child(#{$i}) {
+                .item {
+                    width: 100% / $totalItems ;
+                    &:after {
+                        content: "#{$name}";
+                    }
+                }
+                .item-0 { color: #ec4137; word-wrap: break-word; }
+                .item-1 { &:after { content: "#{$spacing1}"; } }
+                .item-2 { &:after { content: "#{$spacing2}"; } }
+                .item-3 { &:after { content: "#{$spacing3}"; } }
+                .item-4 { &:after { content: "#{$spacing4}"; } }
+            }
+        }
+    }
+}
+
+
+    /* margin*/
+    @include tagSpacing( $margin ,'marginbox');
+    @include tagSpacing( $margin-y,'marginbox-y');
+    @include tagSpacing( $margin-x,'marginbox-x');
+    @include tagSpacing( $margin-top,'marginbox-top');
+    @include tagSpacing( $margin-right,'marginbox-right');
+    @include tagSpacing( $margin-bottom,'marginbox-bottom');
+    @include tagSpacing( $margin-left,'marginbox-left');
+
+    /* padding*/
+    @include tagSpacing( $padding,'paddingbox');
+    @include tagSpacing( $padding-y,'paddingbox-y');
+    @include tagSpacing( $padding-x,'paddingbox-x');
+    @include tagSpacing( $padding-top,'paddingbox-top');
+    @include tagSpacing( $padding-left,'paddingbox-left');
+    @include tagSpacing( $padding-bottom,'paddingbox-bottom');
+    @include tagSpacing( $padding-right,'paddingbox-right');
+
+
+    .site-menu-mobile{
+        background-color: black;
+        position: fixed;
+        height: 100vh;
+
+    }
+    .site-navigation{
+
+        display: none;
+            @media (min-width:$break-md) {
+                display: block;
+        }
+            @media (min-width:$break-lg) {
+        }
+    }
