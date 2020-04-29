@@ -583,10 +583,10 @@ $value in $headersFluids {
         }
     }
 }
-@mixin tagSpacing($spacingArray, $spacingName) {
+@mixin tagSpacing($spacingArray, $spacingName,$totalItems) {
 
 
-    $totalItems: 5;
+
 
     @each $name,
     $value in $spacingArray {
@@ -617,22 +617,22 @@ $value in $headersFluids {
 
 
     /* margin*/
-    @include tagSpacing( $margin ,'marginbox');
-    @include tagSpacing( $margin-y,'marginbox-y');
-    @include tagSpacing( $margin-x,'marginbox-x');
-    @include tagSpacing( $margin-top,'marginbox-top');
-    @include tagSpacing( $margin-right,'marginbox-right');
-    @include tagSpacing( $margin-bottom,'marginbox-bottom');
-    @include tagSpacing( $margin-left,'marginbox-left');
+    @include tagSpacing( $margin ,'marginbox',5);
+    @include tagSpacing( $margin-y,'marginbox-y',5);
+    @include tagSpacing( $margin-x,'marginbox-x',5);
+    @include tagSpacing( $margin-top,'marginbox-top',5);
+    @include tagSpacing( $margin-right,'marginbox-right',5);
+    @include tagSpacing( $margin-bottom,'marginbox-bottom',5);
+    @include tagSpacing( $margin-left,'marginbox-left',5);
 
     /* padding*/
-    @include tagSpacing( $padding,'paddingbox');
-    @include tagSpacing( $padding-y,'paddingbox-y');
-    @include tagSpacing( $padding-x,'paddingbox-x');
-    @include tagSpacing( $padding-top,'paddingbox-top');
-    @include tagSpacing( $padding-left,'paddingbox-left');
-    @include tagSpacing( $padding-bottom,'paddingbox-bottom');
-    @include tagSpacing( $padding-right,'paddingbox-right');
+    @include tagSpacing( $padding,'paddingbox',5);
+    @include tagSpacing( $padding-y,'paddingbox-y',5);
+    @include tagSpacing( $padding-x,'paddingbox-x',5);
+    @include tagSpacing( $padding-top,'paddingbox-top',5);
+    @include tagSpacing( $padding-left,'paddingbox-left',5);
+    @include tagSpacing( $padding-bottom,'paddingbox-bottom',5);
+    @include tagSpacing( $padding-right,'paddingbox-right',5);
 
 
     .site-menu-mobile{
