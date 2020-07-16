@@ -12,7 +12,9 @@ $secondary-guide:#6759bb;
   box-sizing: border-box;
 }
 
-@import "../../../holygrailcss/scss/partials.scss";
+
+
+@import"../../../holygrailcss/scss/partials";
 @import "../../themes/theme-guide/_tags.scss";
 
 
@@ -99,11 +101,6 @@ $headersFluidsGuide: (
   }
 
   .bg-dark {
-    /*  
-  background-position: top left;
- background: url(../../themes/#{$theme}/placeholder/bg-dark.jpg); 
-  background-size: cover;
-  background-repeat: no-repeat;*/
     background-color: $primary-guide;
     color: #fff;
 
@@ -114,7 +111,6 @@ $headersFluidsGuide: (
 
   .bg-light {
     background-position: top left;
-    background: url(../../themes/#{$theme}/placeholder/bg-light.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     color: #000;

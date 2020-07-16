@@ -444,7 +444,7 @@ $value in $headers {
     $type4: nth($value, 4); 
     $type5: nth($value, 5); 
     $type6: nth($value, 6); 
-    $type7: nth($value, 7); 
+
     .wrap-item-type {
  
         position: relative;
@@ -481,7 +481,7 @@ $value in $headers {
         .item-4 { &:after {                       content: "#{$type4}"; } }
         .item-5 { &:after {                       content: "#{$type5}"; } }
         .item-6 { &:after { @include font-bold(); content: "#{$type6}"; } }
-        .item-7 { &:after { @include font-bold(); content: "#{$type7}"; } }
+
     }
 }
 

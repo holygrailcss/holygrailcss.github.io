@@ -1,37 +1,3 @@
-:root {
-  --Black:#000000;
-  --secondary-color:#F5F5F5;
-  --gray-90:#171717;
-  --gray-80:#2E2E2E;
-  --gray-70:#464646;
-  --gray-60:#5D5D5D;
-  --gray-50:#757575;
-  --gray-40:#909090;
-  --gray-30:#ACACAC;
-  --gray-20:#C7C7C7;
-  --gray-10:#E3E3E3;
-  --white-smoke:#F5F5F5;
-  --White:#ffffff;
-  --quartory-color:#E6F5FF;
-  --cinco-color:#B5E6C8;
-  --six-color:#FEF7C1;
-  --siete-color:#FADFC1;
-  --ocho-color:#FCD8CD;
-  --Error:#FD675E;
-  --Sales:#FA3B2C;
-  --Sales-Variant:#E43628;
-  --error-primary:#FD675E;
-  --link:rgb(207, 236, 240);
-  --linkHover:#999;
-  --black:rgb(3, 2, 2);
-  --primary:#000;
-  --break-xs: 1px;
-  --break-sm: 786px;
-  --break-md: 992px;
-  --break-lg: 1280px;
-  --break-xl: 1500px;
-  --min-width:319px; }
-
 /*+------------------------------------------------------------+
  |-COLORS
  +------------------------------------------------------------+*/
@@ -189,7 +155,7 @@ code[class*="language-css"] {
   border-right-color: #a5a5a5; }
 
 .line-numbers-rows > span:before {
-  color: #00bfcb; }
+  color: #121F2A; }
 
 /* overrides color-values for the Line Highlight plugin
  * http://prismjs.com/plugins/line-highlight/
