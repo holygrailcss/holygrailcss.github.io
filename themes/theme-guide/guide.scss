@@ -14,7 +14,11 @@ $secondary-guide:#6759bb;
 
 
 
-@import"../../../holygrailcss/scss/partials";
+//@import"../../../holygrailcss/scss/partials";
+
+
+@import '../../node_modules/holygrailcss/scss/_partials.scss';
+
 @import "../../themes/theme-guide/_tags.scss";
 
 
