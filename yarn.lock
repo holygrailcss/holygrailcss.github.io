@@ -2060,10 +2060,10 @@ hex-color-regex@^1.1.0:
   resolved "https://registry.yarnpkg.com/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
 
-holygrailcss@^1.4.0:
-  version "1.5.6"
-  resolved "https://registry.yarnpkg.com/holygrailcss/-/holygrailcss-1.5.6.tgz#b119022217015a00d9fd119d3a840bf66bcf2939"
-  integrity sha512-UXeA7IesyPhEeQueZhIqUMZKJY5mZLyBxqJisGcvqi95yP+GGrsxj/5S/TqZramnvmH35SSDu4L/DzWDW9ex+Q==
+holygrailcss@^1.6.13:
+  version "1.6.30"
+  resolved "https://registry.yarnpkg.com/holygrailcss/-/holygrailcss-1.6.30.tgz#66b92809b99e6cd81f07e36ad8ca99083d00e62d"
+  integrity sha512-Cl7gM6pCcl6ZY0i4L7fR08sQZPzSBFzOav/8KPbJqCU4jm4549L59GUqyJ6+HsBpql4t9YBj/epGXme+PZ1G0w==
 
 homedir-polyfill@^1.0.1:
   version "1.0.3"
@@ -2205,9 +2205,9 @@ inherits@2.0.3:
   integrity sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
 
 ini@^1.3.4:
-  version "1.3.5"
-  resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.5.tgz#eee25f56db1c9ec6085e0c22778083f596abf927"
-  integrity sha512-RZY5huIKCMRWDUqZlEi72f/lmXKMvuszcMBduliQ3nnWbx9X/ZBQO7DijMEYS9EhHBb2qacRUMtC7svLwe0lcw==
+  version "1.3.8"
+  resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.8.tgz#a29da425b48806f34767a4efce397269af28432c"
+  integrity sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==
 
 interactjs@^1.8.5:
   version "1.9.20"
