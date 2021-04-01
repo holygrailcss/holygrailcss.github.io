@@ -2060,10 +2060,10 @@ hex-color-regex@^1.1.0:
   resolved "https://registry.yarnpkg.com/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
 
-holygrailcss@^1.4.0:
-  version "1.5.6"
-  resolved "https://registry.yarnpkg.com/holygrailcss/-/holygrailcss-1.5.6.tgz#b119022217015a00d9fd119d3a840bf66bcf2939"
-  integrity sha512-UXeA7IesyPhEeQueZhIqUMZKJY5mZLyBxqJisGcvqi95yP+GGrsxj/5S/TqZramnvmH35SSDu4L/DzWDW9ex+Q==
+holygrailcss@^1.6.13:
+  version "1.6.39"
+  resolved "https://registry.yarnpkg.com/holygrailcss/-/holygrailcss-1.6.39.tgz#4226d23390b47d20558a27cf7537af0cc00fb3a5"
+  integrity sha512-fFDCw/xJw3PY4JgjblM2QBmFfyos4tW4Y0eAmJrakBcdJlBmqJ5YxOkeedhgeuJbdzNGnL+TPQZeUS6k8pEauQ==
 
 homedir-polyfill@^1.0.1:
   version "1.0.3"
@@ -4978,9 +4978,9 @@ xtend@~4.0.0, xtend@~4.0.1:
   integrity sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==
 
 y18n@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/y18n/-/y18n-3.2.1.tgz#6d15fba884c08679c0d77e88e7759e811e07fa41"
-  integrity sha1-bRX7qITAhnnA136I53WegR4H+kE=
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/y18n/-/y18n-3.2.2.tgz#85c901bd6470ce71fc4bb723ad209b70f7f28696"
+  integrity sha512-uGZHXkHnhF0XeeAPgnKfPv1bgKAYyVvmNL1xlKsPYZPaIHxGti2hHqvOCQv71XMsLxu1QjergkqogUnms5D3YQ==
 
 y18n@^4.0.0:
   version "4.0.0"
