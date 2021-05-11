@@ -2060,10 +2060,10 @@ hex-color-regex@^1.1.0:
   resolved "https://registry.yarnpkg.com/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
 
-holygrailcss@^1.4.0:
-  version "1.5.6"
-  resolved "https://registry.yarnpkg.com/holygrailcss/-/holygrailcss-1.5.6.tgz#b119022217015a00d9fd119d3a840bf66bcf2939"
-  integrity sha512-UXeA7IesyPhEeQueZhIqUMZKJY5mZLyBxqJisGcvqi95yP+GGrsxj/5S/TqZramnvmH35SSDu4L/DzWDW9ex+Q==
+holygrailcss@^1.6.13:
+  version "1.6.52"
+  resolved "https://registry.yarnpkg.com/holygrailcss/-/holygrailcss-1.6.52.tgz#bf5e34d617da4aab8d1af3337a947f824f842043"
+  integrity sha512-N0zvaeTLxQAK/1ixID2u5vqjbSEaiOH1N+8kisGRGWryPE5ywwiicmYFWgdpHSCxeo0GdiWWD2jXKP1B0U0XgQ==
 
 homedir-polyfill@^1.0.1:
   version "1.0.3"
@@ -2707,9 +2707,9 @@ lodash.uniq@^4.5.0:
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
 lodash@^4.0.0, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.15, lodash@~4.17.10:
-  version "4.17.19"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
-  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 loud-rejection@^1.0.0:
   version "1.6.0"
