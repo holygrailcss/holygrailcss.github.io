@@ -2060,10 +2060,10 @@ hex-color-regex@^1.1.0:
   resolved "https://registry.yarnpkg.com/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
 
-holygrailcss@^1.4.0:
-  version "1.5.6"
-  resolved "https://registry.yarnpkg.com/holygrailcss/-/holygrailcss-1.5.6.tgz#b119022217015a00d9fd119d3a840bf66bcf2939"
-  integrity sha512-UXeA7IesyPhEeQueZhIqUMZKJY5mZLyBxqJisGcvqi95yP+GGrsxj/5S/TqZramnvmH35SSDu4L/DzWDW9ex+Q==
+holygrailcss@^1.6.13:
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/holygrailcss/-/holygrailcss-1.7.3.tgz#8220ea4bb2d14d9bf1dcbfe8bf70e2c0bb349876"
+  integrity sha512-sLu+i2XsoXjy+Aewd76AdAbcDdRbBO8TmSc7tF1491pSqqnAJzjj87i6dDbvNWsQRVv4ANdA0h+mDmh8FPkqZA==
 
 homedir-polyfill@^1.0.1:
   version "1.0.3"
@@ -3312,9 +3312,9 @@ path-is-absolute@^1.0.0:
   integrity sha1-F0uSaHNVNP+8es5r9TpanhtcX18=
 
 path-parse@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
-  integrity sha512-GSmOT2EbHrINBf9SR7CDELwlJ8AENk3Qn7OikK4nFYAu3Ote2+JYNVvkpAEQm3/TLNEJFD/xZJjzyxg3KBWOzw==
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
+  integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
 
 path-root-regex@^0.1.0:
   version "0.1.2"
